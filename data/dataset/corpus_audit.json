@@ -1,0 +1,4738 @@
+{
+  "admitted_volumes": 212,
+  "completed_volumes": 212,
+  "missing_volumes": [],
+  "page_mismatches": [],
+  "total_pages_transcribed": 26325,
+  "unique_non_duplicate_pages": 25827,
+  "expected_total_pages": 26325,
+  "duplicate_consecutive_frames_count": 498,
+  "incomplete_repetition_pages_count": 176,
+  "incomplete_repetition_share": 0.00669,
+  "runs_removed_pages_count": 143,
+  "empty_pages_count": 264,
+  "total_completion_tokens": 10231643,
+  "median_page_duration_s": 8.54,
+  "duplicate_consecutive_frames": [
+    {
+      "bsb_id": "bsb00140586",
+      "district": "Berneck",
+      "canvas_number": 2,
+      "duplicate_of_canvas": 1,
+      "similarity": 0.9676
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 4,
+      "duplicate_of_canvas": 3,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 8,
+      "duplicate_of_canvas": 7,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 10,
+      "duplicate_of_canvas": 9,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 12,
+      "duplicate_of_canvas": 11,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 14,
+      "duplicate_of_canvas": 13,
+      "similarity": 0.996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 16,
+      "duplicate_of_canvas": 15,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 18,
+      "duplicate_of_canvas": 17,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 20,
+      "duplicate_of_canvas": 19,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 22,
+      "duplicate_of_canvas": 21,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 24,
+      "duplicate_of_canvas": 23,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 26,
+      "duplicate_of_canvas": 25,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 28,
+      "duplicate_of_canvas": 27,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 32,
+      "duplicate_of_canvas": 31,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 36,
+      "duplicate_of_canvas": 35,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 38,
+      "duplicate_of_canvas": 37,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 40,
+      "duplicate_of_canvas": 39,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 42,
+      "duplicate_of_canvas": 41,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 44,
+      "duplicate_of_canvas": 43,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 46,
+      "duplicate_of_canvas": 45,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 48,
+      "duplicate_of_canvas": 47,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 50,
+      "duplicate_of_canvas": 49,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 52,
+      "duplicate_of_canvas": 51,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 54,
+      "duplicate_of_canvas": 53,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 56,
+      "duplicate_of_canvas": 55,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 58,
+      "duplicate_of_canvas": 57,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 60,
+      "duplicate_of_canvas": 59,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 62,
+      "duplicate_of_canvas": 61,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 64,
+      "duplicate_of_canvas": 63,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 66,
+      "duplicate_of_canvas": 65,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 68,
+      "duplicate_of_canvas": 67,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 70,
+      "duplicate_of_canvas": 69,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 72,
+      "duplicate_of_canvas": 71,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 74,
+      "duplicate_of_canvas": 73,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 76,
+      "duplicate_of_canvas": 75,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 78,
+      "duplicate_of_canvas": 77,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 80,
+      "duplicate_of_canvas": 79,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 82,
+      "duplicate_of_canvas": 81,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 84,
+      "duplicate_of_canvas": 83,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 86,
+      "duplicate_of_canvas": 85,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 88,
+      "duplicate_of_canvas": 87,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 90,
+      "duplicate_of_canvas": 89,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 92,
+      "duplicate_of_canvas": 91,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 94,
+      "duplicate_of_canvas": 93,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 96,
+      "duplicate_of_canvas": 95,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 98,
+      "duplicate_of_canvas": 97,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 100,
+      "duplicate_of_canvas": 99,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 102,
+      "duplicate_of_canvas": 101,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 104,
+      "duplicate_of_canvas": 103,
+      "similarity": 0.9968
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 106,
+      "duplicate_of_canvas": 105,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 108,
+      "duplicate_of_canvas": 107,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 110,
+      "duplicate_of_canvas": 109,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 112,
+      "duplicate_of_canvas": 111,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 114,
+      "duplicate_of_canvas": 113,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 116,
+      "duplicate_of_canvas": 115,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 118,
+      "duplicate_of_canvas": 117,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 120,
+      "duplicate_of_canvas": 119,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 122,
+      "duplicate_of_canvas": 121,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 124,
+      "duplicate_of_canvas": 123,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 126,
+      "duplicate_of_canvas": 125,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 128,
+      "duplicate_of_canvas": 127,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 130,
+      "duplicate_of_canvas": 129,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 132,
+      "duplicate_of_canvas": 131,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 134,
+      "duplicate_of_canvas": 133,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 136,
+      "duplicate_of_canvas": 135,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 138,
+      "duplicate_of_canvas": 137,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 140,
+      "duplicate_of_canvas": 139,
+      "similarity": 0.9979
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 142,
+      "duplicate_of_canvas": 141,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 144,
+      "duplicate_of_canvas": 143,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 146,
+      "duplicate_of_canvas": 145,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 148,
+      "duplicate_of_canvas": 147,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 150,
+      "duplicate_of_canvas": 149,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 152,
+      "duplicate_of_canvas": 151,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 154,
+      "duplicate_of_canvas": 153,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 156,
+      "duplicate_of_canvas": 155,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 158,
+      "duplicate_of_canvas": 157,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 160,
+      "duplicate_of_canvas": 159,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 162,
+      "duplicate_of_canvas": 161,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 164,
+      "duplicate_of_canvas": 163,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 166,
+      "duplicate_of_canvas": 165,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 168,
+      "duplicate_of_canvas": 167,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 170,
+      "duplicate_of_canvas": 169,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 172,
+      "duplicate_of_canvas": 171,
+      "similarity": 0.9991
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 174,
+      "duplicate_of_canvas": 173,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 176,
+      "duplicate_of_canvas": 175,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 178,
+      "duplicate_of_canvas": 177,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 180,
+      "duplicate_of_canvas": 179,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 182,
+      "duplicate_of_canvas": 181,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 184,
+      "duplicate_of_canvas": 183,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 186,
+      "duplicate_of_canvas": 185,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 188,
+      "duplicate_of_canvas": 187,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 190,
+      "duplicate_of_canvas": 189,
+      "similarity": 0.9987
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 192,
+      "duplicate_of_canvas": 191,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 194,
+      "duplicate_of_canvas": 193,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 196,
+      "duplicate_of_canvas": 195,
+      "similarity": 0.9968
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 198,
+      "duplicate_of_canvas": 197,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 200,
+      "duplicate_of_canvas": 199,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 202,
+      "duplicate_of_canvas": 201,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 204,
+      "duplicate_of_canvas": 203,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 206,
+      "duplicate_of_canvas": 205,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 208,
+      "duplicate_of_canvas": 207,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 210,
+      "duplicate_of_canvas": 209,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 212,
+      "duplicate_of_canvas": 211,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 214,
+      "duplicate_of_canvas": 213,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 216,
+      "duplicate_of_canvas": 215,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 218,
+      "duplicate_of_canvas": 217,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 220,
+      "duplicate_of_canvas": 219,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 222,
+      "duplicate_of_canvas": 221,
+      "similarity": 0.9996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 224,
+      "duplicate_of_canvas": 223,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 226,
+      "duplicate_of_canvas": 225,
+      "similarity": 0.9566
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 228,
+      "duplicate_of_canvas": 227,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 230,
+      "duplicate_of_canvas": 229,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 232,
+      "duplicate_of_canvas": 231,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 234,
+      "duplicate_of_canvas": 233,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 236,
+      "duplicate_of_canvas": 235,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 238,
+      "duplicate_of_canvas": 237,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 240,
+      "duplicate_of_canvas": 239,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 242,
+      "duplicate_of_canvas": 241,
+      "similarity": 0.9326
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 244,
+      "duplicate_of_canvas": 243,
+      "similarity": 0.998
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 246,
+      "duplicate_of_canvas": 245,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 248,
+      "duplicate_of_canvas": 247,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 250,
+      "duplicate_of_canvas": 249,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 252,
+      "duplicate_of_canvas": 251,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 254,
+      "duplicate_of_canvas": 253,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 256,
+      "duplicate_of_canvas": 255,
+      "similarity": 0.9953
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 258,
+      "duplicate_of_canvas": 257,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 260,
+      "duplicate_of_canvas": 259,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 262,
+      "duplicate_of_canvas": 261,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 264,
+      "duplicate_of_canvas": 263,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 266,
+      "duplicate_of_canvas": 265,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 268,
+      "duplicate_of_canvas": 267,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 270,
+      "duplicate_of_canvas": 269,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 272,
+      "duplicate_of_canvas": 271,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 274,
+      "duplicate_of_canvas": 273,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 276,
+      "duplicate_of_canvas": 275,
+      "similarity": 0.9992
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 278,
+      "duplicate_of_canvas": 277,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 280,
+      "duplicate_of_canvas": 279,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 282,
+      "duplicate_of_canvas": 281,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 284,
+      "duplicate_of_canvas": 283,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 286,
+      "duplicate_of_canvas": 285,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 288,
+      "duplicate_of_canvas": 287,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 290,
+      "duplicate_of_canvas": 289,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 292,
+      "duplicate_of_canvas": 291,
+      "similarity": 0.999
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 294,
+      "duplicate_of_canvas": 293,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 296,
+      "duplicate_of_canvas": 295,
+      "similarity": 0.9986
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 298,
+      "duplicate_of_canvas": 297,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 300,
+      "duplicate_of_canvas": 299,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 302,
+      "duplicate_of_canvas": 301,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 304,
+      "duplicate_of_canvas": 303,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 306,
+      "duplicate_of_canvas": 305,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 310,
+      "duplicate_of_canvas": 309,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 312,
+      "duplicate_of_canvas": 311,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 314,
+      "duplicate_of_canvas": 313,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 316,
+      "duplicate_of_canvas": 315,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 318,
+      "duplicate_of_canvas": 317,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 320,
+      "duplicate_of_canvas": 319,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 322,
+      "duplicate_of_canvas": 321,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 324,
+      "duplicate_of_canvas": 323,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 326,
+      "duplicate_of_canvas": 325,
+      "similarity": 0.9951
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 328,
+      "duplicate_of_canvas": 327,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 330,
+      "duplicate_of_canvas": 329,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 332,
+      "duplicate_of_canvas": 331,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 334,
+      "duplicate_of_canvas": 333,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 336,
+      "duplicate_of_canvas": 335,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 338,
+      "duplicate_of_canvas": 337,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 340,
+      "duplicate_of_canvas": 339,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 342,
+      "duplicate_of_canvas": 341,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 344,
+      "duplicate_of_canvas": 343,
+      "similarity": 0.9989
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 346,
+      "duplicate_of_canvas": 345,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 348,
+      "duplicate_of_canvas": 347,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 350,
+      "duplicate_of_canvas": 349,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 352,
+      "duplicate_of_canvas": 351,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 354,
+      "duplicate_of_canvas": 353,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 356,
+      "duplicate_of_canvas": 355,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 358,
+      "duplicate_of_canvas": 357,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 360,
+      "duplicate_of_canvas": 359,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 362,
+      "duplicate_of_canvas": 361,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 364,
+      "duplicate_of_canvas": 363,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 366,
+      "duplicate_of_canvas": 365,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 368,
+      "duplicate_of_canvas": 367,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 370,
+      "duplicate_of_canvas": 369,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 372,
+      "duplicate_of_canvas": 371,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 374,
+      "duplicate_of_canvas": 373,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 376,
+      "duplicate_of_canvas": 375,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 378,
+      "duplicate_of_canvas": 377,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 380,
+      "duplicate_of_canvas": 379,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 382,
+      "duplicate_of_canvas": 381,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 384,
+      "duplicate_of_canvas": 383,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 386,
+      "duplicate_of_canvas": 385,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 388,
+      "duplicate_of_canvas": 387,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 390,
+      "duplicate_of_canvas": 389,
+      "similarity": 0.9996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 392,
+      "duplicate_of_canvas": 391,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 394,
+      "duplicate_of_canvas": 393,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 396,
+      "duplicate_of_canvas": 395,
+      "similarity": 0.9801
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 398,
+      "duplicate_of_canvas": 397,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 400,
+      "duplicate_of_canvas": 399,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 402,
+      "duplicate_of_canvas": 401,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 404,
+      "duplicate_of_canvas": 403,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 406,
+      "duplicate_of_canvas": 405,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 408,
+      "duplicate_of_canvas": 407,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 410,
+      "duplicate_of_canvas": 409,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 412,
+      "duplicate_of_canvas": 411,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 414,
+      "duplicate_of_canvas": 413,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 416,
+      "duplicate_of_canvas": 415,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 418,
+      "duplicate_of_canvas": 417,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 420,
+      "duplicate_of_canvas": 419,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 422,
+      "duplicate_of_canvas": 421,
+      "similarity": 0.9985
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 424,
+      "duplicate_of_canvas": 423,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 426,
+      "duplicate_of_canvas": 425,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 428,
+      "duplicate_of_canvas": 427,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 430,
+      "duplicate_of_canvas": 429,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 432,
+      "duplicate_of_canvas": 431,
+      "similarity": 0.999
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 434,
+      "duplicate_of_canvas": 433,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 436,
+      "duplicate_of_canvas": 435,
+      "similarity": 0.9973
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 438,
+      "duplicate_of_canvas": 437,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 440,
+      "duplicate_of_canvas": 439,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 442,
+      "duplicate_of_canvas": 441,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 444,
+      "duplicate_of_canvas": 443,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 446,
+      "duplicate_of_canvas": 445,
+      "similarity": 0.9908
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 448,
+      "duplicate_of_canvas": 447,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 450,
+      "duplicate_of_canvas": 449,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 452,
+      "duplicate_of_canvas": 451,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 454,
+      "duplicate_of_canvas": 453,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 456,
+      "duplicate_of_canvas": 455,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 458,
+      "duplicate_of_canvas": 457,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 460,
+      "duplicate_of_canvas": 459,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 462,
+      "duplicate_of_canvas": 461,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 464,
+      "duplicate_of_canvas": 463,
+      "similarity": 0.9991
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 466,
+      "duplicate_of_canvas": 465,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 468,
+      "duplicate_of_canvas": 467,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 470,
+      "duplicate_of_canvas": 469,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 472,
+      "duplicate_of_canvas": 471,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 474,
+      "duplicate_of_canvas": 473,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 476,
+      "duplicate_of_canvas": 475,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 478,
+      "duplicate_of_canvas": 477,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 480,
+      "duplicate_of_canvas": 479,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 482,
+      "duplicate_of_canvas": 481,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 484,
+      "duplicate_of_canvas": 483,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 486,
+      "duplicate_of_canvas": 485,
+      "similarity": 0.997
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 488,
+      "duplicate_of_canvas": 487,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 490,
+      "duplicate_of_canvas": 489,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 492,
+      "duplicate_of_canvas": 491,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 494,
+      "duplicate_of_canvas": 493,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 496,
+      "duplicate_of_canvas": 495,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 498,
+      "duplicate_of_canvas": 497,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 500,
+      "duplicate_of_canvas": 499,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 502,
+      "duplicate_of_canvas": 501,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 504,
+      "duplicate_of_canvas": 503,
+      "similarity": 0.9996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 506,
+      "duplicate_of_canvas": 505,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 508,
+      "duplicate_of_canvas": 507,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 510,
+      "duplicate_of_canvas": 509,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 512,
+      "duplicate_of_canvas": 511,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 514,
+      "duplicate_of_canvas": 513,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 516,
+      "duplicate_of_canvas": 515,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 518,
+      "duplicate_of_canvas": 517,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 520,
+      "duplicate_of_canvas": 519,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 522,
+      "duplicate_of_canvas": 521,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 524,
+      "duplicate_of_canvas": 523,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 526,
+      "duplicate_of_canvas": 525,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 528,
+      "duplicate_of_canvas": 527,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 530,
+      "duplicate_of_canvas": 529,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 532,
+      "duplicate_of_canvas": 531,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 534,
+      "duplicate_of_canvas": 533,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 536,
+      "duplicate_of_canvas": 535,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 538,
+      "duplicate_of_canvas": 537,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 540,
+      "duplicate_of_canvas": 539,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 542,
+      "duplicate_of_canvas": 541,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 544,
+      "duplicate_of_canvas": 543,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 546,
+      "duplicate_of_canvas": 545,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 548,
+      "duplicate_of_canvas": 547,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 550,
+      "duplicate_of_canvas": 549,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 552,
+      "duplicate_of_canvas": 551,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 554,
+      "duplicate_of_canvas": 553,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 556,
+      "duplicate_of_canvas": 555,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 558,
+      "duplicate_of_canvas": 557,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 560,
+      "duplicate_of_canvas": 559,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 562,
+      "duplicate_of_canvas": 561,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 564,
+      "duplicate_of_canvas": 563,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 566,
+      "duplicate_of_canvas": 565,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 568,
+      "duplicate_of_canvas": 567,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 570,
+      "duplicate_of_canvas": 569,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 572,
+      "duplicate_of_canvas": 571,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 574,
+      "duplicate_of_canvas": 573,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 576,
+      "duplicate_of_canvas": 575,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 578,
+      "duplicate_of_canvas": 577,
+      "similarity": 0.9977
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 580,
+      "duplicate_of_canvas": 579,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 582,
+      "duplicate_of_canvas": 581,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 584,
+      "duplicate_of_canvas": 583,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 586,
+      "duplicate_of_canvas": 585,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 588,
+      "duplicate_of_canvas": 587,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 590,
+      "duplicate_of_canvas": 589,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 592,
+      "duplicate_of_canvas": 591,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 594,
+      "duplicate_of_canvas": 593,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 596,
+      "duplicate_of_canvas": 595,
+      "similarity": 0.9996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 598,
+      "duplicate_of_canvas": 597,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 600,
+      "duplicate_of_canvas": 599,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 602,
+      "duplicate_of_canvas": 601,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 604,
+      "duplicate_of_canvas": 603,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 606,
+      "duplicate_of_canvas": 605,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 608,
+      "duplicate_of_canvas": 607,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 610,
+      "duplicate_of_canvas": 609,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 612,
+      "duplicate_of_canvas": 611,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 614,
+      "duplicate_of_canvas": 613,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 616,
+      "duplicate_of_canvas": 615,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 618,
+      "duplicate_of_canvas": 617,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 620,
+      "duplicate_of_canvas": 619,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 622,
+      "duplicate_of_canvas": 621,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 624,
+      "duplicate_of_canvas": 623,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 626,
+      "duplicate_of_canvas": 625,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 628,
+      "duplicate_of_canvas": 627,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 630,
+      "duplicate_of_canvas": 629,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 632,
+      "duplicate_of_canvas": 631,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 634,
+      "duplicate_of_canvas": 633,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 636,
+      "duplicate_of_canvas": 635,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 638,
+      "duplicate_of_canvas": 637,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 640,
+      "duplicate_of_canvas": 639,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 642,
+      "duplicate_of_canvas": 641,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 644,
+      "duplicate_of_canvas": 643,
+      "similarity": 0.998
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 646,
+      "duplicate_of_canvas": 645,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 648,
+      "duplicate_of_canvas": 647,
+      "similarity": 0.997
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 650,
+      "duplicate_of_canvas": 649,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 652,
+      "duplicate_of_canvas": 651,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 654,
+      "duplicate_of_canvas": 653,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 656,
+      "duplicate_of_canvas": 655,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 658,
+      "duplicate_of_canvas": 657,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 660,
+      "duplicate_of_canvas": 659,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 662,
+      "duplicate_of_canvas": 661,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 664,
+      "duplicate_of_canvas": 663,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 666,
+      "duplicate_of_canvas": 665,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 668,
+      "duplicate_of_canvas": 667,
+      "similarity": 0.9996
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 670,
+      "duplicate_of_canvas": 669,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 672,
+      "duplicate_of_canvas": 671,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 674,
+      "duplicate_of_canvas": 673,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 676,
+      "duplicate_of_canvas": 675,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 678,
+      "duplicate_of_canvas": 677,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 680,
+      "duplicate_of_canvas": 679,
+      "similarity": 0.9986
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 682,
+      "duplicate_of_canvas": 681,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 684,
+      "duplicate_of_canvas": 683,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 686,
+      "duplicate_of_canvas": 685,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 688,
+      "duplicate_of_canvas": 687,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 690,
+      "duplicate_of_canvas": 689,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 692,
+      "duplicate_of_canvas": 691,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 694,
+      "duplicate_of_canvas": 693,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 696,
+      "duplicate_of_canvas": 695,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 698,
+      "duplicate_of_canvas": 697,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 700,
+      "duplicate_of_canvas": 699,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 702,
+      "duplicate_of_canvas": 701,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 704,
+      "duplicate_of_canvas": 703,
+      "similarity": 0.9991
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 706,
+      "duplicate_of_canvas": 705,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 708,
+      "duplicate_of_canvas": 707,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 710,
+      "duplicate_of_canvas": 709,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 712,
+      "duplicate_of_canvas": 711,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 714,
+      "duplicate_of_canvas": 713,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 716,
+      "duplicate_of_canvas": 715,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 718,
+      "duplicate_of_canvas": 717,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 720,
+      "duplicate_of_canvas": 719,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 724,
+      "duplicate_of_canvas": 723,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 726,
+      "duplicate_of_canvas": 725,
+      "similarity": 0.9222
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 730,
+      "duplicate_of_canvas": 729,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 738,
+      "duplicate_of_canvas": 737,
+      "similarity": 0.9507
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 742,
+      "duplicate_of_canvas": 741,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 744,
+      "duplicate_of_canvas": 743,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 746,
+      "duplicate_of_canvas": 745,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 750,
+      "duplicate_of_canvas": 749,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00140610",
+      "district": "Erlangen (Stadt)",
+      "canvas_number": 113,
+      "duplicate_of_canvas": 112,
+      "similarity": 0.986
+    },
+    {
+      "bsb_id": "bsb00110703",
+      "district": "Hengersberg",
+      "canvas_number": 2,
+      "duplicate_of_canvas": 1,
+      "similarity": 0.9127
+    },
+    {
+      "bsb_id": "bsb00107011",
+      "district": "Höchstadt an der Aisch",
+      "canvas_number": 3,
+      "duplicate_of_canvas": 2,
+      "similarity": 0.9877
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 71,
+      "duplicate_of_canvas": 70,
+      "similarity": 0.962
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 8,
+      "duplicate_of_canvas": 7,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 10,
+      "duplicate_of_canvas": 9,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 12,
+      "duplicate_of_canvas": 11,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 14,
+      "duplicate_of_canvas": 13,
+      "similarity": 0.9961
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 16,
+      "duplicate_of_canvas": 15,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 18,
+      "duplicate_of_canvas": 17,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 20,
+      "duplicate_of_canvas": 19,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 22,
+      "duplicate_of_canvas": 21,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 24,
+      "duplicate_of_canvas": 23,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 26,
+      "duplicate_of_canvas": 25,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 28,
+      "duplicate_of_canvas": 27,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 30,
+      "duplicate_of_canvas": 29,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 32,
+      "duplicate_of_canvas": 31,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 34,
+      "duplicate_of_canvas": 33,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 36,
+      "duplicate_of_canvas": 35,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 38,
+      "duplicate_of_canvas": 37,
+      "similarity": 0.9959
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 40,
+      "duplicate_of_canvas": 39,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 42,
+      "duplicate_of_canvas": 41,
+      "similarity": 0.9987
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 44,
+      "duplicate_of_canvas": 43,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 46,
+      "duplicate_of_canvas": 45,
+      "similarity": 0.9694
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 48,
+      "duplicate_of_canvas": 47,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 50,
+      "duplicate_of_canvas": 49,
+      "similarity": 0.9632
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 52,
+      "duplicate_of_canvas": 51,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 54,
+      "duplicate_of_canvas": 53,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 56,
+      "duplicate_of_canvas": 55,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 58,
+      "duplicate_of_canvas": 57,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 60,
+      "duplicate_of_canvas": 59,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 62,
+      "duplicate_of_canvas": 61,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 64,
+      "duplicate_of_canvas": 63,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 66,
+      "duplicate_of_canvas": 65,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 68,
+      "duplicate_of_canvas": 67,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 70,
+      "duplicate_of_canvas": 69,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 72,
+      "duplicate_of_canvas": 71,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 74,
+      "duplicate_of_canvas": 73,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 76,
+      "duplicate_of_canvas": 75,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 78,
+      "duplicate_of_canvas": 77,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 80,
+      "duplicate_of_canvas": 79,
+      "similarity": 0.9991
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 82,
+      "duplicate_of_canvas": 81,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 84,
+      "duplicate_of_canvas": 83,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 86,
+      "duplicate_of_canvas": 85,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 88,
+      "duplicate_of_canvas": 87,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 90,
+      "duplicate_of_canvas": 89,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 92,
+      "duplicate_of_canvas": 91,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 94,
+      "duplicate_of_canvas": 93,
+      "similarity": 0.999
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 96,
+      "duplicate_of_canvas": 95,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 98,
+      "duplicate_of_canvas": 97,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 100,
+      "duplicate_of_canvas": 99,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 102,
+      "duplicate_of_canvas": 101,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 104,
+      "duplicate_of_canvas": 103,
+      "similarity": 0.9987
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 106,
+      "duplicate_of_canvas": 105,
+      "similarity": 0.9823
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 108,
+      "duplicate_of_canvas": 107,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 110,
+      "duplicate_of_canvas": 109,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 112,
+      "duplicate_of_canvas": 111,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 114,
+      "duplicate_of_canvas": 113,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 116,
+      "duplicate_of_canvas": 115,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 118,
+      "duplicate_of_canvas": 117,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 120,
+      "duplicate_of_canvas": 119,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 122,
+      "duplicate_of_canvas": 121,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 124,
+      "duplicate_of_canvas": 123,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 126,
+      "duplicate_of_canvas": 125,
+      "similarity": 0.9974
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 128,
+      "duplicate_of_canvas": 127,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 130,
+      "duplicate_of_canvas": 129,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 132,
+      "duplicate_of_canvas": 131,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 134,
+      "duplicate_of_canvas": 133,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 136,
+      "duplicate_of_canvas": 135,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 138,
+      "duplicate_of_canvas": 137,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 140,
+      "duplicate_of_canvas": 139,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 142,
+      "duplicate_of_canvas": 141,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 144,
+      "duplicate_of_canvas": 143,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 146,
+      "duplicate_of_canvas": 145,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 148,
+      "duplicate_of_canvas": 147,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 150,
+      "duplicate_of_canvas": 149,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 152,
+      "duplicate_of_canvas": 151,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 154,
+      "duplicate_of_canvas": 153,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 156,
+      "duplicate_of_canvas": 155,
+      "similarity": 0.9976
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 158,
+      "duplicate_of_canvas": 157,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 160,
+      "duplicate_of_canvas": 159,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 162,
+      "duplicate_of_canvas": 161,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 164,
+      "duplicate_of_canvas": 163,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 166,
+      "duplicate_of_canvas": 165,
+      "similarity": 0.999
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 168,
+      "duplicate_of_canvas": 167,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 170,
+      "duplicate_of_canvas": 169,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 172,
+      "duplicate_of_canvas": 171,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 174,
+      "duplicate_of_canvas": 173,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 176,
+      "duplicate_of_canvas": 175,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 178,
+      "duplicate_of_canvas": 177,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 180,
+      "duplicate_of_canvas": 179,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 182,
+      "duplicate_of_canvas": 181,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 184,
+      "duplicate_of_canvas": 183,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 186,
+      "duplicate_of_canvas": 185,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 188,
+      "duplicate_of_canvas": 187,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 190,
+      "duplicate_of_canvas": 189,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 192,
+      "duplicate_of_canvas": 191,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 194,
+      "duplicate_of_canvas": 193,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 196,
+      "duplicate_of_canvas": 195,
+      "similarity": 0.9995
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 198,
+      "duplicate_of_canvas": 197,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 200,
+      "duplicate_of_canvas": 199,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 202,
+      "duplicate_of_canvas": 201,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 204,
+      "duplicate_of_canvas": 203,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 206,
+      "duplicate_of_canvas": 205,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 208,
+      "duplicate_of_canvas": 207,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 210,
+      "duplicate_of_canvas": 209,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 212,
+      "duplicate_of_canvas": 211,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 214,
+      "duplicate_of_canvas": 213,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 216,
+      "duplicate_of_canvas": 215,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 218,
+      "duplicate_of_canvas": 217,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 220,
+      "duplicate_of_canvas": 219,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 222,
+      "duplicate_of_canvas": 221,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 224,
+      "duplicate_of_canvas": 223,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 226,
+      "duplicate_of_canvas": 225,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 228,
+      "duplicate_of_canvas": 227,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 230,
+      "duplicate_of_canvas": 229,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 232,
+      "duplicate_of_canvas": 231,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 234,
+      "duplicate_of_canvas": 233,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 238,
+      "duplicate_of_canvas": 237,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 242,
+      "duplicate_of_canvas": 241,
+      "similarity": 0.9987
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 244,
+      "duplicate_of_canvas": 243,
+      "similarity": 0.9733
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 246,
+      "duplicate_of_canvas": 245,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 250,
+      "duplicate_of_canvas": 249,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 254,
+      "duplicate_of_canvas": 253,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 256,
+      "duplicate_of_canvas": 255,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 258,
+      "duplicate_of_canvas": 257,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 260,
+      "duplicate_of_canvas": 259,
+      "similarity": 0.9984
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 262,
+      "duplicate_of_canvas": 261,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 264,
+      "duplicate_of_canvas": 263,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 268,
+      "duplicate_of_canvas": 267,
+      "similarity": 0.9927
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 270,
+      "duplicate_of_canvas": 269,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 272,
+      "duplicate_of_canvas": 271,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 274,
+      "duplicate_of_canvas": 273,
+      "similarity": 1.0
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 276,
+      "duplicate_of_canvas": 275,
+      "similarity": 1.0
+    }
+  ],
+  "incomplete_pages": [
+    {
+      "bsb_id": "bsb00140574",
+      "district": "Alzenau, Amorbach, Arnstein, Aschaffenburg, Aub",
+      "canvas_number": 45,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00026308",
+      "district": "Amberg (Stadt)",
+      "canvas_number": 145,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00026308",
+      "district": "Amberg (Stadt)",
+      "canvas_number": 152,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00026307",
+      "district": "Amberg (Land)",
+      "canvas_number": 30,
+      "incomplete": "repetition",
+      "loop_rule": null
+    },
+    {
+      "bsb_id": "bsb00026307",
+      "district": "Amberg (Land)",
+      "canvas_number": 115,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140582",
+      "district": "Baunach, Bischofsheim (Rhön), Babenhausen, Brückenau",
+      "canvas_number": 96,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140582",
+      "district": "Baunach, Bischofsheim (Rhön), Babenhausen, Brückenau",
+      "canvas_number": 99,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140582",
+      "district": "Baunach, Bischofsheim (Rhön), Babenhausen, Brückenau",
+      "canvas_number": 107,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140582",
+      "district": "Baunach, Bischofsheim (Rhön), Babenhausen, Brückenau",
+      "canvas_number": 111,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140582",
+      "district": "Baunach, Bischofsheim (Rhön), Babenhausen, Brückenau",
+      "canvas_number": 289,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140583",
+      "district": "Bayreuth (Stadt)",
+      "canvas_number": 151,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140585",
+      "district": "Bergzabern",
+      "canvas_number": 20,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 725,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00009735",
+      "district": "Bissingen",
+      "canvas_number": 726,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140589",
+      "district": "Bogen",
+      "canvas_number": 202,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140589",
+      "district": "Bogen",
+      "canvas_number": 203,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140589",
+      "district": "Bogen",
+      "canvas_number": 204,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140601",
+      "district": "Buchloe",
+      "canvas_number": 53,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140601",
+      "district": "Buchloe",
+      "canvas_number": 54,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140601",
+      "district": "Buchloe",
+      "canvas_number": 55,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140601",
+      "district": "Buchloe",
+      "canvas_number": 57,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140602",
+      "district": "Burgau",
+      "canvas_number": 35,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140602",
+      "district": "Burgau",
+      "canvas_number": 36,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00003360",
+      "district": "Burglengenfeld",
+      "canvas_number": 10,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00003360",
+      "district": "Burglengenfeld",
+      "canvas_number": 14,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140606",
+      "district": "Dettelbach, Ebern, Eltmann, Euerdorf, Gemünden, Gerolzhofen",
+      "canvas_number": 253,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140606",
+      "district": "Dettelbach, Ebern, Eltmann, Euerdorf, Gemünden, Gerolzhofen",
+      "canvas_number": 484,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00140608",
+      "district": "Dürkheim",
+      "canvas_number": 110,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140609",
+      "district": "Ebermannstadt",
+      "canvas_number": 14,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00041245",
+      "district": "Erbendorf",
+      "canvas_number": 146,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00041245",
+      "district": "Erbendorf",
+      "canvas_number": 177,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00041245",
+      "district": "Erbendorf",
+      "canvas_number": 204,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00041245",
+      "district": "Erbendorf",
+      "canvas_number": 205,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140610",
+      "district": "Erlangen (Stadt)",
+      "canvas_number": 104,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140610",
+      "district": "Erlangen (Stadt)",
+      "canvas_number": 109,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140610",
+      "district": "Erlangen (Stadt)",
+      "canvas_number": 110,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140614",
+      "district": "Fürth",
+      "canvas_number": 107,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 7,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 13,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 29,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 37,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 40,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 42,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00142852",
+      "district": "Fürth",
+      "canvas_number": 45,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140616",
+      "district": "Germersheim",
+      "canvas_number": 76,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140616",
+      "district": "Germersheim",
+      "canvas_number": 77,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140618",
+      "district": "Göllheim",
+      "canvas_number": 98,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00140618",
+      "district": "Göllheim",
+      "canvas_number": 100,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144874",
+      "district": "Günzburg",
+      "canvas_number": 128,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144874",
+      "district": "Günzburg",
+      "canvas_number": 324,
+      "incomplete": "repetition",
+      "loop_rule": null
+    },
+    {
+      "bsb_id": "bsb00144874",
+      "district": "Günzburg",
+      "canvas_number": 332,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144874",
+      "district": "Günzburg",
+      "canvas_number": 337,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144876",
+      "district": "Hammelburg, Haßfurt, Hilders, Hofheim, Karlstadt, Kissingen",
+      "canvas_number": 230,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144877",
+      "district": "Heidenheim",
+      "canvas_number": 71,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144877",
+      "district": "Heidenheim",
+      "canvas_number": 79,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144878",
+      "district": "Heilsbronn",
+      "canvas_number": 78,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00017248",
+      "district": "Hemau",
+      "canvas_number": 4,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00077455",
+      "district": "Herrieden",
+      "canvas_number": 144,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00077455",
+      "district": "Herrieden",
+      "canvas_number": 162,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00109173",
+      "district": "Hersbruck",
+      "canvas_number": 62,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00109173",
+      "district": "Hersbruck",
+      "canvas_number": 74,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00109173",
+      "district": "Hersbruck",
+      "canvas_number": 151,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144879",
+      "district": "Herzogenaurach",
+      "canvas_number": 44,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144879",
+      "district": "Herzogenaurach",
+      "canvas_number": 53,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144879",
+      "district": "Herzogenaurach",
+      "canvas_number": 68,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00137059",
+      "district": "Hilpoltstein",
+      "canvas_number": 75,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00137059",
+      "district": "Hilpoltstein",
+      "canvas_number": 97,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144880",
+      "district": "Hof",
+      "canvas_number": 106,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144880",
+      "district": "Hof",
+      "canvas_number": 112,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144880",
+      "district": "Hof",
+      "canvas_number": 113,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00060144",
+      "district": "Immenstadt",
+      "canvas_number": 138,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00060144",
+      "district": "Immenstadt",
+      "canvas_number": 161,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144882",
+      "district": "Kadolzburg",
+      "canvas_number": 12,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144882",
+      "district": "Kadolzburg",
+      "canvas_number": 105,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144882",
+      "district": "Kadolzburg",
+      "canvas_number": 106,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144883",
+      "district": "Kaiserslautern",
+      "canvas_number": 40,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00139797",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. B",
+      "canvas_number": 12,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00139797",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. B",
+      "canvas_number": 16,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00139797",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. B",
+      "canvas_number": 20,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00139797",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. B",
+      "canvas_number": 30,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00139798",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. C",
+      "canvas_number": 6,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00139798",
+      "district": "Kastl (Oberpfalz). Anlage sub Lit. C",
+      "canvas_number": 8,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00072131",
+      "district": "Kemnath",
+      "canvas_number": 100,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 8,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 10,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 11,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 18,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00079194",
+      "district": "Kempten",
+      "canvas_number": 27,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144888",
+      "district": "Kirchheimbolanden, Grünstadt",
+      "canvas_number": 42,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144888",
+      "district": "Kirchheimbolanden, Grünstadt",
+      "canvas_number": 58,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145112",
+      "district": "Kitzingen, Klingenberg, Königshofen im Grabfeld, Lohr am Main",
+      "canvas_number": 46,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145112",
+      "district": "Kitzingen, Klingenberg, Königshofen im Grabfeld, Lohr am Main",
+      "canvas_number": 57,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145112",
+      "district": "Kitzingen, Klingenberg, Königshofen im Grabfeld, Lohr am Main",
+      "canvas_number": 64,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145114",
+      "district": "Kronach",
+      "canvas_number": 127,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00143138",
+      "district": "Lauf an der Pegnitz",
+      "canvas_number": 38,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00143138",
+      "district": "Lauf an der Pegnitz",
+      "canvas_number": 39,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00143138",
+      "district": "Lauf an der Pegnitz",
+      "canvas_number": 83,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 245,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 246,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 247,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00009733",
+      "district": "Lauingen",
+      "canvas_number": 248,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145119",
+      "district": "Lichtenfels",
+      "canvas_number": 50,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 85,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 98,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 247,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 248,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 249,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 263,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 264,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 291,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 292,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 313,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 314,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 378,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 391,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 392,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 430,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 438,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 452,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145124",
+      "district": "Marktbreit, Marktheidenfeld, Marktsteft, Mellrichstadt, Miltenberg, Münnerstadt",
+      "canvas_number": 558,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00143123",
+      "district": "Markt Erlbach",
+      "canvas_number": 268,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00143123",
+      "district": "Markt Erlbach",
+      "canvas_number": 272,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145125",
+      "district": "Memmingen",
+      "canvas_number": 75,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00094713",
+      "district": "Monheim",
+      "canvas_number": 265,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00094713",
+      "district": "Monheim",
+      "canvas_number": 271,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145129",
+      "district": "Naila",
+      "canvas_number": 105,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145129",
+      "district": "Naila",
+      "canvas_number": 181,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145130",
+      "district": "Naila",
+      "canvas_number": 79,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145132",
+      "district": "Neumarkt",
+      "canvas_number": 24,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145132",
+      "district": "Neumarkt",
+      "canvas_number": 119,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145133",
+      "district": "Neustadt an der Haardt",
+      "canvas_number": 56,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145133",
+      "district": "Neustadt an der Haardt",
+      "canvas_number": 63,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00092700",
+      "district": "Neustadt an der Waldnaab",
+      "canvas_number": 32,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145138",
+      "district": "Nürnberg",
+      "canvas_number": 133,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00146470",
+      "district": "Obermoschel",
+      "canvas_number": 45,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00146470",
+      "district": "Obermoschel",
+      "canvas_number": 48,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145148",
+      "district": "Otterberg",
+      "canvas_number": 3,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00003359",
+      "district": "Parsberg",
+      "canvas_number": 9,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00003359",
+      "district": "Parsberg",
+      "canvas_number": 31,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00003359",
+      "district": "Parsberg",
+      "canvas_number": 35,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 17,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 113,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 121,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 124,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 154,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 156,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 170,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 182,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 186,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144138",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 188,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144139",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 84,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144139",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 86,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144139",
+      "district": "Regensburg (Stadt)",
+      "canvas_number": 87,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00144140",
+      "district": "Regensburg (Land)",
+      "canvas_number": 51,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145146",
+      "district": "Rothenfels, Schöllkrippen, Schweinfurt, Stadtprozelten",
+      "canvas_number": 316,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145144",
+      "district": "Speyer",
+      "canvas_number": 39,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145144",
+      "district": "Speyer",
+      "canvas_number": 40,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145151",
+      "district": "Thurnau",
+      "canvas_number": 114,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00145153",
+      "district": "Türkheim",
+      "canvas_number": 2,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00085711",
+      "district": "Vilseck",
+      "canvas_number": 36,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00110696",
+      "district": "Vilshofen",
+      "canvas_number": 244,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00110696",
+      "district": "Vilshofen",
+      "canvas_number": 245,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00110696",
+      "district": "Vilshofen",
+      "canvas_number": 248,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00146483",
+      "district": "Volkach, Weihers, Werneck, Wissentheid, Würzburg r. d. M., Würzburg l. d. M.",
+      "canvas_number": 96,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00146485",
+      "district": "Waldmohr",
+      "canvas_number": 63,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00136007",
+      "district": "Wegscheid",
+      "canvas_number": 42,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00028867",
+      "district": "Weiler",
+      "canvas_number": 70,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00028867",
+      "district": "Weiler",
+      "canvas_number": 73,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00145139",
+      "district": "Weißenburg i. B.",
+      "canvas_number": 101,
+      "incomplete": "repetition",
+      "loop_rule": null
+    },
+    {
+      "bsb_id": "bsb00144889",
+      "district": "Winnweiler",
+      "canvas_number": 44,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144889",
+      "district": "Winnweiler",
+      "canvas_number": 102,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00003358",
+      "district": "Wörth a.d. Donau",
+      "canvas_number": 186,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    },
+    {
+      "bsb_id": "bsb00003358",
+      "district": "Wörth a.d. Donau",
+      "canvas_number": 193,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00003358",
+      "district": "Wörth a.d. Donau",
+      "canvas_number": 194,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144890",
+      "district": "Wolfstein i. Pf.",
+      "canvas_number": 4,
+      "incomplete": "repetition",
+      "loop_rule": "line"
+    },
+    {
+      "bsb_id": "bsb00144891",
+      "district": "Würzburg (Stadt), Schweinfurt (Stadt), Aschaffenburg (Stadt)",
+      "canvas_number": 78,
+      "incomplete": "repetition",
+      "loop_rule": "periodic"
+    }
+  ]
+}

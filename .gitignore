@@ -1,0 +1,21 @@
+# Python bytecode and OS metadata
+__pycache__/
+*.pyc
+.DS_Store
+
+# Re-downloadable archival IIIF page images (~293 MB; download via scripts/download_iiif_targets.py)
+data/verification_scans/
+data/eval_sample/images/
+
+# Intermediate local candidate caches and download manifests (reproducible via scripts/extract_epidemiology_candidates.py)
+data/dataset/candidate_shards/
+data/dataset/folk_candidate_shards/
+data/dataset/district_epidemiology_candidates.json
+data/dataset/folk_medicine_top_candidates.json
+data/dataset/iiif_download_manifest.json
+data/dataset/extra_landmarks_manifest.json
+
+# Staged Zenodo bundle binaries (reproducible via scripts/build_zenodo_package.py); keep datacard and checksums
+dist/zenodo_package/*
+!dist/zenodo_package/DATACARD.md
+!dist/zenodo_package/SHA256SUMS

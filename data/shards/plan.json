@@ -1,0 +1,30 @@
+[
+  {
+    "session": "cgm6874",
+    "gpu": "L4",
+    "volumes": 27,
+    "pages": 3326,
+    "file": "data/shards/cgm6874.txt"
+  },
+  {
+    "session": "cgm6874-s1",
+    "gpu": "A100",
+    "volumes": 66,
+    "pages": 7948,
+    "file": "data/shards/cgm6874-s1.txt"
+  },
+  {
+    "session": "cgm6874-s2",
+    "gpu": "L4",
+    "volumes": 27,
+    "pages": 3325,
+    "file": "data/shards/cgm6874-s2.txt"
+  },
+  {
+    "session": "cgm6874-s3",
+    "gpu": "A100",
+    "volumes": 66,
+    "pages": 7951,
+    "file": "data/shards/cgm6874-s3.txt"
+  }
+]

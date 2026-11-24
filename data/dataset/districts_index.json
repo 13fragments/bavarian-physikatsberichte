@@ -1,0 +1,4615 @@
+[
+  {
+    "district_id": "abensberg",
+    "district_name": "Abensberg",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8158,
+    "longitude": 11.8481,
+    "total_canvases": 112,
+    "bsb_ids": "bsb00113407",
+    "volume_numbers": "1",
+    "slices": [
+      {
+        "bsb_id": "bsb00113407",
+        "volume_number": "1",
+        "start_canvas": 1,
+        "end_canvas": 112
+      }
+    ]
+  },
+  {
+    "district_id": "altdorf",
+    "district_name": "Altdorf",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3869,
+    "longitude": 11.3569,
+    "total_canvases": 156,
+    "bsb_ids": "bsb00140572",
+    "volume_numbers": "2,1",
+    "slices": [
+      {
+        "bsb_id": "bsb00140572",
+        "volume_number": "2,1",
+        "start_canvas": 1,
+        "end_canvas": 156
+      }
+    ]
+  },
+  {
+    "district_id": "alzenau",
+    "district_name": "Alzenau",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0872,
+    "longitude": 9.0725,
+    "total_canvases": 68,
+    "bsb_ids": "bsb00140574",
+    "volume_numbers": "3",
+    "slices": [
+      {
+        "bsb_id": "bsb00140574",
+        "volume_number": "3",
+        "start_canvas": 1,
+        "end_canvas": 68
+      }
+    ]
+  },
+  {
+    "district_id": "amberg_land",
+    "district_name": "Amberg (Land)",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.452,
+    "longitude": 11.875,
+    "total_canvases": 262,
+    "bsb_ids": "bsb00026307",
+    "volume_numbers": "5",
+    "slices": [
+      {
+        "bsb_id": "bsb00026307",
+        "volume_number": "5",
+        "start_canvas": 1,
+        "end_canvas": 262
+      }
+    ]
+  },
+  {
+    "district_id": "amberg_stadt",
+    "district_name": "Amberg (Stadt)",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.4428,
+    "longitude": 11.8628,
+    "total_canvases": 165,
+    "bsb_ids": "bsb00026308",
+    "volume_numbers": "4",
+    "slices": [
+      {
+        "bsb_id": "bsb00026308",
+        "volume_number": "4",
+        "start_canvas": 1,
+        "end_canvas": 165
+      }
+    ]
+  },
+  {
+    "district_id": "amorbach",
+    "district_name": "Amorbach",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6447,
+    "longitude": 9.2219,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00140574",
+    "volume_numbers": "3",
+    "slices": [
+      {
+        "bsb_id": "bsb00140574",
+        "volume_number": "3",
+        "start_canvas": 69,
+        "end_canvas": 124
+      }
+    ]
+  },
+  {
+    "district_id": "ansbach_land",
+    "district_name": "Ansbach (Land)",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.31,
+    "longitude": 10.585,
+    "total_canvases": 77,
+    "bsb_ids": "bsb00140576",
+    "volume_numbers": "8",
+    "slices": [
+      {
+        "bsb_id": "bsb00140576",
+        "volume_number": "8",
+        "start_canvas": 1,
+        "end_canvas": 77
+      }
+    ]
+  },
+  {
+    "district_id": "ansbach_stadt",
+    "district_name": "Ansbach (Stadt)",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.3006,
+    "longitude": 10.5719,
+    "total_canvases": 32,
+    "bsb_ids": "bsb00140575",
+    "volume_numbers": "7",
+    "slices": [
+      {
+        "bsb_id": "bsb00140575",
+        "volume_number": "7",
+        "start_canvas": 1,
+        "end_canvas": 32
+      }
+    ]
+  },
+  {
+    "district_id": "arnstein",
+    "district_name": "Arnstein",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9781,
+    "longitude": 9.9692,
+    "total_canvases": 48,
+    "bsb_ids": "bsb00140574",
+    "volume_numbers": "3",
+    "slices": [
+      {
+        "bsb_id": "bsb00140574",
+        "volume_number": "3",
+        "start_canvas": 125,
+        "end_canvas": 172
+      }
+    ]
+  },
+  {
+    "district_id": "aschaffenburg_land",
+    "district_name": "Aschaffenburg (Land)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.985,
+    "longitude": 9.17,
+    "total_canvases": 58,
+    "bsb_ids": "bsb00140574",
+    "volume_numbers": "3",
+    "slices": [
+      {
+        "bsb_id": "bsb00140574",
+        "volume_number": "3",
+        "start_canvas": 173,
+        "end_canvas": 230
+      }
+    ]
+  },
+  {
+    "district_id": "aschaffenburg_stadt",
+    "district_name": "Aschaffenburg (Stadt)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.9737,
+    "longitude": 9.1521,
+    "total_canvases": 66,
+    "bsb_ids": "bsb00144891",
+    "volume_numbers": "205",
+    "slices": [
+      {
+        "bsb_id": "bsb00144891",
+        "volume_number": "205",
+        "start_canvas": 77,
+        "end_canvas": 142
+      }
+    ]
+  },
+  {
+    "district_id": "aub",
+    "district_name": "Aub",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5528,
+    "longitude": 10.0658,
+    "total_canvases": 24,
+    "bsb_ids": "bsb00140574",
+    "volume_numbers": "3",
+    "slices": [
+      {
+        "bsb_id": "bsb00140574",
+        "volume_number": "3",
+        "start_canvas": 231,
+        "end_canvas": 254
+      }
+    ]
+  },
+  {
+    "district_id": "auerbach",
+    "district_name": "Auerbach",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6922,
+    "longitude": 11.6317,
+    "total_canvases": 22,
+    "bsb_ids": "bsb00057412",
+    "volume_numbers": "9",
+    "slices": [
+      {
+        "bsb_id": "bsb00057412",
+        "volume_number": "9",
+        "start_canvas": 1,
+        "end_canvas": 22
+      }
+    ]
+  },
+  {
+    "district_id": "augsburg",
+    "district_name": "Augsburg",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 48.3705,
+    "longitude": 10.8978,
+    "total_canvases": 238,
+    "bsb_ids": "bsb00140577",
+    "volume_numbers": "10",
+    "slices": [
+      {
+        "bsb_id": "bsb00140577",
+        "volume_number": "10",
+        "start_canvas": 1,
+        "end_canvas": 238
+      }
+    ]
+  },
+  {
+    "district_id": "babenhausen",
+    "district_name": "Babenhausen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.1453,
+    "longitude": 10.2514,
+    "total_canvases": 16,
+    "bsb_ids": "bsb00140581",
+    "volume_numbers": "13 a",
+    "slices": [
+      {
+        "bsb_id": "bsb00140581",
+        "volume_number": "13 a",
+        "start_canvas": 1,
+        "end_canvas": 16
+      }
+    ]
+  },
+  {
+    "district_id": "bamberg_land_i",
+    "district_name": "Bamberg (Land) I",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.908,
+    "longitude": 10.94,
+    "total_canvases": 81,
+    "bsb_ids": "bsb00140579",
+    "volume_numbers": "12",
+    "slices": [
+      {
+        "bsb_id": "bsb00140579",
+        "volume_number": "12",
+        "start_canvas": 1,
+        "end_canvas": 81
+      }
+    ]
+  },
+  {
+    "district_id": "bamberg_land_ii",
+    "district_name": "Bamberg (Land) II",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.885,
+    "longitude": 10.865,
+    "total_canvases": 38,
+    "bsb_ids": "bsb00140580",
+    "volume_numbers": "13",
+    "slices": [
+      {
+        "bsb_id": "bsb00140580",
+        "volume_number": "13",
+        "start_canvas": 1,
+        "end_canvas": 38
+      }
+    ]
+  },
+  {
+    "district_id": "bamberg_stadt",
+    "district_name": "Bamberg (Stadt)",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.8988,
+    "longitude": 10.9028,
+    "total_canvases": 34,
+    "bsb_ids": "bsb00140578",
+    "volume_numbers": "11",
+    "slices": [
+      {
+        "bsb_id": "bsb00140578",
+        "volume_number": "11",
+        "start_canvas": 1,
+        "end_canvas": 34
+      }
+    ]
+  },
+  {
+    "district_id": "baunach",
+    "district_name": "Baunach",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9839,
+    "longitude": 10.8511,
+    "total_canvases": 112,
+    "bsb_ids": "bsb00140582",
+    "volume_numbers": "14",
+    "slices": [
+      {
+        "bsb_id": "bsb00140582",
+        "volume_number": "14",
+        "start_canvas": 1,
+        "end_canvas": 112
+      }
+    ]
+  },
+  {
+    "district_id": "bayreuth_land",
+    "district_name": "Bayreuth (Land)",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.955,
+    "longitude": 11.59,
+    "total_canvases": 53,
+    "bsb_ids": "bsb00140584",
+    "volume_numbers": "16",
+    "slices": [
+      {
+        "bsb_id": "bsb00140584",
+        "volume_number": "16",
+        "start_canvas": 1,
+        "end_canvas": 53
+      }
+    ]
+  },
+  {
+    "district_id": "bayreuth_stadt",
+    "district_name": "Bayreuth (Stadt)",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.9456,
+    "longitude": 11.5713,
+    "total_canvases": 151,
+    "bsb_ids": "bsb00140583",
+    "volume_numbers": "15",
+    "slices": [
+      {
+        "bsb_id": "bsb00140583",
+        "volume_number": "15",
+        "start_canvas": 1,
+        "end_canvas": 151
+      }
+    ]
+  },
+  {
+    "district_id": "beilngries",
+    "district_name": "Beilngries",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.035,
+    "longitude": 11.4728,
+    "total_canvases": 29,
+    "bsb_ids": "bsb00064466",
+    "volume_numbers": "17",
+    "slices": [
+      {
+        "bsb_id": "bsb00064466",
+        "volume_number": "17",
+        "start_canvas": 1,
+        "end_canvas": 29
+      }
+    ]
+  },
+  {
+    "district_id": "bergzabern",
+    "district_name": "Bergzabern",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.1028,
+    "longitude": 7.9989,
+    "total_canvases": 49,
+    "bsb_ids": "bsb00140585",
+    "volume_numbers": "18",
+    "slices": [
+      {
+        "bsb_id": "bsb00140585",
+        "volume_number": "18",
+        "start_canvas": 1,
+        "end_canvas": 49
+      }
+    ]
+  },
+  {
+    "district_id": "berneck",
+    "district_name": "Berneck",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0456,
+    "longitude": 11.6725,
+    "total_canvases": 65,
+    "bsb_ids": "bsb00140586",
+    "volume_numbers": "19",
+    "slices": [
+      {
+        "bsb_id": "bsb00140586",
+        "volume_number": "19",
+        "start_canvas": 1,
+        "end_canvas": 65
+      }
+    ]
+  },
+  {
+    "district_id": "bischofsheim_rhoen",
+    "district_name": "Bischofsheim (Rhön)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.4019,
+    "longitude": 10.0072,
+    "total_canvases": 185,
+    "bsb_ids": "bsb00140582;bsb00140587",
+    "volume_numbers": "14;19 a",
+    "slices": [
+      {
+        "bsb_id": "bsb00140582",
+        "volume_number": "14",
+        "start_canvas": 113,
+        "end_canvas": 186
+      },
+      {
+        "bsb_id": "bsb00140587",
+        "volume_number": "19 a",
+        "start_canvas": 1,
+        "end_canvas": 111
+      }
+    ]
+  },
+  {
+    "district_id": "bissingen",
+    "district_name": "Bissingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.7161,
+    "longitude": 10.6181,
+    "total_canvases": 752,
+    "bsb_ids": "bsb00009735",
+    "volume_numbers": "20",
+    "slices": [
+      {
+        "bsb_id": "bsb00009735",
+        "volume_number": "20",
+        "start_canvas": 1,
+        "end_canvas": 752
+      }
+    ]
+  },
+  {
+    "district_id": "blieskastel",
+    "district_name": "Blieskastel",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.2364,
+    "longitude": 7.2547,
+    "total_canvases": 36,
+    "bsb_ids": "bsb00140588",
+    "volume_numbers": "21",
+    "slices": [
+      {
+        "bsb_id": "bsb00140588",
+        "volume_number": "21",
+        "start_canvas": 1,
+        "end_canvas": 36
+      }
+    ]
+  },
+  {
+    "district_id": "bogen",
+    "district_name": "Bogen",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9114,
+    "longitude": 12.6897,
+    "total_canvases": 205,
+    "bsb_ids": "bsb00140589",
+    "volume_numbers": "22",
+    "slices": [
+      {
+        "bsb_id": "bsb00140589",
+        "volume_number": "22",
+        "start_canvas": 1,
+        "end_canvas": 205
+      }
+    ]
+  },
+  {
+    "district_id": "brueckenau",
+    "district_name": "Brückenau",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.3097,
+    "longitude": 9.7906,
+    "total_canvases": 174,
+    "bsb_ids": "bsb00140582",
+    "volume_numbers": "14",
+    "slices": [
+      {
+        "bsb_id": "bsb00140582",
+        "volume_number": "14",
+        "start_canvas": 187,
+        "end_canvas": 360
+      }
+    ]
+  },
+  {
+    "district_id": "buchloe",
+    "district_name": "Buchloe",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.0369,
+    "longitude": 10.7256,
+    "total_canvases": 57,
+    "bsb_ids": "bsb00140601",
+    "volume_numbers": "23",
+    "slices": [
+      {
+        "bsb_id": "bsb00140601",
+        "volume_number": "23",
+        "start_canvas": 1,
+        "end_canvas": 57
+      }
+    ]
+  },
+  {
+    "district_id": "burgau",
+    "district_name": "Burgau",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4319,
+    "longitude": 10.4072,
+    "total_canvases": 202,
+    "bsb_ids": "bsb00140602",
+    "volume_numbers": "24",
+    "slices": [
+      {
+        "bsb_id": "bsb00140602",
+        "volume_number": "24",
+        "start_canvas": 1,
+        "end_canvas": 202
+      }
+    ]
+  },
+  {
+    "district_id": "burgebrach",
+    "district_name": "Burgebrach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8286,
+    "longitude": 10.7469,
+    "total_canvases": 218,
+    "bsb_ids": "bsb00140603",
+    "volume_numbers": "25",
+    "slices": [
+      {
+        "bsb_id": "bsb00140603",
+        "volume_number": "25",
+        "start_canvas": 1,
+        "end_canvas": 218
+      }
+    ]
+  },
+  {
+    "district_id": "burglengenfeld",
+    "district_name": "Burglengenfeld",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2058,
+    "longitude": 12.0406,
+    "total_canvases": 72,
+    "bsb_ids": "bsb00003360",
+    "volume_numbers": "26",
+    "slices": [
+      {
+        "bsb_id": "bsb00003360",
+        "volume_number": "26",
+        "start_canvas": 1,
+        "end_canvas": 72
+      }
+    ]
+  },
+  {
+    "district_id": "cham",
+    "district_name": "Cham",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2186,
+    "longitude": 12.6633,
+    "total_canvases": 45,
+    "bsb_ids": "bsb00134376",
+    "volume_numbers": "27",
+    "slices": [
+      {
+        "bsb_id": "bsb00134376",
+        "volume_number": "27",
+        "start_canvas": 1,
+        "end_canvas": 45
+      }
+    ]
+  },
+  {
+    "district_id": "dahn",
+    "district_name": "Dahn",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.1514,
+    "longitude": 7.7792,
+    "total_canvases": 73,
+    "bsb_ids": "bsb00140604",
+    "volume_numbers": "28",
+    "slices": [
+      {
+        "bsb_id": "bsb00140604",
+        "volume_number": "28",
+        "start_canvas": 1,
+        "end_canvas": 73
+      }
+    ]
+  },
+  {
+    "district_id": "deggendorf",
+    "district_name": "Deggendorf",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8414,
+    "longitude": 12.9606,
+    "total_canvases": 67,
+    "bsb_ids": "bsb00140605",
+    "volume_numbers": "29",
+    "slices": [
+      {
+        "bsb_id": "bsb00140605",
+        "volume_number": "29",
+        "start_canvas": 1,
+        "end_canvas": 67
+      }
+    ]
+  },
+  {
+    "district_id": "dettelbach",
+    "district_name": "Dettelbach",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8022,
+    "longitude": 10.1608,
+    "total_canvases": 262,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 1,
+        "end_canvas": 262
+      }
+    ]
+  },
+  {
+    "district_id": "dillingen",
+    "district_name": "Dillingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.5778,
+    "longitude": 10.4944,
+    "total_canvases": 127,
+    "bsb_ids": "bsb00009734",
+    "volume_numbers": "31",
+    "slices": [
+      {
+        "bsb_id": "bsb00009734",
+        "volume_number": "31",
+        "start_canvas": 1,
+        "end_canvas": 127
+      }
+    ]
+  },
+  {
+    "district_id": "dingolfing",
+    "district_name": "Dingolfing",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6294,
+    "longitude": 12.4975,
+    "total_canvases": 339,
+    "bsb_ids": "bsb00049260",
+    "volume_numbers": "32",
+    "slices": [
+      {
+        "bsb_id": "bsb00049260",
+        "volume_number": "32",
+        "start_canvas": 1,
+        "end_canvas": 339
+      }
+    ]
+  },
+  {
+    "district_id": "dinkelsbuehl",
+    "district_name": "Dinkelsbühl",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0692,
+    "longitude": 10.3194,
+    "total_canvases": 201,
+    "bsb_ids": "bsb00140607",
+    "volume_numbers": "33",
+    "slices": [
+      {
+        "bsb_id": "bsb00140607",
+        "volume_number": "33",
+        "start_canvas": 1,
+        "end_canvas": 201
+      }
+    ]
+  },
+  {
+    "district_id": "donauwoerth_land",
+    "district_name": "Donauwörth (Land)",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.728,
+    "longitude": 10.79,
+    "total_canvases": 90,
+    "bsb_ids": "bsb00094606",
+    "volume_numbers": "35",
+    "slices": [
+      {
+        "bsb_id": "bsb00094606",
+        "volume_number": "35",
+        "start_canvas": 1,
+        "end_canvas": 90
+      }
+    ]
+  },
+  {
+    "district_id": "donauwoerth_stadt",
+    "district_name": "Donauwörth (Stadt)",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 48.7186,
+    "longitude": 10.7794,
+    "total_canvases": 29,
+    "bsb_ids": "bsb00094607",
+    "volume_numbers": "34",
+    "slices": [
+      {
+        "bsb_id": "bsb00094607",
+        "volume_number": "34",
+        "start_canvas": 1,
+        "end_canvas": 29
+      }
+    ]
+  },
+  {
+    "district_id": "duerkheim",
+    "district_name": "Dürkheim",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.4619,
+    "longitude": 8.1722,
+    "total_canvases": 111,
+    "bsb_ids": "bsb00140608",
+    "volume_numbers": "36",
+    "slices": [
+      {
+        "bsb_id": "bsb00140608",
+        "volume_number": "36",
+        "start_canvas": 1,
+        "end_canvas": 111
+      }
+    ]
+  },
+  {
+    "district_id": "ebermannstadt",
+    "district_name": "Ebermannstadt",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7794,
+    "longitude": 11.1869,
+    "total_canvases": 179,
+    "bsb_ids": "bsb00140609",
+    "volume_numbers": "37",
+    "slices": [
+      {
+        "bsb_id": "bsb00140609",
+        "volume_number": "37",
+        "start_canvas": 1,
+        "end_canvas": 179
+      }
+    ]
+  },
+  {
+    "district_id": "ebern",
+    "district_name": "Ebern",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0972,
+    "longitude": 10.7931,
+    "total_canvases": 68,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 263,
+        "end_canvas": 330
+      }
+    ]
+  },
+  {
+    "district_id": "eggenfelden",
+    "district_name": "Eggenfelden",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4039,
+    "longitude": 12.7631,
+    "total_canvases": 29,
+    "bsb_ids": "bsb00110683",
+    "volume_numbers": "39",
+    "slices": [
+      {
+        "bsb_id": "bsb00110683",
+        "volume_number": "39",
+        "start_canvas": 1,
+        "end_canvas": 29
+      }
+    ]
+  },
+  {
+    "district_id": "eichstaett",
+    "district_name": "Eichstätt",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8919,
+    "longitude": 11.1844,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00060106",
+    "volume_numbers": "40",
+    "slices": [
+      {
+        "bsb_id": "bsb00060106",
+        "volume_number": "40",
+        "start_canvas": 1,
+        "end_canvas": 70
+      }
+    ]
+  },
+  {
+    "district_id": "eltmann",
+    "district_name": "Eltmann",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9722,
+    "longitude": 10.6669,
+    "total_canvases": 46,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 331,
+        "end_canvas": 376
+      }
+    ]
+  },
+  {
+    "district_id": "erbendorf",
+    "district_name": "Erbendorf",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8408,
+    "longitude": 12.0467,
+    "total_canvases": 263,
+    "bsb_ids": "bsb00041245",
+    "volume_numbers": "42",
+    "slices": [
+      {
+        "bsb_id": "bsb00041245",
+        "volume_number": "42",
+        "start_canvas": 1,
+        "end_canvas": 263
+      }
+    ]
+  },
+  {
+    "district_id": "erlangen_land",
+    "district_name": "Erlangen (Land)",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6,
+    "longitude": 11.02,
+    "total_canvases": 449,
+    "bsb_ids": "bsb00140611",
+    "volume_numbers": "44",
+    "slices": [
+      {
+        "bsb_id": "bsb00140611",
+        "volume_number": "44",
+        "start_canvas": 1,
+        "end_canvas": 449
+      }
+    ]
+  },
+  {
+    "district_id": "erlangen_stadt",
+    "district_name": "Erlangen (Stadt)",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.5897,
+    "longitude": 11.0039,
+    "total_canvases": 113,
+    "bsb_ids": "bsb00140610",
+    "volume_numbers": "43",
+    "slices": [
+      {
+        "bsb_id": "bsb00140610",
+        "volume_number": "43",
+        "start_canvas": 1,
+        "end_canvas": 113
+      }
+    ]
+  },
+  {
+    "district_id": "eschenbach",
+    "district_name": "Eschenbach",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7531,
+    "longitude": 11.8294,
+    "total_canvases": 55,
+    "bsb_ids": "bsb00072130",
+    "volume_numbers": "45",
+    "slices": [
+      {
+        "bsb_id": "bsb00072130",
+        "volume_number": "45",
+        "start_canvas": 1,
+        "end_canvas": 55
+      }
+    ]
+  },
+  {
+    "district_id": "euerdorf",
+    "district_name": "Euerdorf",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.15,
+    "longitude": 10.0258,
+    "total_canvases": 36,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 377,
+        "end_canvas": 412
+      }
+    ]
+  },
+  {
+    "district_id": "falkenstein",
+    "district_name": "Falkenstein",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0981,
+    "longitude": 12.4858,
+    "total_canvases": 80,
+    "bsb_ids": "bsb00031113",
+    "volume_numbers": "46",
+    "slices": [
+      {
+        "bsb_id": "bsb00031113",
+        "volume_number": "46",
+        "start_canvas": 1,
+        "end_canvas": 80
+      }
+    ]
+  },
+  {
+    "district_id": "feuchtwangen",
+    "district_name": "Feuchtwangen",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1683,
+    "longitude": 10.3292,
+    "total_canvases": 100,
+    "bsb_ids": "bsb00140612",
+    "volume_numbers": "47",
+    "slices": [
+      {
+        "bsb_id": "bsb00140612",
+        "volume_number": "47",
+        "start_canvas": 1,
+        "end_canvas": 100
+      }
+    ]
+  },
+  {
+    "district_id": "forchheim",
+    "district_name": "Forchheim",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7197,
+    "longitude": 11.0581,
+    "total_canvases": 211,
+    "bsb_ids": "bsb00139936",
+    "volume_numbers": "48",
+    "slices": [
+      {
+        "bsb_id": "bsb00139936",
+        "volume_number": "48",
+        "start_canvas": 1,
+        "end_canvas": 211
+      }
+    ]
+  },
+  {
+    "district_id": "frankenthal",
+    "district_name": "Frankenthal",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5333,
+    "longitude": 8.35,
+    "total_canvases": 104,
+    "bsb_ids": "bsb00140613",
+    "volume_numbers": "49",
+    "slices": [
+      {
+        "bsb_id": "bsb00140613",
+        "volume_number": "49",
+        "start_canvas": 1,
+        "end_canvas": 104
+      }
+    ]
+  },
+  {
+    "district_id": "fuerth",
+    "district_name": "Fürth",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.4774,
+    "longitude": 10.9886,
+    "total_canvases": 154,
+    "bsb_ids": "bsb00140614;bsb00142852",
+    "volume_numbers": "50,1;50,2",
+    "slices": [
+      {
+        "bsb_id": "bsb00140614",
+        "volume_number": "50,1",
+        "start_canvas": 1,
+        "end_canvas": 108
+      },
+      {
+        "bsb_id": "bsb00142852",
+        "volume_number": "50,2",
+        "start_canvas": 1,
+        "end_canvas": 46
+      }
+    ]
+  },
+  {
+    "district_id": "fuessen",
+    "district_name": "Füssen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.5696,
+    "longitude": 10.7004,
+    "total_canvases": 31,
+    "bsb_ids": "bsb00140615",
+    "volume_numbers": "51",
+    "slices": [
+      {
+        "bsb_id": "bsb00140615",
+        "volume_number": "51",
+        "start_canvas": 1,
+        "end_canvas": 31
+      }
+    ]
+  },
+  {
+    "district_id": "gemuenden",
+    "district_name": "Gemünden",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0508,
+    "longitude": 9.6961,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 413,
+        "end_canvas": 482
+      }
+    ]
+  },
+  {
+    "district_id": "germersheim",
+    "district_name": "Germersheim",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.2167,
+    "longitude": 8.3667,
+    "total_canvases": 242,
+    "bsb_ids": "bsb00140616",
+    "volume_numbers": "52",
+    "slices": [
+      {
+        "bsb_id": "bsb00140616",
+        "volume_number": "52",
+        "start_canvas": 1,
+        "end_canvas": 242
+      }
+    ]
+  },
+  {
+    "district_id": "gerolzhofen",
+    "district_name": "Gerolzhofen",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9006,
+    "longitude": 10.3489,
+    "total_canvases": 76,
+    "bsb_ids": "bsb00140606",
+    "volume_numbers": "30",
+    "slices": [
+      {
+        "bsb_id": "bsb00140606",
+        "volume_number": "30",
+        "start_canvas": 483,
+        "end_canvas": 558
+      }
+    ]
+  },
+  {
+    "district_id": "grafenau",
+    "district_name": "Grafenau",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8569,
+    "longitude": 13.3972,
+    "total_canvases": 17,
+    "bsb_ids": "bsb00135835",
+    "volume_numbers": "56",
+    "slices": [
+      {
+        "bsb_id": "bsb00135835",
+        "volume_number": "56",
+        "start_canvas": 1,
+        "end_canvas": 17
+      }
+    ]
+  },
+  {
+    "district_id": "greding",
+    "district_name": "Greding",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0469,
+    "longitude": 11.3547,
+    "total_canvases": 147,
+    "bsb_ids": "bsb00141175",
+    "volume_numbers": "57,1",
+    "slices": [
+      {
+        "bsb_id": "bsb00141175",
+        "volume_number": "57,1",
+        "start_canvas": 1,
+        "end_canvas": 147
+      }
+    ]
+  },
+  {
+    "district_id": "griesbach",
+    "district_name": "Griesbach",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4422,
+    "longitude": 13.1969,
+    "total_canvases": 45,
+    "bsb_ids": "bsb00110682",
+    "volume_numbers": "58",
+    "slices": [
+      {
+        "bsb_id": "bsb00110682",
+        "volume_number": "58",
+        "start_canvas": 1,
+        "end_canvas": 45
+      }
+    ]
+  },
+  {
+    "district_id": "graefenberg",
+    "district_name": "Gräfenberg",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6458,
+    "longitude": 11.2494,
+    "total_canvases": 117,
+    "bsb_ids": "bsb00140619",
+    "volume_numbers": "55",
+    "slices": [
+      {
+        "bsb_id": "bsb00140619",
+        "volume_number": "55",
+        "start_canvas": 1,
+        "end_canvas": 117
+      }
+    ]
+  },
+  {
+    "district_id": "groenenbach",
+    "district_name": "Grönenbach",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.8769,
+    "longitude": 10.2222,
+    "total_canvases": 112,
+    "bsb_ids": "bsb00141324",
+    "volume_numbers": "59",
+    "slices": [
+      {
+        "bsb_id": "bsb00141324",
+        "volume_number": "59",
+        "start_canvas": 1,
+        "end_canvas": 112
+      }
+    ]
+  },
+  {
+    "district_id": "gruenstadt",
+    "district_name": "Grünstadt",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5647,
+    "longitude": 8.1681,
+    "total_canvases": 33,
+    "bsb_ids": "bsb00144888",
+    "volume_numbers": "87",
+    "slices": [
+      {
+        "bsb_id": "bsb00144888",
+        "volume_number": "87",
+        "start_canvas": 45,
+        "end_canvas": 77
+      }
+    ]
+  },
+  {
+    "district_id": "gunzenhausen",
+    "district_name": "Gunzenhausen",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1144,
+    "longitude": 10.7547,
+    "total_canvases": 108,
+    "bsb_ids": "bsb00144875",
+    "volume_numbers": "60",
+    "slices": [
+      {
+        "bsb_id": "bsb00144875",
+        "volume_number": "60",
+        "start_canvas": 1,
+        "end_canvas": 108
+      }
+    ]
+  },
+  {
+    "district_id": "goeggingen",
+    "district_name": "Göggingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.3408,
+    "longitude": 10.8692,
+    "total_canvases": 131,
+    "bsb_ids": "bsb00140617",
+    "volume_numbers": "53",
+    "slices": [
+      {
+        "bsb_id": "bsb00140617",
+        "volume_number": "53",
+        "start_canvas": 1,
+        "end_canvas": 131
+      }
+    ]
+  },
+  {
+    "district_id": "goellheim",
+    "district_name": "Göllheim",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5939,
+    "longitude": 8.0503,
+    "total_canvases": 104,
+    "bsb_ids": "bsb00140618",
+    "volume_numbers": "54",
+    "slices": [
+      {
+        "bsb_id": "bsb00140618",
+        "volume_number": "54",
+        "start_canvas": 1,
+        "end_canvas": 104
+      }
+    ]
+  },
+  {
+    "district_id": "guenzburg",
+    "district_name": "Günzburg",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4528,
+    "longitude": 10.2769,
+    "total_canvases": 337,
+    "bsb_ids": "bsb00144874",
+    "volume_numbers": "59 a",
+    "slices": [
+      {
+        "bsb_id": "bsb00144874",
+        "volume_number": "59 a",
+        "start_canvas": 1,
+        "end_canvas": 337
+      }
+    ]
+  },
+  {
+    "district_id": "hammelburg",
+    "district_name": "Hammelburg",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1167,
+    "longitude": 9.8906,
+    "total_canvases": 136,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 1,
+        "end_canvas": 136
+      }
+    ]
+  },
+  {
+    "district_id": "hassfurt",
+    "district_name": "Haßfurt",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0339,
+    "longitude": 10.5119,
+    "total_canvases": 22,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 137,
+        "end_canvas": 158
+      }
+    ]
+  },
+  {
+    "district_id": "heidenheim",
+    "district_name": "Heidenheim",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0183,
+    "longitude": 10.7417,
+    "total_canvases": 79,
+    "bsb_ids": "bsb00144877",
+    "volume_numbers": "62",
+    "slices": [
+      {
+        "bsb_id": "bsb00144877",
+        "volume_number": "62",
+        "start_canvas": 1,
+        "end_canvas": 79
+      }
+    ]
+  },
+  {
+    "district_id": "heilsbronn",
+    "district_name": "Heilsbronn",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3375,
+    "longitude": 10.7911,
+    "total_canvases": 89,
+    "bsb_ids": "bsb00144878",
+    "volume_numbers": "63",
+    "slices": [
+      {
+        "bsb_id": "bsb00144878",
+        "volume_number": "63",
+        "start_canvas": 1,
+        "end_canvas": 89
+      }
+    ]
+  },
+  {
+    "district_id": "hemau",
+    "district_name": "Hemau",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0522,
+    "longitude": 11.7819,
+    "total_canvases": 121,
+    "bsb_ids": "bsb00017248",
+    "volume_numbers": "64",
+    "slices": [
+      {
+        "bsb_id": "bsb00017248",
+        "volume_number": "64",
+        "start_canvas": 1,
+        "end_canvas": 121
+      }
+    ]
+  },
+  {
+    "district_id": "hengersberg",
+    "district_name": "Hengersberg",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.7739,
+    "longitude": 13.0519,
+    "total_canvases": 231,
+    "bsb_ids": "bsb00110703",
+    "volume_numbers": "65",
+    "slices": [
+      {
+        "bsb_id": "bsb00110703",
+        "volume_number": "65",
+        "start_canvas": 1,
+        "end_canvas": 231
+      }
+    ]
+  },
+  {
+    "district_id": "herrieden",
+    "district_name": "Herrieden",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2319,
+    "longitude": 10.4975,
+    "total_canvases": 168,
+    "bsb_ids": "bsb00077455",
+    "volume_numbers": "66",
+    "slices": [
+      {
+        "bsb_id": "bsb00077455",
+        "volume_number": "66",
+        "start_canvas": 1,
+        "end_canvas": 168
+      }
+    ]
+  },
+  {
+    "district_id": "hersbruck",
+    "district_name": "Hersbruck",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5086,
+    "longitude": 11.4328,
+    "total_canvases": 157,
+    "bsb_ids": "bsb00109173",
+    "volume_numbers": "67",
+    "slices": [
+      {
+        "bsb_id": "bsb00109173",
+        "volume_number": "67",
+        "start_canvas": 1,
+        "end_canvas": 157
+      }
+    ]
+  },
+  {
+    "district_id": "herzogenaurach",
+    "district_name": "Herzogenaurach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5694,
+    "longitude": 10.8842,
+    "total_canvases": 133,
+    "bsb_ids": "bsb00144879",
+    "volume_numbers": "68",
+    "slices": [
+      {
+        "bsb_id": "bsb00144879",
+        "volume_number": "68",
+        "start_canvas": 1,
+        "end_canvas": 133
+      }
+    ]
+  },
+  {
+    "district_id": "hilders",
+    "district_name": "Hilders",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.5728,
+    "longitude": 10.0039,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 159,
+        "end_canvas": 228
+      }
+    ]
+  },
+  {
+    "district_id": "hilpoltstein",
+    "district_name": "Hilpoltstein",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.19,
+    "longitude": 11.1897,
+    "total_canvases": 130,
+    "bsb_ids": "bsb00137059",
+    "volume_numbers": "69",
+    "slices": [
+      {
+        "bsb_id": "bsb00137059",
+        "volume_number": "69",
+        "start_canvas": 1,
+        "end_canvas": 130
+      }
+    ]
+  },
+  {
+    "district_id": "hof",
+    "district_name": "Hof",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 50.3135,
+    "longitude": 11.9128,
+    "total_canvases": 119,
+    "bsb_ids": "bsb00144880",
+    "volume_numbers": "71",
+    "slices": [
+      {
+        "bsb_id": "bsb00144880",
+        "volume_number": "71",
+        "start_canvas": 1,
+        "end_canvas": 119
+      }
+    ]
+  },
+  {
+    "district_id": "hofheim",
+    "district_name": "Hofheim",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1369,
+    "longitude": 10.5236,
+    "total_canvases": 148,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 229,
+        "end_canvas": 376
+      }
+    ]
+  },
+  {
+    "district_id": "homburg",
+    "district_name": "Homburg",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.3228,
+    "longitude": 7.3372,
+    "total_canvases": 42,
+    "bsb_ids": "bsb00144881",
+    "volume_numbers": "73",
+    "slices": [
+      {
+        "bsb_id": "bsb00144881",
+        "volume_number": "73",
+        "start_canvas": 1,
+        "end_canvas": 42
+      }
+    ]
+  },
+  {
+    "district_id": "hoechstadt_an_der_aisch",
+    "district_name": "Höchstadt an der Aisch",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7056,
+    "longitude": 10.8064,
+    "total_canvases": 89,
+    "bsb_ids": "bsb00107011",
+    "volume_numbers": "70",
+    "slices": [
+      {
+        "bsb_id": "bsb00107011",
+        "volume_number": "70",
+        "start_canvas": 1,
+        "end_canvas": 89
+      }
+    ]
+  },
+  {
+    "district_id": "illertissen",
+    "district_name": "Illertissen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.2233,
+    "longitude": 10.1044,
+    "total_canvases": 57,
+    "bsb_ids": "bsb00061177",
+    "volume_numbers": "75",
+    "slices": [
+      {
+        "bsb_id": "bsb00061177",
+        "volume_number": "75",
+        "start_canvas": 1,
+        "end_canvas": 57
+      }
+    ]
+  },
+  {
+    "district_id": "immenstadt",
+    "district_name": "Immenstadt",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.56,
+    "longitude": 10.2194,
+    "total_canvases": 195,
+    "bsb_ids": "bsb00060144",
+    "volume_numbers": "76",
+    "slices": [
+      {
+        "bsb_id": "bsb00060144",
+        "volume_number": "76",
+        "start_canvas": 1,
+        "end_canvas": 195
+      }
+    ]
+  },
+  {
+    "district_id": "kadolzburg",
+    "district_name": "Kadolzburg",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.46,
+    "longitude": 10.855,
+    "total_canvases": 192,
+    "bsb_ids": "bsb00144882",
+    "volume_numbers": "77",
+    "slices": [
+      {
+        "bsb_id": "bsb00144882",
+        "volume_number": "77",
+        "start_canvas": 1,
+        "end_canvas": 192
+      }
+    ]
+  },
+  {
+    "district_id": "kaiserslautern",
+    "district_name": "Kaiserslautern",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.4447,
+    "longitude": 7.7689,
+    "total_canvases": 48,
+    "bsb_ids": "bsb00144883",
+    "volume_numbers": "78",
+    "slices": [
+      {
+        "bsb_id": "bsb00144883",
+        "volume_number": "78",
+        "start_canvas": 1,
+        "end_canvas": 48
+      }
+    ]
+  },
+  {
+    "district_id": "kandel",
+    "district_name": "Kandel",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.0828,
+    "longitude": 8.1964,
+    "total_canvases": 41,
+    "bsb_ids": "bsb00144884",
+    "volume_numbers": "79",
+    "slices": [
+      {
+        "bsb_id": "bsb00144884",
+        "volume_number": "79",
+        "start_canvas": 1,
+        "end_canvas": 41
+      }
+    ]
+  },
+  {
+    "district_id": "karlstadt",
+    "district_name": "Karlstadt",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9603,
+    "longitude": 9.7722,
+    "total_canvases": 98,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 377,
+        "end_canvas": 474
+      }
+    ]
+  },
+  {
+    "district_id": "kastl_oberpfalz",
+    "district_name": "Kastl (Oberpfalz)",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3694,
+    "longitude": 11.6819,
+    "total_canvases": 340,
+    "bsb_ids": "bsb00020843;bsb00139796;bsb00139797;bsb00139798;bsb00139799;bsb00139800;bsb00139801",
+    "volume_numbers": "80;80 a,1;80 a,2;80 a,3;80 a,4;80 a,5;80 a,6",
+    "slices": [
+      {
+        "bsb_id": "bsb00020843",
+        "volume_number": "80",
+        "start_canvas": 1,
+        "end_canvas": 152
+      },
+      {
+        "bsb_id": "bsb00139796",
+        "volume_number": "80 a,1",
+        "start_canvas": 1,
+        "end_canvas": 44
+      },
+      {
+        "bsb_id": "bsb00139797",
+        "volume_number": "80 a,2",
+        "start_canvas": 1,
+        "end_canvas": 48
+      },
+      {
+        "bsb_id": "bsb00139798",
+        "volume_number": "80 a,3",
+        "start_canvas": 1,
+        "end_canvas": 24
+      },
+      {
+        "bsb_id": "bsb00139799",
+        "volume_number": "80 a,4",
+        "start_canvas": 1,
+        "end_canvas": 16
+      },
+      {
+        "bsb_id": "bsb00139800",
+        "volume_number": "80 a,5",
+        "start_canvas": 1,
+        "end_canvas": 16
+      },
+      {
+        "bsb_id": "bsb00139801",
+        "volume_number": "80 a,6",
+        "start_canvas": 1,
+        "end_canvas": 40
+      }
+    ]
+  },
+  {
+    "district_id": "kaufbeuren",
+    "district_name": "Kaufbeuren",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.88,
+    "longitude": 10.6225,
+    "total_canvases": 43,
+    "bsb_ids": "bsb00144885",
+    "volume_numbers": "81",
+    "slices": [
+      {
+        "bsb_id": "bsb00144885",
+        "volume_number": "81",
+        "start_canvas": 1,
+        "end_canvas": 43
+      }
+    ]
+  },
+  {
+    "district_id": "kelheim",
+    "district_name": "Kelheim",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9183,
+    "longitude": 11.8739,
+    "total_canvases": 151,
+    "bsb_ids": "bsb00113406",
+    "volume_numbers": "82",
+    "slices": [
+      {
+        "bsb_id": "bsb00113406",
+        "volume_number": "82",
+        "start_canvas": 1,
+        "end_canvas": 151
+      }
+    ]
+  },
+  {
+    "district_id": "kemnath",
+    "district_name": "Kemnath",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8706,
+    "longitude": 11.8894,
+    "total_canvases": 153,
+    "bsb_ids": "bsb00072131",
+    "volume_numbers": "83",
+    "slices": [
+      {
+        "bsb_id": "bsb00072131",
+        "volume_number": "83",
+        "start_canvas": 1,
+        "end_canvas": 153
+      }
+    ]
+  },
+  {
+    "district_id": "kempten_land",
+    "district_name": "Kempten (Land)",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.738,
+    "longitude": 10.33,
+    "total_canvases": 228,
+    "bsb_ids": "bsb00079161;bsb00079194",
+    "volume_numbers": "84,1;84,3",
+    "slices": [
+      {
+        "bsb_id": "bsb00079161",
+        "volume_number": "84,1",
+        "start_canvas": 1,
+        "end_canvas": 157
+      },
+      {
+        "bsb_id": "bsb00079194",
+        "volume_number": "84,3",
+        "start_canvas": 1,
+        "end_canvas": 71
+      }
+    ]
+  },
+  {
+    "district_id": "kempten_stadt",
+    "district_name": "Kempten (Stadt)",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 47.7267,
+    "longitude": 10.3167,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00079195",
+    "volume_numbers": "84,2",
+    "slices": [
+      {
+        "bsb_id": "bsb00079195",
+        "volume_number": "84,2",
+        "start_canvas": 1,
+        "end_canvas": 56
+      }
+    ]
+  },
+  {
+    "district_id": "kipfenberg",
+    "district_name": "Kipfenberg",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9489,
+    "longitude": 11.3961,
+    "total_canvases": 117,
+    "bsb_ids": "bsb00144886",
+    "volume_numbers": "85",
+    "slices": [
+      {
+        "bsb_id": "bsb00144886",
+        "volume_number": "85",
+        "start_canvas": 1,
+        "end_canvas": 117
+      }
+    ]
+  },
+  {
+    "district_id": "kirchenlamitz",
+    "district_name": "Kirchenlamitz",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1519,
+    "longitude": 11.9497,
+    "total_canvases": 161,
+    "bsb_ids": "bsb00144887",
+    "volume_numbers": "86",
+    "slices": [
+      {
+        "bsb_id": "bsb00144887",
+        "volume_number": "86",
+        "start_canvas": 1,
+        "end_canvas": 161
+      }
+    ]
+  },
+  {
+    "district_id": "kirchheimbolanden",
+    "district_name": "Kirchheimbolanden",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.6664,
+    "longitude": 8.0117,
+    "total_canvases": 44,
+    "bsb_ids": "bsb00144888",
+    "volume_numbers": "87",
+    "slices": [
+      {
+        "bsb_id": "bsb00144888",
+        "volume_number": "87",
+        "start_canvas": 1,
+        "end_canvas": 44
+      }
+    ]
+  },
+  {
+    "district_id": "kissingen",
+    "district_name": "Kissingen",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1986,
+    "longitude": 10.0764,
+    "total_canvases": 126,
+    "bsb_ids": "bsb00144876",
+    "volume_numbers": "61",
+    "slices": [
+      {
+        "bsb_id": "bsb00144876",
+        "volume_number": "61",
+        "start_canvas": 475,
+        "end_canvas": 600
+      }
+    ]
+  },
+  {
+    "district_id": "kitzingen",
+    "district_name": "Kitzingen",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7389,
+    "longitude": 10.1619,
+    "total_canvases": 81,
+    "bsb_ids": "bsb00145112",
+    "volume_numbers": "88",
+    "slices": [
+      {
+        "bsb_id": "bsb00145112",
+        "volume_number": "88",
+        "start_canvas": 1,
+        "end_canvas": 81
+      }
+    ]
+  },
+  {
+    "district_id": "klingenberg",
+    "district_name": "Klingenberg",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7819,
+    "longitude": 9.1828,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00145112",
+    "volume_numbers": "88",
+    "slices": [
+      {
+        "bsb_id": "bsb00145112",
+        "volume_number": "88",
+        "start_canvas": 82,
+        "end_canvas": 137
+      }
+    ]
+  },
+  {
+    "district_id": "kronach",
+    "district_name": "Kronach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.2406,
+    "longitude": 11.3236,
+    "total_canvases": 189,
+    "bsb_ids": "bsb00145114",
+    "volume_numbers": "90",
+    "slices": [
+      {
+        "bsb_id": "bsb00145114",
+        "volume_number": "90",
+        "start_canvas": 1,
+        "end_canvas": 189
+      }
+    ]
+  },
+  {
+    "district_id": "krumbach",
+    "district_name": "Krumbach",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.2428,
+    "longitude": 10.3633,
+    "total_canvases": 285,
+    "bsb_ids": "bsb00145115",
+    "volume_numbers": "91",
+    "slices": [
+      {
+        "bsb_id": "bsb00145115",
+        "volume_number": "91",
+        "start_canvas": 1,
+        "end_canvas": 285
+      }
+    ]
+  },
+  {
+    "district_id": "kulmbach",
+    "district_name": "Kulmbach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1078,
+    "longitude": 11.4553,
+    "total_canvases": 95,
+    "bsb_ids": "bsb00145116",
+    "volume_numbers": "92",
+    "slices": [
+      {
+        "bsb_id": "bsb00145116",
+        "volume_number": "92",
+        "start_canvas": 1,
+        "end_canvas": 95
+      }
+    ]
+  },
+  {
+    "district_id": "kusel",
+    "district_name": "Kusel",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5392,
+    "longitude": 7.3981,
+    "total_canvases": 29,
+    "bsb_ids": "bsb00145117",
+    "volume_numbers": "93",
+    "slices": [
+      {
+        "bsb_id": "bsb00145117",
+        "volume_number": "93",
+        "start_canvas": 1,
+        "end_canvas": 29
+      }
+    ]
+  },
+  {
+    "district_id": "koenigshofen_im_grabfeld",
+    "district_name": "Königshofen im Grabfeld",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.2994,
+    "longitude": 10.4675,
+    "total_canvases": 167,
+    "bsb_ids": "bsb00145112",
+    "volume_numbers": "88",
+    "slices": [
+      {
+        "bsb_id": "bsb00145112",
+        "volume_number": "88",
+        "start_canvas": 138,
+        "end_canvas": 304
+      }
+    ]
+  },
+  {
+    "district_id": "koetzting",
+    "district_name": "Kötzting",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1764,
+    "longitude": 12.855,
+    "total_canvases": 180,
+    "bsb_ids": "bsb00145113",
+    "volume_numbers": "89",
+    "slices": [
+      {
+        "bsb_id": "bsb00145113",
+        "volume_number": "89",
+        "start_canvas": 1,
+        "end_canvas": 180
+      }
+    ]
+  },
+  {
+    "district_id": "landau_a_d_isar",
+    "district_name": "Landau a. d. Isar",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6753,
+    "longitude": 12.6922,
+    "total_canvases": 35,
+    "bsb_ids": "bsb00028016",
+    "volume_numbers": "94",
+    "slices": [
+      {
+        "bsb_id": "bsb00028016",
+        "volume_number": "94",
+        "start_canvas": 1,
+        "end_canvas": 35
+      }
+    ]
+  },
+  {
+    "district_id": "landshut_land",
+    "district_name": "Landshut (Land)",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.545,
+    "longitude": 12.165,
+    "total_canvases": 51,
+    "bsb_ids": "bsb00111891",
+    "volume_numbers": "97",
+    "slices": [
+      {
+        "bsb_id": "bsb00111891",
+        "volume_number": "97",
+        "start_canvas": 1,
+        "end_canvas": 51
+      }
+    ]
+  },
+  {
+    "district_id": "landshut_stadt",
+    "district_name": "Landshut (Stadt)",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Stadt",
+    "latitude": 48.5372,
+    "longitude": 12.1508,
+    "total_canvases": 47,
+    "bsb_ids": "bsb00041246",
+    "volume_numbers": "96",
+    "slices": [
+      {
+        "bsb_id": "bsb00041246",
+        "volume_number": "96",
+        "start_canvas": 1,
+        "end_canvas": 47
+      }
+    ]
+  },
+  {
+    "district_id": "landstuhl",
+    "district_name": "Landstuhl",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.4131,
+    "longitude": 7.5722,
+    "total_canvases": 75,
+    "bsb_ids": "bsb00145118",
+    "volume_numbers": "98",
+    "slices": [
+      {
+        "bsb_id": "bsb00145118",
+        "volume_number": "98",
+        "start_canvas": 1,
+        "end_canvas": 75
+      }
+    ]
+  },
+  {
+    "district_id": "lauf_an_der_pegnitz",
+    "district_name": "Lauf an der Pegnitz",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5106,
+    "longitude": 11.2772,
+    "total_canvases": 295,
+    "bsb_ids": "bsb00143129;bsb00143138",
+    "volume_numbers": "99,1;99,2",
+    "slices": [
+      {
+        "bsb_id": "bsb00143129",
+        "volume_number": "99,1",
+        "start_canvas": 1,
+        "end_canvas": 202
+      },
+      {
+        "bsb_id": "bsb00143138",
+        "volume_number": "99,2",
+        "start_canvas": 1,
+        "end_canvas": 93
+      }
+    ]
+  },
+  {
+    "district_id": "lauingen",
+    "district_name": "Lauingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.5714,
+    "longitude": 10.4308,
+    "total_canvases": 282,
+    "bsb_ids": "bsb00009733",
+    "volume_numbers": "100",
+    "slices": [
+      {
+        "bsb_id": "bsb00009733",
+        "volume_number": "100",
+        "start_canvas": 1,
+        "end_canvas": 282
+      }
+    ]
+  },
+  {
+    "district_id": "lichtenfels",
+    "district_name": "Lichtenfels",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1464,
+    "longitude": 11.0644,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00145119",
+    "volume_numbers": "101",
+    "slices": [
+      {
+        "bsb_id": "bsb00145119",
+        "volume_number": "101",
+        "start_canvas": 1,
+        "end_canvas": 56
+      }
+    ]
+  },
+  {
+    "district_id": "lindau",
+    "district_name": "Lindau",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.5461,
+    "longitude": 9.6842,
+    "total_canvases": 59,
+    "bsb_ids": "bsb00145120",
+    "volume_numbers": "102",
+    "slices": [
+      {
+        "bsb_id": "bsb00145120",
+        "volume_number": "102",
+        "start_canvas": 1,
+        "end_canvas": 59
+      }
+    ]
+  },
+  {
+    "district_id": "lohr_am_main",
+    "district_name": "Lohr am Main",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9936,
+    "longitude": 9.5783,
+    "total_canvases": 43,
+    "bsb_ids": "bsb00145112",
+    "volume_numbers": "88",
+    "slices": [
+      {
+        "bsb_id": "bsb00145112",
+        "volume_number": "88",
+        "start_canvas": 305,
+        "end_canvas": 347
+      }
+    ]
+  },
+  {
+    "district_id": "ludwigshafen_am_rhein",
+    "district_name": "Ludwigshafen am Rhein",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.4811,
+    "longitude": 8.4353,
+    "total_canvases": 36,
+    "bsb_ids": "bsb00145121",
+    "volume_numbers": "103",
+    "slices": [
+      {
+        "bsb_id": "bsb00145121",
+        "volume_number": "103",
+        "start_canvas": 1,
+        "end_canvas": 36
+      }
+    ]
+  },
+  {
+    "district_id": "ludwigsstadt",
+    "district_name": "Ludwigsstadt",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.4858,
+    "longitude": 11.3867,
+    "total_canvases": 36,
+    "bsb_ids": "bsb00145122",
+    "volume_numbers": "104",
+    "slices": [
+      {
+        "bsb_id": "bsb00145122",
+        "volume_number": "104",
+        "start_canvas": 1,
+        "end_canvas": 36
+      }
+    ]
+  },
+  {
+    "district_id": "mainburg",
+    "district_name": "Mainburg",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6431,
+    "longitude": 11.7789,
+    "total_canvases": 72,
+    "bsb_ids": "bsb00111890",
+    "volume_numbers": "105",
+    "slices": [
+      {
+        "bsb_id": "bsb00111890",
+        "volume_number": "105",
+        "start_canvas": 1,
+        "end_canvas": 72
+      }
+    ]
+  },
+  {
+    "district_id": "mallersdorf",
+    "district_name": "Mallersdorf",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.7764,
+    "longitude": 12.2489,
+    "total_canvases": 65,
+    "bsb_ids": "bsb00051627",
+    "volume_numbers": "106",
+    "slices": [
+      {
+        "bsb_id": "bsb00051627",
+        "volume_number": "106",
+        "start_canvas": 1,
+        "end_canvas": 65
+      }
+    ]
+  },
+  {
+    "district_id": "markt_bibart",
+    "district_name": "Markt Bibart",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6478,
+    "longitude": 10.4258,
+    "total_canvases": 107,
+    "bsb_ids": "bsb00145123",
+    "volume_numbers": "107",
+    "slices": [
+      {
+        "bsb_id": "bsb00145123",
+        "volume_number": "107",
+        "start_canvas": 1,
+        "end_canvas": 107
+      }
+    ]
+  },
+  {
+    "district_id": "markt_erlbach",
+    "district_name": "Markt Erlbach",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.4939,
+    "longitude": 10.6531,
+    "total_canvases": 313,
+    "bsb_ids": "bsb00143123",
+    "volume_numbers": "109",
+    "slices": [
+      {
+        "bsb_id": "bsb00143123",
+        "volume_number": "109",
+        "start_canvas": 1,
+        "end_canvas": 313
+      }
+    ]
+  },
+  {
+    "district_id": "marktbreit",
+    "district_name": "Marktbreit",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6669,
+    "longitude": 10.1439,
+    "total_canvases": 110,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 1,
+        "end_canvas": 110
+      }
+    ]
+  },
+  {
+    "district_id": "marktheidenfeld",
+    "district_name": "Marktheidenfeld",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8511,
+    "longitude": 9.6019,
+    "total_canvases": 76,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 111,
+        "end_canvas": 186
+      }
+    ]
+  },
+  {
+    "district_id": "marktsteft",
+    "district_name": "Marktsteft",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6967,
+    "longitude": 10.1364,
+    "total_canvases": 256,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 187,
+        "end_canvas": 442
+      }
+    ]
+  },
+  {
+    "district_id": "mellrichstadt",
+    "district_name": "Mellrichstadt",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.4281,
+    "longitude": 10.3028,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 443,
+        "end_canvas": 512
+      }
+    ]
+  },
+  {
+    "district_id": "memmingen",
+    "district_name": "Memmingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.9839,
+    "longitude": 10.1808,
+    "total_canvases": 82,
+    "bsb_ids": "bsb00145125",
+    "volume_numbers": "110",
+    "slices": [
+      {
+        "bsb_id": "bsb00145125",
+        "volume_number": "110",
+        "start_canvas": 1,
+        "end_canvas": 82
+      }
+    ]
+  },
+  {
+    "district_id": "miltenberg",
+    "district_name": "Miltenberg",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7039,
+    "longitude": 9.2644,
+    "total_canvases": 44,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 513,
+        "end_canvas": 556
+      }
+    ]
+  },
+  {
+    "district_id": "mindelheim",
+    "district_name": "Mindelheim",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.0469,
+    "longitude": 10.4878,
+    "total_canvases": 189,
+    "bsb_ids": "bsb00145126",
+    "volume_numbers": "111",
+    "slices": [
+      {
+        "bsb_id": "bsb00145126",
+        "volume_number": "111",
+        "start_canvas": 1,
+        "end_canvas": 189
+      }
+    ]
+  },
+  {
+    "district_id": "mitterfels",
+    "district_name": "Mitterfels",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9708,
+    "longitude": 12.6817,
+    "total_canvases": 54,
+    "bsb_ids": "bsb00145127",
+    "volume_numbers": "112",
+    "slices": [
+      {
+        "bsb_id": "bsb00145127",
+        "volume_number": "112",
+        "start_canvas": 1,
+        "end_canvas": 54
+      }
+    ]
+  },
+  {
+    "district_id": "monheim",
+    "district_name": "Monheim",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8419,
+    "longitude": 10.8569,
+    "total_canvases": 289,
+    "bsb_ids": "bsb00094713",
+    "volume_numbers": "113",
+    "slices": [
+      {
+        "bsb_id": "bsb00094713",
+        "volume_number": "113",
+        "start_canvas": 1,
+        "end_canvas": 289
+      }
+    ]
+  },
+  {
+    "district_id": "muenchberg",
+    "district_name": "Münchberg",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1917,
+    "longitude": 11.7878,
+    "total_canvases": 28,
+    "bsb_ids": "bsb00145128",
+    "volume_numbers": "114",
+    "slices": [
+      {
+        "bsb_id": "bsb00145128",
+        "volume_number": "114",
+        "start_canvas": 1,
+        "end_canvas": 28
+      }
+    ]
+  },
+  {
+    "district_id": "muennerstadt",
+    "district_name": "Münnerstadt",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.2525,
+    "longitude": 10.1958,
+    "total_canvases": 60,
+    "bsb_ids": "bsb00145124",
+    "volume_numbers": "108",
+    "slices": [
+      {
+        "bsb_id": "bsb00145124",
+        "volume_number": "108",
+        "start_canvas": 557,
+        "end_canvas": 616
+      }
+    ]
+  },
+  {
+    "district_id": "nabburg",
+    "district_name": "Nabburg",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.4539,
+    "longitude": 12.1786,
+    "total_canvases": 111,
+    "bsb_ids": "bsb00072202",
+    "volume_numbers": "115",
+    "slices": [
+      {
+        "bsb_id": "bsb00072202",
+        "volume_number": "115",
+        "start_canvas": 1,
+        "end_canvas": 111
+      }
+    ]
+  },
+  {
+    "district_id": "naila",
+    "district_name": "Naila",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.3297,
+    "longitude": 11.7081,
+    "total_canvases": 287,
+    "bsb_ids": "bsb00145129;bsb00145130",
+    "volume_numbers": "116,1;116,2",
+    "slices": [
+      {
+        "bsb_id": "bsb00145129",
+        "volume_number": "116,1",
+        "start_canvas": 1,
+        "end_canvas": 182
+      },
+      {
+        "bsb_id": "bsb00145130",
+        "volume_number": "116,2",
+        "start_canvas": 1,
+        "end_canvas": 105
+      }
+    ]
+  },
+  {
+    "district_id": "neu_ulm",
+    "district_name": "Neu-Ulm",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.3936,
+    "longitude": 10.0111,
+    "total_canvases": 49,
+    "bsb_ids": "bsb00145136",
+    "volume_numbers": "124",
+    "slices": [
+      {
+        "bsb_id": "bsb00145136",
+        "volume_number": "124",
+        "start_canvas": 1,
+        "end_canvas": 49
+      }
+    ]
+  },
+  {
+    "district_id": "neuburg_an_der_donau",
+    "district_name": "Neuburg an der Donau",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.7322,
+    "longitude": 11.1808,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00145131",
+    "volume_numbers": "117",
+    "slices": [
+      {
+        "bsb_id": "bsb00145131",
+        "volume_number": "117",
+        "start_canvas": 1,
+        "end_canvas": 70
+      }
+    ]
+  },
+  {
+    "district_id": "neumarkt",
+    "district_name": "Neumarkt",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2803,
+    "longitude": 11.4628,
+    "total_canvases": 318,
+    "bsb_ids": "bsb00145132",
+    "volume_numbers": "118",
+    "slices": [
+      {
+        "bsb_id": "bsb00145132",
+        "volume_number": "118",
+        "start_canvas": 1,
+        "end_canvas": 318
+      }
+    ]
+  },
+  {
+    "district_id": "neunburg_vorm_wald",
+    "district_name": "Neunburg vorm Wald",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3481,
+    "longitude": 12.3858,
+    "total_canvases": 60,
+    "bsb_ids": "bsb00060082",
+    "volume_numbers": "119",
+    "slices": [
+      {
+        "bsb_id": "bsb00060082",
+        "volume_number": "119",
+        "start_canvas": 1,
+        "end_canvas": 60
+      }
+    ]
+  },
+  {
+    "district_id": "neustadt_an_der_aisch",
+    "district_name": "Neustadt an der Aisch",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5806,
+    "longitude": 10.6086,
+    "total_canvases": 137,
+    "bsb_ids": "bsb00145134",
+    "volume_numbers": "120",
+    "slices": [
+      {
+        "bsb_id": "bsb00145134",
+        "volume_number": "120",
+        "start_canvas": 1,
+        "end_canvas": 137
+      }
+    ]
+  },
+  {
+    "district_id": "neustadt_an_der_haardt",
+    "district_name": "Neustadt an der Haardt",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.3536,
+    "longitude": 8.1353,
+    "total_canvases": 78,
+    "bsb_ids": "bsb00145133",
+    "volume_numbers": "121",
+    "slices": [
+      {
+        "bsb_id": "bsb00145133",
+        "volume_number": "121",
+        "start_canvas": 1,
+        "end_canvas": 78
+      }
+    ]
+  },
+  {
+    "district_id": "neustadt_an_der_saale",
+    "district_name": "Neustadt an der Saale",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.3219,
+    "longitude": 10.2161,
+    "total_canvases": 74,
+    "bsb_ids": "bsb00145135",
+    "volume_numbers": "122",
+    "slices": [
+      {
+        "bsb_id": "bsb00145135",
+        "volume_number": "122",
+        "start_canvas": 1,
+        "end_canvas": 74
+      }
+    ]
+  },
+  {
+    "district_id": "neustadt_an_der_waldnaab",
+    "district_name": "Neustadt an der Waldnaab",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7308,
+    "longitude": 12.1706,
+    "total_canvases": 151,
+    "bsb_ids": "bsb00092700",
+    "volume_numbers": "123",
+    "slices": [
+      {
+        "bsb_id": "bsb00092700",
+        "volume_number": "123",
+        "start_canvas": 1,
+        "end_canvas": 151
+      }
+    ]
+  },
+  {
+    "district_id": "nittenau",
+    "district_name": "Nittenau",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1969,
+    "longitude": 12.2739,
+    "total_canvases": 57,
+    "bsb_ids": "bsb00060084",
+    "volume_numbers": "125",
+    "slices": [
+      {
+        "bsb_id": "bsb00060084",
+        "volume_number": "125",
+        "start_canvas": 1,
+        "end_canvas": 57
+      }
+    ]
+  },
+  {
+    "district_id": "nordhalben",
+    "district_name": "Nordhalben",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.3742,
+    "longitude": 11.5131,
+    "total_canvases": 44,
+    "bsb_ids": "bsb00145137",
+    "volume_numbers": "127",
+    "slices": [
+      {
+        "bsb_id": "bsb00145137",
+        "volume_number": "127",
+        "start_canvas": 1,
+        "end_canvas": 44
+      }
+    ]
+  },
+  {
+    "district_id": "noerdlingen",
+    "district_name": "Nördlingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8514,
+    "longitude": 10.4883,
+    "total_canvases": 76,
+    "bsb_ids": "bsb00044081",
+    "volume_numbers": "126",
+    "slices": [
+      {
+        "bsb_id": "bsb00044081",
+        "volume_number": "126",
+        "start_canvas": 1,
+        "end_canvas": 76
+      }
+    ]
+  },
+  {
+    "district_id": "nuernberg",
+    "district_name": "Nürnberg",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.4521,
+    "longitude": 11.0767,
+    "total_canvases": 160,
+    "bsb_ids": "bsb00145138",
+    "volume_numbers": "128",
+    "slices": [
+      {
+        "bsb_id": "bsb00145138",
+        "volume_number": "128",
+        "start_canvas": 1,
+        "end_canvas": 160
+      }
+    ]
+  },
+  {
+    "district_id": "oberdorf",
+    "district_name": "Oberdorf",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.7792,
+    "longitude": 10.6172,
+    "total_canvases": 71,
+    "bsb_ids": "bsb00146468",
+    "volume_numbers": "129",
+    "slices": [
+      {
+        "bsb_id": "bsb00146468",
+        "volume_number": "129",
+        "start_canvas": 1,
+        "end_canvas": 71
+      }
+    ]
+  },
+  {
+    "district_id": "oberguenzburg",
+    "district_name": "Obergünzburg",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.8469,
+    "longitude": 10.4189,
+    "total_canvases": 64,
+    "bsb_ids": "bsb00146469",
+    "volume_numbers": "130",
+    "slices": [
+      {
+        "bsb_id": "bsb00146469",
+        "volume_number": "130",
+        "start_canvas": 1,
+        "end_canvas": 64
+      }
+    ]
+  },
+  {
+    "district_id": "obermoschel",
+    "district_name": "Obermoschel",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.7267,
+    "longitude": 7.7728,
+    "total_canvases": 50,
+    "bsb_ids": "bsb00146470",
+    "volume_numbers": "131",
+    "slices": [
+      {
+        "bsb_id": "bsb00146470",
+        "volume_number": "131",
+        "start_canvas": 1,
+        "end_canvas": 50
+      }
+    ]
+  },
+  {
+    "district_id": "obernburg",
+    "district_name": "Obernburg",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8406,
+    "longitude": 9.1456,
+    "total_canvases": 82,
+    "bsb_ids": "bsb00145135",
+    "volume_numbers": "122",
+    "slices": [
+      {
+        "bsb_id": "bsb00145135",
+        "volume_number": "122",
+        "start_canvas": 75,
+        "end_canvas": 156
+      }
+    ]
+  },
+  {
+    "district_id": "oberviechtach",
+    "district_name": "Oberviechtach",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.4586,
+    "longitude": 12.4192,
+    "total_canvases": 75,
+    "bsb_ids": "bsb00089445",
+    "volume_numbers": "132",
+    "slices": [
+      {
+        "bsb_id": "bsb00089445",
+        "volume_number": "132",
+        "start_canvas": 1,
+        "end_canvas": 75
+      }
+    ]
+  },
+  {
+    "district_id": "ochsenfurt",
+    "district_name": "Ochsenfurt",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6639,
+    "longitude": 10.0639,
+    "total_canvases": 108,
+    "bsb_ids": "bsb00145135",
+    "volume_numbers": "122",
+    "slices": [
+      {
+        "bsb_id": "bsb00145135",
+        "volume_number": "122",
+        "start_canvas": 157,
+        "end_canvas": 264
+      }
+    ]
+  },
+  {
+    "district_id": "orb",
+    "district_name": "Orb",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.2278,
+    "longitude": 9.3481,
+    "total_canvases": 60,
+    "bsb_ids": "bsb00145135",
+    "volume_numbers": "122",
+    "slices": [
+      {
+        "bsb_id": "bsb00145135",
+        "volume_number": "122",
+        "start_canvas": 265,
+        "end_canvas": 324
+      }
+    ]
+  },
+  {
+    "district_id": "osterhofen",
+    "district_name": "Osterhofen",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6989,
+    "longitude": 13.0219,
+    "total_canvases": 33,
+    "bsb_ids": "bsb00110702",
+    "volume_numbers": "134",
+    "slices": [
+      {
+        "bsb_id": "bsb00110702",
+        "volume_number": "134",
+        "start_canvas": 1,
+        "end_canvas": 33
+      }
+    ]
+  },
+  {
+    "district_id": "otterberg",
+    "district_name": "Otterberg",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5039,
+    "longitude": 7.7717,
+    "total_canvases": 44,
+    "bsb_ids": "bsb00145148",
+    "volume_numbers": "135",
+    "slices": [
+      {
+        "bsb_id": "bsb00145148",
+        "volume_number": "135",
+        "start_canvas": 1,
+        "end_canvas": 44
+      }
+    ]
+  },
+  {
+    "district_id": "ottobeuren",
+    "district_name": "Ottobeuren",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.9419,
+    "longitude": 10.2994,
+    "total_canvases": 172,
+    "bsb_ids": "bsb00145149",
+    "volume_numbers": "136",
+    "slices": [
+      {
+        "bsb_id": "bsb00145149",
+        "volume_number": "136",
+        "start_canvas": 1,
+        "end_canvas": 172
+      }
+    ]
+  },
+  {
+    "district_id": "parsberg",
+    "district_name": "Parsberg",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1603,
+    "longitude": 11.72,
+    "total_canvases": 152,
+    "bsb_ids": "bsb00003359",
+    "volume_numbers": "137",
+    "slices": [
+      {
+        "bsb_id": "bsb00003359",
+        "volume_number": "137",
+        "start_canvas": 1,
+        "end_canvas": 152
+      }
+    ]
+  },
+  {
+    "district_id": "passau_stadt",
+    "district_name": "Passau (Stadt)",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Stadt",
+    "latitude": 48.5748,
+    "longitude": 13.461,
+    "total_canvases": 136,
+    "bsb_ids": "bsb00113404",
+    "volume_numbers": "140",
+    "slices": [
+      {
+        "bsb_id": "bsb00113404",
+        "volume_number": "140",
+        "start_canvas": 1,
+        "end_canvas": 136
+      }
+    ]
+  },
+  {
+    "district_id": "passau_i",
+    "district_name": "Passau I",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.59,
+    "longitude": 13.45,
+    "total_canvases": 112,
+    "bsb_ids": "bsb00110701",
+    "volume_numbers": "138",
+    "slices": [
+      {
+        "bsb_id": "bsb00110701",
+        "volume_number": "138",
+        "start_canvas": 1,
+        "end_canvas": 112
+      }
+    ]
+  },
+  {
+    "district_id": "passau_ii",
+    "district_name": "Passau II",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.555,
+    "longitude": 13.44,
+    "total_canvases": 84,
+    "bsb_ids": "bsb00110700",
+    "volume_numbers": "139",
+    "slices": [
+      {
+        "bsb_id": "bsb00110700",
+        "volume_number": "139",
+        "start_canvas": 1,
+        "end_canvas": 84
+      }
+    ]
+  },
+  {
+    "district_id": "pegnitz",
+    "district_name": "Pegnitz",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7564,
+    "longitude": 11.5419,
+    "total_canvases": 92,
+    "bsb_ids": "bsb00145147",
+    "volume_numbers": "141",
+    "slices": [
+      {
+        "bsb_id": "bsb00145147",
+        "volume_number": "141",
+        "start_canvas": 1,
+        "end_canvas": 92
+      }
+    ]
+  },
+  {
+    "district_id": "pfarrkirchen",
+    "district_name": "Pfarrkirchen",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4319,
+    "longitude": 12.9389,
+    "total_canvases": 25,
+    "bsb_ids": "bsb00110684",
+    "volume_numbers": "142",
+    "slices": [
+      {
+        "bsb_id": "bsb00110684",
+        "volume_number": "142",
+        "start_canvas": 1,
+        "end_canvas": 25
+      }
+    ]
+  },
+  {
+    "district_id": "pirmasens",
+    "district_name": "Pirmasens",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.2014,
+    "longitude": 7.6053,
+    "total_canvases": 42,
+    "bsb_ids": "bsb00146471",
+    "volume_numbers": "143",
+    "slices": [
+      {
+        "bsb_id": "bsb00146471",
+        "volume_number": "143",
+        "start_canvas": 1,
+        "end_canvas": 42
+      }
+    ]
+  },
+  {
+    "district_id": "pottenstein",
+    "district_name": "Pottenstein",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7719,
+    "longitude": 11.4083,
+    "total_canvases": 76,
+    "bsb_ids": "bsb00146472",
+    "volume_numbers": "144",
+    "slices": [
+      {
+        "bsb_id": "bsb00146472",
+        "volume_number": "144",
+        "start_canvas": 1,
+        "end_canvas": 76
+      }
+    ]
+  },
+  {
+    "district_id": "regen",
+    "district_name": "Regen",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9711,
+    "longitude": 13.1269,
+    "total_canvases": 96,
+    "bsb_ids": "bsb00146473",
+    "volume_numbers": "145",
+    "slices": [
+      {
+        "bsb_id": "bsb00146473",
+        "volume_number": "145",
+        "start_canvas": 1,
+        "end_canvas": 96
+      }
+    ]
+  },
+  {
+    "district_id": "regensburg_land",
+    "district_name": "Regensburg (Land)",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.002,
+    "longitude": 12.12,
+    "total_canvases": 52,
+    "bsb_ids": "bsb00144140",
+    "volume_numbers": "147",
+    "slices": [
+      {
+        "bsb_id": "bsb00144140",
+        "volume_number": "147",
+        "start_canvas": 1,
+        "end_canvas": 52
+      }
+    ]
+  },
+  {
+    "district_id": "regensburg_stadt",
+    "district_name": "Regensburg (Stadt)",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.0134,
+    "longitude": 12.1016,
+    "total_canvases": 308,
+    "bsb_ids": "bsb00144138;bsb00144139",
+    "volume_numbers": "146,1;146,2",
+    "slices": [
+      {
+        "bsb_id": "bsb00144138",
+        "volume_number": "146,1",
+        "start_canvas": 1,
+        "end_canvas": 212
+      },
+      {
+        "bsb_id": "bsb00144139",
+        "volume_number": "146,2",
+        "start_canvas": 1,
+        "end_canvas": 96
+      }
+    ]
+  },
+  {
+    "district_id": "regenstauf",
+    "district_name": "Regenstauf",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1239,
+    "longitude": 12.1286,
+    "total_canvases": 57,
+    "bsb_ids": "bsb00146474",
+    "volume_numbers": "148",
+    "slices": [
+      {
+        "bsb_id": "bsb00146474",
+        "volume_number": "148",
+        "start_canvas": 1,
+        "end_canvas": 57
+      }
+    ]
+  },
+  {
+    "district_id": "rehau",
+    "district_name": "Rehau",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.2492,
+    "longitude": 12.0364,
+    "total_canvases": 58,
+    "bsb_ids": "bsb00146475",
+    "volume_numbers": "149",
+    "slices": [
+      {
+        "bsb_id": "bsb00146475",
+        "volume_number": "149",
+        "start_canvas": 1,
+        "end_canvas": 58
+      }
+    ]
+  },
+  {
+    "district_id": "riedenburg",
+    "district_name": "Riedenburg",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9614,
+    "longitude": 11.6864,
+    "total_canvases": 162,
+    "bsb_ids": "bsb00146476",
+    "volume_numbers": "150",
+    "slices": [
+      {
+        "bsb_id": "bsb00146476",
+        "volume_number": "150",
+        "start_canvas": 1,
+        "end_canvas": 162
+      }
+    ]
+  },
+  {
+    "district_id": "rockenhausen",
+    "district_name": "Rockenhausen",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.6289,
+    "longitude": 7.8214,
+    "total_canvases": 17,
+    "bsb_ids": "bsb00146477",
+    "volume_numbers": "151",
+    "slices": [
+      {
+        "bsb_id": "bsb00146477",
+        "volume_number": "151",
+        "start_canvas": 1,
+        "end_canvas": 17
+      }
+    ]
+  },
+  {
+    "district_id": "roding",
+    "district_name": "Roding",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.1969,
+    "longitude": 12.5186,
+    "total_canvases": 118,
+    "bsb_ids": "bsb00031112",
+    "volume_numbers": "152",
+    "slices": [
+      {
+        "bsb_id": "bsb00031112",
+        "volume_number": "152",
+        "start_canvas": 1,
+        "end_canvas": 118
+      }
+    ]
+  },
+  {
+    "district_id": "roggenburg",
+    "district_name": "Roggenburg",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.2756,
+    "longitude": 10.2281,
+    "total_canvases": 66,
+    "bsb_ids": "bsb00007355",
+    "volume_numbers": "153",
+    "slices": [
+      {
+        "bsb_id": "bsb00007355",
+        "volume_number": "153",
+        "start_canvas": 1,
+        "end_canvas": 66
+      }
+    ]
+  },
+  {
+    "district_id": "roth_mittelfranken",
+    "district_name": "Roth (Mittelfranken)",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2458,
+    "longitude": 11.0914,
+    "total_canvases": 182,
+    "bsb_ids": "bsb00126872",
+    "volume_numbers": "154",
+    "slices": [
+      {
+        "bsb_id": "bsb00126872",
+        "volume_number": "154",
+        "start_canvas": 1,
+        "end_canvas": 182
+      }
+    ]
+  },
+  {
+    "district_id": "rothenbuch",
+    "district_name": "Rothenbuch",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9669,
+    "longitude": 9.3978,
+    "total_canvases": 65,
+    "bsb_ids": "bsb00145135",
+    "volume_numbers": "122",
+    "slices": [
+      {
+        "bsb_id": "bsb00145135",
+        "volume_number": "122",
+        "start_canvas": 325,
+        "end_canvas": 389
+      }
+    ]
+  },
+  {
+    "district_id": "rothenburg_ob_der_tauber",
+    "district_name": "Rothenburg ob der Tauber",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3769,
+    "longitude": 10.1789,
+    "total_canvases": 140,
+    "bsb_ids": "bsb00143122",
+    "volume_numbers": "155",
+    "slices": [
+      {
+        "bsb_id": "bsb00143122",
+        "volume_number": "155",
+        "start_canvas": 1,
+        "end_canvas": 140
+      }
+    ]
+  },
+  {
+    "district_id": "rothenfels",
+    "district_name": "Rothenfels",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8906,
+    "longitude": 9.5892,
+    "total_canvases": 80,
+    "bsb_ids": "bsb00145146",
+    "volume_numbers": "156",
+    "slices": [
+      {
+        "bsb_id": "bsb00145146",
+        "volume_number": "156",
+        "start_canvas": 1,
+        "end_canvas": 80
+      }
+    ]
+  },
+  {
+    "district_id": "rottenburg",
+    "district_name": "Rottenburg",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.7019,
+    "longitude": 12.0272,
+    "total_canvases": 43,
+    "bsb_ids": "bsb00111889",
+    "volume_numbers": "157",
+    "slices": [
+      {
+        "bsb_id": "bsb00111889",
+        "volume_number": "157",
+        "start_canvas": 1,
+        "end_canvas": 43
+      }
+    ]
+  },
+  {
+    "district_id": "rotthalmuenster",
+    "district_name": "Rotthalmünster",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.3592,
+    "longitude": 13.2031,
+    "total_canvases": 20,
+    "bsb_ids": "bsb00110699",
+    "volume_numbers": "158",
+    "slices": [
+      {
+        "bsb_id": "bsb00110699",
+        "volume_number": "158",
+        "start_canvas": 1,
+        "end_canvas": 20
+      }
+    ]
+  },
+  {
+    "district_id": "scheinfeld",
+    "district_name": "Scheinfeld",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6647,
+    "longitude": 10.4619,
+    "total_canvases": 214,
+    "bsb_ids": "bsb00145145",
+    "volume_numbers": "159",
+    "slices": [
+      {
+        "bsb_id": "bsb00145145",
+        "volume_number": "159",
+        "start_canvas": 1,
+        "end_canvas": 214
+      }
+    ]
+  },
+  {
+    "district_id": "schesslitz",
+    "district_name": "Scheßlitz",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9764,
+    "longitude": 11.0339,
+    "total_canvases": 41,
+    "bsb_ids": "bsb00143121",
+    "volume_numbers": "160",
+    "slices": [
+      {
+        "bsb_id": "bsb00143121",
+        "volume_number": "160",
+        "start_canvas": 1,
+        "end_canvas": 41
+      }
+    ]
+  },
+  {
+    "district_id": "schillingsfuerst",
+    "district_name": "Schillingsfürst",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.2869,
+    "longitude": 10.26,
+    "total_canvases": 113,
+    "bsb_ids": "bsb00146478",
+    "volume_numbers": "161",
+    "slices": [
+      {
+        "bsb_id": "bsb00146478",
+        "volume_number": "161",
+        "start_canvas": 1,
+        "end_canvas": 113
+      }
+    ]
+  },
+  {
+    "district_id": "schwabach",
+    "district_name": "Schwabach",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3292,
+    "longitude": 11.0208,
+    "total_canvases": 133,
+    "bsb_ids": "bsb00146479",
+    "volume_numbers": "162",
+    "slices": [
+      {
+        "bsb_id": "bsb00146479",
+        "volume_number": "162",
+        "start_canvas": 1,
+        "end_canvas": 133
+      }
+    ]
+  },
+  {
+    "district_id": "schwabmuenchen",
+    "district_name": "Schwabmünchen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.1789,
+    "longitude": 10.7556,
+    "total_canvases": 34,
+    "bsb_ids": "bsb00146480",
+    "volume_numbers": "163",
+    "slices": [
+      {
+        "bsb_id": "bsb00146480",
+        "volume_number": "163",
+        "start_canvas": 1,
+        "end_canvas": 34
+      }
+    ]
+  },
+  {
+    "district_id": "schweinfurt_land",
+    "district_name": "Schweinfurt (Land)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.06,
+    "longitude": 10.235,
+    "total_canvases": 134,
+    "bsb_ids": "bsb00145146",
+    "volume_numbers": "156",
+    "slices": [
+      {
+        "bsb_id": "bsb00145146",
+        "volume_number": "156",
+        "start_canvas": 187,
+        "end_canvas": 320
+      }
+    ]
+  },
+  {
+    "district_id": "schweinfurt_stadt",
+    "district_name": "Schweinfurt (Stadt)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 50.0492,
+    "longitude": 10.2217,
+    "total_canvases": 20,
+    "bsb_ids": "bsb00144891",
+    "volume_numbers": "205",
+    "slices": [
+      {
+        "bsb_id": "bsb00144891",
+        "volume_number": "205",
+        "start_canvas": 57,
+        "end_canvas": 76
+      }
+    ]
+  },
+  {
+    "district_id": "schoellkrippen",
+    "district_name": "Schöllkrippen",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0853,
+    "longitude": 9.2458,
+    "total_canvases": 106,
+    "bsb_ids": "bsb00145146",
+    "volume_numbers": "156",
+    "slices": [
+      {
+        "bsb_id": "bsb00145146",
+        "volume_number": "156",
+        "start_canvas": 81,
+        "end_canvas": 186
+      }
+    ]
+  },
+  {
+    "district_id": "selb",
+    "district_name": "Selb",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1706,
+    "longitude": 12.1328,
+    "total_canvases": 68,
+    "bsb_ids": "bsb00146481",
+    "volume_numbers": "164",
+    "slices": [
+      {
+        "bsb_id": "bsb00146481",
+        "volume_number": "164",
+        "start_canvas": 1,
+        "end_canvas": 68
+      }
+    ]
+  },
+  {
+    "district_id": "sesslach",
+    "district_name": "Seßlach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1878,
+    "longitude": 10.8422,
+    "total_canvases": 17,
+    "bsb_ids": "bsb00137280",
+    "volume_numbers": "165",
+    "slices": [
+      {
+        "bsb_id": "bsb00137280",
+        "volume_number": "165",
+        "start_canvas": 1,
+        "end_canvas": 17
+      }
+    ]
+  },
+  {
+    "district_id": "simbach",
+    "district_name": "Simbach",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.2656,
+    "longitude": 13.0236,
+    "total_canvases": 110,
+    "bsb_ids": "bsb00110698",
+    "volume_numbers": "166",
+    "slices": [
+      {
+        "bsb_id": "bsb00110698",
+        "volume_number": "166",
+        "start_canvas": 1,
+        "end_canvas": 110
+      }
+    ]
+  },
+  {
+    "district_id": "sonthofen",
+    "district_name": "Sonthofen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.5142,
+    "longitude": 10.2789,
+    "total_canvases": 95,
+    "bsb_ids": "bsb00044080",
+    "volume_numbers": "167",
+    "slices": [
+      {
+        "bsb_id": "bsb00044080",
+        "volume_number": "167",
+        "start_canvas": 1,
+        "end_canvas": 95
+      }
+    ]
+  },
+  {
+    "district_id": "speyer",
+    "district_name": "Speyer",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.3172,
+    "longitude": 8.4411,
+    "total_canvases": 41,
+    "bsb_ids": "bsb00145144",
+    "volume_numbers": "168",
+    "slices": [
+      {
+        "bsb_id": "bsb00145144",
+        "volume_number": "168",
+        "start_canvas": 1,
+        "end_canvas": 41
+      }
+    ]
+  },
+  {
+    "district_id": "stadtprozelten",
+    "district_name": "Stadtprozelten",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7856,
+    "longitude": 9.4122,
+    "total_canvases": 130,
+    "bsb_ids": "bsb00145146",
+    "volume_numbers": "156",
+    "slices": [
+      {
+        "bsb_id": "bsb00145146",
+        "volume_number": "156",
+        "start_canvas": 321,
+        "end_canvas": 450
+      }
+    ]
+  },
+  {
+    "district_id": "stadtsteinach",
+    "district_name": "Stadtsteinach",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.1614,
+    "longitude": 11.5056,
+    "total_canvases": 148,
+    "bsb_ids": "bsb00140363",
+    "volume_numbers": "170",
+    "slices": [
+      {
+        "bsb_id": "bsb00140363",
+        "volume_number": "170",
+        "start_canvas": 1,
+        "end_canvas": 148
+      }
+    ]
+  },
+  {
+    "district_id": "straubing_land",
+    "district_name": "Straubing (Land)",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.89,
+    "longitude": 12.585,
+    "total_canvases": 242,
+    "bsb_ids": "bsb00110697",
+    "volume_numbers": "172",
+    "slices": [
+      {
+        "bsb_id": "bsb00110697",
+        "volume_number": "172",
+        "start_canvas": 1,
+        "end_canvas": 242
+      }
+    ]
+  },
+  {
+    "district_id": "straubing_stadt",
+    "district_name": "Straubing (Stadt)",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Stadt",
+    "latitude": 48.8814,
+    "longitude": 12.5739,
+    "total_canvases": 54,
+    "bsb_ids": "bsb00113403",
+    "volume_numbers": "171",
+    "slices": [
+      {
+        "bsb_id": "bsb00113403",
+        "volume_number": "171",
+        "start_canvas": 1,
+        "end_canvas": 54
+      }
+    ]
+  },
+  {
+    "district_id": "sulzbach",
+    "district_name": "Sulzbach",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5036,
+    "longitude": 11.7417,
+    "total_canvases": 73,
+    "bsb_ids": "bsb00105945",
+    "volume_numbers": "173",
+    "slices": [
+      {
+        "bsb_id": "bsb00105945",
+        "volume_number": "173",
+        "start_canvas": 1,
+        "end_canvas": 73
+      }
+    ]
+  },
+  {
+    "district_id": "thiersheim",
+    "district_name": "Thiersheim",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0772,
+    "longitude": 12.1264,
+    "total_canvases": 76,
+    "bsb_ids": "bsb00145150",
+    "volume_numbers": "174",
+    "slices": [
+      {
+        "bsb_id": "bsb00145150",
+        "volume_number": "174",
+        "start_canvas": 1,
+        "end_canvas": 76
+      }
+    ]
+  },
+  {
+    "district_id": "thurnau",
+    "district_name": "Thurnau",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0258,
+    "longitude": 11.3944,
+    "total_canvases": 114,
+    "bsb_ids": "bsb00145151",
+    "volume_numbers": "175",
+    "slices": [
+      {
+        "bsb_id": "bsb00145151",
+        "volume_number": "175",
+        "start_canvas": 1,
+        "end_canvas": 114
+      }
+    ]
+  },
+  {
+    "district_id": "tirschenreuth",
+    "district_name": "Tirschenreuth",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.88,
+    "longitude": 12.3372,
+    "total_canvases": 63,
+    "bsb_ids": "bsb00145152",
+    "volume_numbers": "176",
+    "slices": [
+      {
+        "bsb_id": "bsb00145152",
+        "volume_number": "176",
+        "start_canvas": 1,
+        "end_canvas": 63
+      }
+    ]
+  },
+  {
+    "district_id": "tuerkheim",
+    "district_name": "Türkheim",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.0594,
+    "longitude": 10.6322,
+    "total_canvases": 53,
+    "bsb_ids": "bsb00145153",
+    "volume_numbers": "177",
+    "slices": [
+      {
+        "bsb_id": "bsb00145153",
+        "volume_number": "177",
+        "start_canvas": 1,
+        "end_canvas": 53
+      }
+    ]
+  },
+  {
+    "district_id": "uffenheim",
+    "district_name": "Uffenheim",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5439,
+    "longitude": 10.2328,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00143120",
+    "volume_numbers": "178",
+    "slices": [
+      {
+        "bsb_id": "bsb00143120",
+        "volume_number": "178",
+        "start_canvas": 1,
+        "end_canvas": 56
+      }
+    ]
+  },
+  {
+    "district_id": "viechtach",
+    "district_name": "Viechtach",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0792,
+    "longitude": 12.8853,
+    "total_canvases": 82,
+    "bsb_ids": "bsb00145143",
+    "volume_numbers": "179",
+    "slices": [
+      {
+        "bsb_id": "bsb00145143",
+        "volume_number": "179",
+        "start_canvas": 1,
+        "end_canvas": 82
+      }
+    ]
+  },
+  {
+    "district_id": "vilsbiburg",
+    "district_name": "Vilsbiburg",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.4508,
+    "longitude": 12.3533,
+    "total_canvases": 32,
+    "bsb_ids": "bsb00111888",
+    "volume_numbers": "180",
+    "slices": [
+      {
+        "bsb_id": "bsb00111888",
+        "volume_number": "180",
+        "start_canvas": 1,
+        "end_canvas": 32
+      }
+    ]
+  },
+  {
+    "district_id": "vilseck",
+    "district_name": "Vilseck",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6114,
+    "longitude": 11.8058,
+    "total_canvases": 83,
+    "bsb_ids": "bsb00085711",
+    "volume_numbers": "181",
+    "slices": [
+      {
+        "bsb_id": "bsb00085711",
+        "volume_number": "181",
+        "start_canvas": 1,
+        "end_canvas": 83
+      }
+    ]
+  },
+  {
+    "district_id": "vilshofen",
+    "district_name": "Vilshofen",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6328,
+    "longitude": 13.1869,
+    "total_canvases": 250,
+    "bsb_ids": "bsb00110696",
+    "volume_numbers": "182",
+    "slices": [
+      {
+        "bsb_id": "bsb00110696",
+        "volume_number": "182",
+        "start_canvas": 1,
+        "end_canvas": 250
+      }
+    ]
+  },
+  {
+    "district_id": "vohenstrauss",
+    "district_name": "Vohenstrauß",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6222,
+    "longitude": 12.3422,
+    "total_canvases": 70,
+    "bsb_ids": "bsb00146482",
+    "volume_numbers": "183",
+    "slices": [
+      {
+        "bsb_id": "bsb00146482",
+        "volume_number": "183",
+        "start_canvas": 1,
+        "end_canvas": 70
+      }
+    ]
+  },
+  {
+    "district_id": "volkach",
+    "district_name": "Volkach",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.8661,
+    "longitude": 10.2261,
+    "total_canvases": 94,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 1,
+        "end_canvas": 94
+      }
+    ]
+  },
+  {
+    "district_id": "waldfischbach",
+    "district_name": "Waldfischbach",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.2839,
+    "longitude": 7.6547,
+    "total_canvases": 28,
+    "bsb_ids": "bsb00146484",
+    "volume_numbers": "185",
+    "slices": [
+      {
+        "bsb_id": "bsb00146484",
+        "volume_number": "185",
+        "start_canvas": 1,
+        "end_canvas": 28
+      }
+    ]
+  },
+  {
+    "district_id": "waldmohr",
+    "district_name": "Waldmohr",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.3953,
+    "longitude": 7.3411,
+    "total_canvases": 84,
+    "bsb_ids": "bsb00146485",
+    "volume_numbers": "186",
+    "slices": [
+      {
+        "bsb_id": "bsb00146485",
+        "volume_number": "186",
+        "start_canvas": 1,
+        "end_canvas": 84
+      }
+    ]
+  },
+  {
+    "district_id": "waldmuenchen",
+    "district_name": "Waldmünchen",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.3789,
+    "longitude": 12.7058,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00146486",
+    "volume_numbers": "187",
+    "slices": [
+      {
+        "bsb_id": "bsb00146486",
+        "volume_number": "187",
+        "start_canvas": 1,
+        "end_canvas": 56
+      }
+    ]
+  },
+  {
+    "district_id": "waldsassen",
+    "district_name": "Waldsassen",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0042,
+    "longitude": 12.3086,
+    "total_canvases": 54,
+    "bsb_ids": "bsb00041244",
+    "volume_numbers": "188",
+    "slices": [
+      {
+        "bsb_id": "bsb00041244",
+        "volume_number": "188",
+        "start_canvas": 1,
+        "end_canvas": 54
+      }
+    ]
+  },
+  {
+    "district_id": "wallerstein",
+    "district_name": "Wallerstein",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8886,
+    "longitude": 10.4728,
+    "total_canvases": 109,
+    "bsb_ids": "bsb00044078",
+    "volume_numbers": "189",
+    "slices": [
+      {
+        "bsb_id": "bsb00044078",
+        "volume_number": "189",
+        "start_canvas": 1,
+        "end_canvas": 109
+      }
+    ]
+  },
+  {
+    "district_id": "wassertruedingen",
+    "district_name": "Wassertrüdingen",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0422,
+    "longitude": 10.5986,
+    "total_canvases": 235,
+    "bsb_ids": "bsb00145142",
+    "volume_numbers": "190",
+    "slices": [
+      {
+        "bsb_id": "bsb00145142",
+        "volume_number": "190",
+        "start_canvas": 1,
+        "end_canvas": 235
+      }
+    ]
+  },
+  {
+    "district_id": "wegscheid",
+    "district_name": "Wegscheid",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.6019,
+    "longitude": 13.7867,
+    "total_canvases": 119,
+    "bsb_ids": "bsb00136007",
+    "volume_numbers": "191",
+    "slices": [
+      {
+        "bsb_id": "bsb00136007",
+        "volume_number": "191",
+        "start_canvas": 1,
+        "end_canvas": 119
+      }
+    ]
+  },
+  {
+    "district_id": "weiden",
+    "district_name": "Weiden",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.6758,
+    "longitude": 12.1561,
+    "total_canvases": 28,
+    "bsb_ids": "bsb00145141",
+    "volume_numbers": "192",
+    "slices": [
+      {
+        "bsb_id": "bsb00145141",
+        "volume_number": "192",
+        "start_canvas": 1,
+        "end_canvas": 28
+      }
+    ]
+  },
+  {
+    "district_id": "weihers",
+    "district_name": "Weihers",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.4856,
+    "longitude": 9.8056,
+    "total_canvases": 82,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 95,
+        "end_canvas": 176
+      }
+    ]
+  },
+  {
+    "district_id": "weiler",
+    "district_name": "Weiler",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 47.5819,
+    "longitude": 9.9164,
+    "total_canvases": 85,
+    "bsb_ids": "bsb00028867",
+    "volume_numbers": "194",
+    "slices": [
+      {
+        "bsb_id": "bsb00028867",
+        "volume_number": "194",
+        "start_canvas": 1,
+        "end_canvas": 85
+      }
+    ]
+  },
+  {
+    "district_id": "weismain",
+    "district_name": "Weismain",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0853,
+    "longitude": 11.2392,
+    "total_canvases": 39,
+    "bsb_ids": "bsb00145140",
+    "volume_numbers": "195",
+    "slices": [
+      {
+        "bsb_id": "bsb00145140",
+        "volume_number": "195",
+        "start_canvas": 1,
+        "end_canvas": 39
+      }
+    ]
+  },
+  {
+    "district_id": "weissenburg_i_b",
+    "district_name": "Weißenburg i. B.",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0308,
+    "longitude": 10.9714,
+    "total_canvases": 103,
+    "bsb_ids": "bsb00145139",
+    "volume_numbers": "196",
+    "slices": [
+      {
+        "bsb_id": "bsb00145139",
+        "volume_number": "196",
+        "start_canvas": 1,
+        "end_canvas": 103
+      }
+    ]
+  },
+  {
+    "district_id": "wemding",
+    "district_name": "Wemding",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8744,
+    "longitude": 10.7244,
+    "total_canvases": 294,
+    "bsb_ids": "bsb00094605",
+    "volume_numbers": "198",
+    "slices": [
+      {
+        "bsb_id": "bsb00094605",
+        "volume_number": "198",
+        "start_canvas": 1,
+        "end_canvas": 294
+      }
+    ]
+  },
+  {
+    "district_id": "werneck",
+    "district_name": "Werneck",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.9806,
+    "longitude": 10.1039,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 177,
+        "end_canvas": 232
+      }
+    ]
+  },
+  {
+    "district_id": "wertingen",
+    "district_name": "Wertingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.5558,
+    "longitude": 10.6808,
+    "total_canvases": 50,
+    "bsb_ids": "bsb00009732",
+    "volume_numbers": "199",
+    "slices": [
+      {
+        "bsb_id": "bsb00009732",
+        "volume_number": "199",
+        "start_canvas": 1,
+        "end_canvas": 50
+      }
+    ]
+  },
+  {
+    "district_id": "wiesentheid",
+    "district_name": "Wiesentheid",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.7944,
+    "longitude": 10.3439,
+    "total_canvases": 64,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 233,
+        "end_canvas": 296
+      }
+    ]
+  },
+  {
+    "district_id": "windsheim",
+    "district_name": "Windsheim",
+    "regierungsbezirk": "Mittelfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.5022,
+    "longitude": 10.4167,
+    "total_canvases": 52,
+    "bsb_ids": "bsb00143119",
+    "volume_numbers": "200",
+    "slices": [
+      {
+        "bsb_id": "bsb00143119",
+        "volume_number": "200",
+        "start_canvas": 1,
+        "end_canvas": 52
+      }
+    ]
+  },
+  {
+    "district_id": "winnweiler",
+    "district_name": "Winnweiler",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5692,
+    "longitude": 7.8547,
+    "total_canvases": 126,
+    "bsb_ids": "bsb00144889",
+    "volume_numbers": "201",
+    "slices": [
+      {
+        "bsb_id": "bsb00144889",
+        "volume_number": "201",
+        "start_canvas": 1,
+        "end_canvas": 126
+      }
+    ]
+  },
+  {
+    "district_id": "wolfstein_i_pf",
+    "district_name": "Wolfstein i. Pf.",
+    "regierungsbezirk": "Pfalz",
+    "jurisdiction_type": "Kanton",
+    "latitude": 49.5831,
+    "longitude": 7.6061,
+    "total_canvases": 181,
+    "bsb_ids": "bsb00144890",
+    "volume_numbers": "204",
+    "slices": [
+      {
+        "bsb_id": "bsb00144890",
+        "volume_number": "204",
+        "start_canvas": 1,
+        "end_canvas": 181
+      }
+    ]
+  },
+  {
+    "district_id": "wolfstein_in_niederbayern",
+    "district_name": "Wolfstein in Niederbayern",
+    "regierungsbezirk": "Niederbayern",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.8075,
+    "longitude": 13.5467,
+    "total_canvases": 64,
+    "bsb_ids": "bsb00092985",
+    "volume_numbers": "203",
+    "slices": [
+      {
+        "bsb_id": "bsb00092985",
+        "volume_number": "203",
+        "start_canvas": 1,
+        "end_canvas": 64
+      }
+    ]
+  },
+  {
+    "district_id": "wunsiedel",
+    "district_name": "Wunsiedel",
+    "regierungsbezirk": "Oberfranken",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 50.0378,
+    "longitude": 11.9997,
+    "total_canvases": 51,
+    "bsb_ids": "bsb00144892",
+    "volume_numbers": "206",
+    "slices": [
+      {
+        "bsb_id": "bsb00144892",
+        "volume_number": "206",
+        "start_canvas": 1,
+        "end_canvas": 51
+      }
+    ]
+  },
+  {
+    "district_id": "woerth_a_d_donau",
+    "district_name": "Wörth a.d. Donau",
+    "regierungsbezirk": "Oberpfalz und Regensburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.0006,
+    "longitude": 12.4017,
+    "total_canvases": 198,
+    "bsb_ids": "bsb00003358",
+    "volume_numbers": "202",
+    "slices": [
+      {
+        "bsb_id": "bsb00003358",
+        "volume_number": "202",
+        "start_canvas": 1,
+        "end_canvas": 198
+      }
+    ]
+  },
+  {
+    "district_id": "wuerzburg_stadt",
+    "district_name": "Würzburg (Stadt)",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Stadt",
+    "latitude": 49.7913,
+    "longitude": 9.9534,
+    "total_canvases": 56,
+    "bsb_ids": "bsb00144891",
+    "volume_numbers": "205",
+    "slices": [
+      {
+        "bsb_id": "bsb00144891",
+        "volume_number": "205",
+        "start_canvas": 1,
+        "end_canvas": 56
+      }
+    ]
+  },
+  {
+    "district_id": "wuerzburg_l_d_m",
+    "district_name": "Würzburg l. d. M.",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.78,
+    "longitude": 9.91,
+    "total_canvases": 133,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 385,
+        "end_canvas": 517
+      }
+    ]
+  },
+  {
+    "district_id": "wuerzburg_r_d_m",
+    "district_name": "Würzburg r. d. M.",
+    "regierungsbezirk": "Unterfranken und Aschaffenburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 49.805,
+    "longitude": 9.99,
+    "total_canvases": 88,
+    "bsb_ids": "bsb00146483",
+    "volume_numbers": "184",
+    "slices": [
+      {
+        "bsb_id": "bsb00146483",
+        "volume_number": "184",
+        "start_canvas": 297,
+        "end_canvas": 384
+      }
+    ]
+  },
+  {
+    "district_id": "oettingen",
+    "district_name": "Öttingen",
+    "regierungsbezirk": "Schwaben und Neuburg",
+    "jurisdiction_type": "Landgericht",
+    "latitude": 48.9539,
+    "longitude": 10.605,
+    "total_canvases": 50,
+    "bsb_ids": "bsb00044079",
+    "volume_numbers": "133",
+    "slices": [
+      {
+        "bsb_id": "bsb00044079",
+        "volume_number": "133",
+        "start_canvas": 1,
+        "end_canvas": 50
+      }
+    ]
+  }
+]

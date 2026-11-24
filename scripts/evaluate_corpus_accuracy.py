@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Stratified 30-page in-corpus accuracy evaluation sampler and scorer.
+"""Volume-clustered 30-page in-corpus accuracy evaluation sampler and scorer.
 
 Implements the pre-registered Kurrent Pages Benchmark normalization and alignment
 metrics (`cer_dipl`, `cer_norm`, `cer_norm_lc`, `wer_norm`, `nls_norm`) with
 10,000-draw nonparametric bootstrap 95% confidence intervals.
 
-Subcommands:
-  sample — deterministically select 30 prose pages across 30 distinct volumes
-           (seed=18580421) once corpus transcription is complete.
-  score  — score verified reference transcriptions in `data/eval_sample/references/`
-           against the `re-v1` model outputs and write
-           `data/dataset/in_corpus_accuracy_eval.json` and `.csv`.
+Sampling design note: selects one eligible text-bearing interior page per volume
+(`canvas > 2`, 80–450 model words, digit share < 0.12, non-duplicate) and draws 30
+distinct volumes by uniform stride after a deterministic shuffle (`seed=18580421`).
+Because eligibility depends on model output, blank and catastrophic-output pages are
+excluded; the scorer reports both blind-keyed and ink-adjudicated metrics plus the
+running-prose slice (`n = 25`) explicitly.
 """
 
 from __future__ import annotations
@@ -32,10 +32,19 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG_FILE = ROOT / "data" / "catalog" / "volumes.jsonl"
 TRANSCRIPTS_DIR = ROOT / "data" / "transcripts"
 EVAL_DIR = ROOT / "data" / "eval_sample"
+BLIND_DIR = EVAL_DIR / "blind_keying"
 REF_DIR = EVAL_DIR / "references"
 DATASET_DIR = ROOT / "data" / "dataset"
 
 SEED = 18580421  # Royal Bavarian ministerial rescript date: 21 April 1858
+
+NON_PROSE_PAGE_TYPES = {
+    "eval_01_bsb00009732_p050": "hand_drawn_map",
+    "eval_10_bsb00139797_p031": "tabular_spread",
+    "eval_16_bsb00142852_p043": "ruled_table",
+    "eval_21_bsb00144879_p091": "tabular_spread",
+    "eval_22_bsb00145121_p005": "tabular_spread",
+}
 
 _LIGATURES = {
     "ſ": "s",
@@ -141,6 +150,8 @@ def is_duplicate_pair(prev_text: str, curr_text: str) -> bool:
     b = re.sub(r"\s+", " ", (curr_text or "").strip().lower())
     if len(a) < 200 or len(b) < 200:
         return False
+    if abs(len(a) - len(b)) > max(len(a), len(b)) * 0.25:
+        return False
     return SequenceMatcher(None, a[:1500], b[:1500]).ratio() >= 0.88
 
 
@@ -198,8 +209,8 @@ def cmd_sample(count: int) -> int:
                 "canvas_number": int(page["canvas_number"]),
                 "iiif_image_url": page["iiif_image_url"],
                 "mdz_page_url": f"https://www.digitale-sammlungen.de/de/view/{vol['bsb_id']}?page={page['canvas_number']}",
-                "image_path": str(EVAL_DIR / "images" / f"{sample_id}.jpg"),
-                "reference_path": str(REF_DIR / f"{sample_id}.txt"),
+                "image_path": str((EVAL_DIR / "images" / f"{sample_id}.jpg").relative_to(ROOT)),
+                "reference_path": str((REF_DIR / f"{sample_id}.txt").relative_to(ROOT)),
                 "model_text": page.get("text", ""),
                 "model_raw_text": page.get("raw_text", ""),
                 "incomplete": page.get("incomplete"),
@@ -225,6 +236,8 @@ def cmd_score() -> int:
     total_char_edits = 0
     total_ref_words = 0
     total_word_edits = 0
+    blind_cer_vals: list[float] = []
+    blind_wer_vals: list[float] = []
 
     for item in manifest:
         ref_path = Path(item["reference_path"])
@@ -246,6 +259,16 @@ def cmd_score() -> int:
         w_norm = wer(gold_norm.split(), hyp_norm.split())
         n_norm = nls(gold_norm, hyp_norm)
 
+        blind_path = BLIND_DIR / f"{item['sample_id']}.txt"
+        blind_c_norm = None
+        blind_w_norm = None
+        if blind_path.exists():
+            blind_norm = normalize(strip_markers(blind_path.read_text(encoding="utf-8").strip()))
+            blind_c_norm = round(cer(blind_norm, hyp_norm), 5)
+            blind_w_norm = round(wer(blind_norm.split(), hyp_norm.split()), 5)
+            blind_cer_vals.append(blind_c_norm)
+            blind_wer_vals.append(blind_w_norm)
+
         char_edits = levenshtein(gold_norm, hyp_norm)
         word_edits = levenshtein(gold_norm.split(), hyp_norm.split())
         total_ref_chars += len(gold_norm)
@@ -260,6 +283,7 @@ def cmd_score() -> int:
                 "volume_number": item["volume_number"],
                 "district": item["district"],
                 "canvas_number": item["canvas_number"],
+                "page_type": NON_PROSE_PAGE_TYPES.get(item["sample_id"], "running_prose"),
                 "ref_chars": len(gold_norm),
                 "hyp_chars": len(hyp_norm),
                 "ref_words": len(gold_norm.split()),
@@ -268,6 +292,8 @@ def cmd_score() -> int:
                 "cer_norm_lc": round(c_norm_lc, 5),
                 "wer_norm": round(w_norm, 5),
                 "nls_norm": round(n_norm, 5),
+                "blind_cer_norm": blind_c_norm,
+                "blind_wer_norm": blind_w_norm,
                 "incomplete": item.get("incomplete"),
                 "mdz_page_url": item["mdz_page_url"],
             }
@@ -277,13 +303,18 @@ def cmd_score() -> int:
     wer_vals = [r["wer_norm"] for r in rows]
     cer_dipl_vals = [r["cer_dipl"] for r in rows]
     nls_vals = [r["nls_norm"] for r in rows]
+    prose_rows = [r for r in rows if r["page_type"] == "running_prose"]
+    prose_cer = [r["cer_norm"] for r in prose_rows]
+    prose_wer = [r["wer_norm"] for r in prose_rows]
+    prose_blind_cer = [r["blind_cer_norm"] for r in prose_rows if r["blind_cer_norm"] is not None]
 
     summary = {
         "protocol": "Kurrent Pages Benchmark §4-§5 normalization & alignment",
+        "sampling_design": "Volume-clustered random sample of 30 text-bearing interior pages (canvas > 2, 80-450 model words, digit share < 0.12, non-duplicate) across 30 distinct volumes.",
         "seed": SEED,
         "pages_evaluated": len(rows),
         "distinct_volumes": len({r["bsb_id"] for r in rows}),
-        "verifier_note": "Independent agent image transcription checked word-for-word against IIIF scans; human paleographer check open.",
+        "verifier_note": "Independent LLM-agent blind image transcription plus word-for-word pixel adjudication; human paleographer check open.",
         "total_reference_chars": total_ref_chars,
         "total_reference_words": total_ref_words,
         "median_cer_norm": round(statistics.median(cer_vals), 5),
@@ -297,6 +328,22 @@ def cmd_score() -> int:
         "mean_wer_norm": round(statistics.mean(wer_vals), 5),
         "micro_wer_norm": round(total_word_edits / max(total_ref_words, 1), 5),
         "mean_nls_norm": round(statistics.mean(nls_vals), 5),
+        "blind_keying_summary": {
+            "pages": len(blind_cer_vals),
+            "median_cer_norm": round(statistics.median(blind_cer_vals), 5) if blind_cer_vals else None,
+            "median_cer_norm_ci95": bootstrap_ci(blind_cer_vals, statistics.median) if blind_cer_vals else None,
+            "mean_cer_norm": round(statistics.mean(blind_cer_vals), 5) if blind_cer_vals else None,
+            "median_wer_norm": round(statistics.median(blind_wer_vals), 5) if blind_wer_vals else None,
+        },
+        "running_prose_summary": {
+            "pages": len(prose_rows),
+            "median_cer_norm": round(statistics.median(prose_cer), 5),
+            "mean_cer_norm": round(statistics.mean(prose_cer), 5),
+            "median_wer_norm": round(statistics.median(prose_wer), 5),
+            "min_cer_norm": round(min(prose_cer), 5),
+            "max_cer_norm": round(max(prose_cer), 5),
+            "blind_median_cer_norm": round(statistics.median(prose_blind_cer), 5) if prose_blind_cer else None,
+        },
         "per_page": rows,
     }
 

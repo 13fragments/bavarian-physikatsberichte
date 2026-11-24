@@ -4,26 +4,28 @@ End-to-end harvesting, transcription, accuracy evaluation, and image-verified ex
 
 ## Summary of outputs
 
-1. **Complete transcription (`212` volumes, `26,325` pages):** Compressed per-volume `JSONL` files under `data/transcripts/`, produced with `Kurrent Transcriber 1B` (`huggingface.co/13fragments/kurrent-transcriber-1b`, `CC BY-SA 4.0`, DOI `10.5281/zenodo.24342061`, release stack `re-v1`). Corpus audit (`data/dataset/corpus_audit.json`) flags `498` double-exposed microfilm frames (`25,827` unique pages).
-2. **In-corpus accuracy evaluation (`30` pages, `30` distinct volumes):** Blind image keying plus ink adjudication (`data/eval_sample/references/`), scored with the `Kurrent Pages Benchmark` protocol (`3.45%` median `cer_norm`, `2.99%` across `25` running-prose pages; full per-page table in `data/dataset/in_corpus_accuracy_eval.csv`).
-3. **Image-verified structured epidemiology (`239` canonical districts across 7 regions):** `data/dataset/verified_bavaria_1860_infant_feeding.csv`, `data/dataset/map_bavaria_1860_infant_feeding.geojson`, `data/dataset/epidemiology_summary_stats.json`, and `data/dataset/verification_viewer.html`.
-4. **Image-verified folk-medicine passages (`57` confirmed accounts):** `data/dataset/verified_bavaria_1860_folk_medicine.csv`.
-5. **Publication drafts and cropped figures:** `publication/FACTS.md`, `publication/article_1_infant_feeding_draft.md`, `publication/article_2_folk_medicine_outline_and_quotes.md`, and `publication/figures/`.
+1. **Complete transcription (`212` volumes, `26,325` pages):** Compressed per-volume `JSONL` files under `data/transcripts/`, produced with `Kurrent Transcriber 1B` (`https://huggingface.co/13fragments/kurrent-transcriber-1b`, `CC BY-SA 4.0`, DOI `10.5281/zenodo.24342061`, release stack `re-v1`). Corpus audit (`data/dataset/corpus_audit.json`) verifies exact `1..canvas_count` sequences and flags `498` consecutive duplicate frames (`493` exact image-hash duplicates + `5` text near-duplicates; `25,827` unique pages).
+2. **In-corpus accuracy evaluation (`30` pages, `30` distinct volumes):** LLM-agent blind image keying (`4.33%` median `cer_norm`) plus word-for-word ink adjudication (`3.45%` median `cer_norm`, `2.99%` on `25` running-prose sheets) under the `Kurrent Pages Benchmark` protocol (`data/dataset/in_corpus_accuracy_eval.{csv,json}`).
+3. **Image-verified structured epidemiology (`239` canonical districts across 7 regions):** `data/dataset/verified_bavaria_1860_infant_feeding.csv` and `map_bavaria_1860_infant_feeding.geojson` (separating `imr_pct_of_births` from `infant_share_of_all_deaths_pct` with stillbirth/approximate/age-window flags), `data/dataset/epidemiology_summary_stats.json` (strict sensitivity slices + Mann-Whitney `AUC = 0.922`), and `data/dataset/verification_viewer.html`.
+4. **Passage-level evidence and folk-medicine tables:** `data/dataset/verified_bavaria_1860_folk_medicine.csv` (`57` verified accounts) and `data/dataset/verified_passages.csv` (every primary and secondary quotation cited in Articles 1 and 2).
+5. **Publication drafts and figures:** `publication/FACTS.md`, `publication/article_1_infant_feeding_draft.md`, `publication/article_2_folk_medicine_outline_and_quotes.md`, and `publication/figures/` (eight cropped manuscript strips plus the rendered archival map `fig_bavaria_1860_feeding_map.png`).
 
 ## Pipeline scripts
 
 - `scripts/harvest_catalog.py`: Discovers digitized `BSB Cgm 6874` volumes via B3Kat SRU and MDZ IIIF manifests, verifies `Public Domain Mark 1.0`, and writes `data/catalog/volumes.{jsonl,csv}`.
-- `scripts/colab_worker.py` and `scripts/deploy_colab.py` / `scripts/prepare_shards.py`: Provisions Google Colab GPU shards running the pinned `re-v1` stack and saves per-volume transcripts under `data/transcripts/`.
-- `scripts/audit_corpus.py`: Audits completeness across all `212` volumes and flags consecutive duplicate microfilm frames.
-- `scripts/evaluate_corpus_accuracy.py`: Samples `30` stratified pages (`seed=18580421`) and scores verified references with bootstrap `95%` confidence intervals.
-- `scripts/district_gazetteer_data.py` and `scripts/extract_epidemiology_candidates.py`: Splits collective volumes into `239` canonical 1860 districts and extracts candidate infant-feeding, mortality, and folk-medicine passages.
+- `scripts/colab_worker.py`, `scripts/deploy_colab.py`, and `scripts/prepare_shards.py`: Provisions Google Colab GPU shards running the `re-v1` stack (supports `KURRENT_MODEL_REVISION` pinning) and saves per-volume transcripts under `data/transcripts/`.
+- `scripts/audit_corpus.py`: Validates exact `1..canvas_count` sets across all `212` volumes and distinguishes exact image-hash duplicates from text near-duplicates.
+- `scripts/evaluate_corpus_accuracy.py`: Draws a `30`-page volume-clustered random sample (`seed=18580421`) and scores both blind keyings and ink-adjudicated references with bootstrap `95%` confidence intervals.
+- `scripts/district_gazetteer_data.py` and `scripts/extract_epidemiology_candidates.py`: Splits collective volumes into `239` canonical 1860 districts and extracts candidate infant-feeding, mortality, and folk-medicine passages using dialect-tolerant patterns.
 - `scripts/build_verification_download_manifest.py` and `scripts/download_iiif_targets.py`: Downloads full-resolution IIIF page images locally for image verification.
-- `scripts/compile_verified_datasets.py`: Compiles verified JSON shards into final `CSV`, `GeoJSON`, summary JSON, and `verification_viewer.html`.
-- `scripts/build_article_figures.py`: Crops verified manuscript passage strips into `publication/figures/`.
-- `scripts/build_zenodo_package.py`: Stages the Zenodo and Hugging Face release bundle in `dist/zenodo_package/` with `SHA256SUMS`.
+- `scripts/compile_verified_datasets.py`: Validates all `239` district shards against `districts_index.json` and builds the final `CSV`, `GeoJSON`, `verified_passages.csv`, sensitivity JSON, and `verification_viewer.html`.
+- `scripts/build_article_figures.py` and `scripts/render_bavaria_map.py`: Generates cropped manuscript strips and the static archival map under `publication/figures/`.
+- `scripts/build_zenodo_package.py`: Deterministically (`mtime=0`) stages the complete Zenodo and Hugging Face bundle in `dist/zenodo_package/` from a strict required allowlist with `SHA256SUMS`.
 
-## Licensing and verification status
+## Licensing, archival coverage, and verification status
 
+- **Archival coverage:** `BSB Cgm 6874` covers seven of Bavaria's eight historical *Regierungsbezirke*. Upper Bavaria (*Oberbayern*) passed to the *Historischer Verein von Oberbayern* and is preserved as a deposit in the **Stadtarchiv München**.
 - **Original archival images:** Bayerische Staatsbibliothek (Munich), `Public Domain Mark 1.0`.
-- **Code, transcriptions, and verified datasets:** `13fragments`, `CC BY-SA 4.0`.
-- **Verification note:** All structured records and quotations marked `Agent-checked` (`[A]`) were checked against local BSB IIIF images; independent review by a professional historical paleographer is open before public release.
+- **Pipeline code:** `MIT License` (`LICENSE-CODE.txt`).
+- **Transcriptions, verified tables, and evaluation references:** `13fragments`, `CC BY-SA 4.0` (`LICENSE-DATA.txt`; citation metadata in `CITATION.cff`).
+- **Verification note:** All structured records and quotations marked `Agent-checked` (`[A]`) were checked by an LLM agent against local BSB IIIF images; independent review by a professional historical paleographer is open before public release.

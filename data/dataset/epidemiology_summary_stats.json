@@ -1,46 +1,124 @@
 {
   "total_canonical_districts": 239,
   "agent_checked_districts": 226,
+  "no_candidate_section_districts": 13,
   "infant_feeding_documented_districts": 191,
   "breastfeeding_breakdown": {
     "predominantly_breastfed": 122,
     "mixed_or_short_duration": 36,
     "rarely_or_not_breastfed": 23,
-    "not_documented": 10
+    "feeding_documented_breastfeeding_unstated": 10
   },
   "mehlbrei_breakdown": {
     "predominant_early_diet": 37,
     "supplemental": 92,
-    "explicitly_rare_or_absent": 9
+    "explicitly_rare_or_absent": 9,
+    "not_documented": 53
   },
   "pacifier_used_districts": 61,
   "poppy_opiate_used_districts": 2,
-  "poppy_opiate_explicitly_denied_districts": 0,
   "alcohol_to_infants_used_districts": 15,
+  "alcohol_to_children_all_districts": 16,
   "endemic_goiter_districts": 26,
   "sporadic_goiter_districts": 38,
-  "explicit_mortality_rate_districts": 37,
-  "median_infant_mortality_pct": 29.5,
-  "min_infant_mortality_pct": 16.3,
-  "max_infant_mortality_pct": 50.0,
-  "mortality_by_breastfeeding_status": {
-    "predominantly_breastfed": {
-      "n": 17,
-      "median_pct": 23.0,
-      "mean_pct": 24.5,
-      "min_pct": 16.3,
-      "max_pct": 33.7
+  "birth_cohort_mortality_districts_all": 37,
+  "birth_cohort_mortality_districts_live_births_only": 29,
+  "all_deaths_share_only_districts": 18,
+  "median_imr_pct_all_birth_cohort": 29.5,
+  "median_imr_pct_live_births_only": 29.79,
+  "mortality_sensitivity": {
+    "all_birth_cohort_rates": {
+      "predominantly_breastfed": {
+        "n": 17,
+        "median_pct": 23.03,
+        "mean_pct": 24.51,
+        "min_pct": 16.3,
+        "max_pct": 33.69
+      },
+      "mixed_or_rarely_breastfed": {
+        "n": 9,
+        "median_pct": 40.0,
+        "mean_pct": 39.08,
+        "min_pct": 24.8,
+        "max_pct": 50.0
+      },
+      "median_gap_pp": 16.97,
+      "mann_whitney": {
+        "u": 141.0,
+        "max_u": 153,
+        "auc": 0.9216
+      }
     },
-    "mixed_or_rarely_breastfed": {
-      "n": 9,
-      "median_pct": 40.0,
-      "mean_pct": 39.1,
-      "min_pct": 24.8,
-      "max_pct": 50.0
+    "strict_live_births_only": {
+      "predominantly_breastfed": {
+        "n": 15,
+        "median_pct": 24.05,
+        "mean_pct": 25.22,
+        "min_pct": 17.6,
+        "max_pct": 33.69
+      },
+      "mixed_or_rarely_breastfed": {
+        "n": 7,
+        "median_pct": 40.0,
+        "mean_pct": 39.67,
+        "min_pct": 24.8,
+        "max_pct": 50.0
+      },
+      "median_gap_pp": 15.95,
+      "mann_whitney": {
+        "u": 98.0,
+        "max_u": 105,
+        "auc": 0.9333
+      }
+    },
+    "strict_live_births_excl_approximate": {
+      "predominantly_breastfed": {
+        "n": 15,
+        "median_pct": 24.05,
+        "mean_pct": 25.22,
+        "min_pct": 17.6,
+        "max_pct": 33.69
+      },
+      "mixed_or_rarely_breastfed": {
+        "n": 6,
+        "median_pct": 39.45,
+        "mean_pct": 37.95,
+        "min_pct": 24.8,
+        "max_pct": 47.4
+      },
+      "median_gap_pp": 15.4,
+      "mann_whitney": {
+        "u": 83.0,
+        "max_u": 90,
+        "auc": 0.9222
+      }
+    },
+    "within_mittelfranken_live_births": {
+      "predominantly_breastfed": {
+        "n": 6,
+        "median_pct": 24.93,
+        "mean_pct": 24.99,
+        "min_pct": 17.6,
+        "max_pct": 30.3
+      },
+      "mixed_or_rarely_breastfed": {
+        "n": 2,
+        "median_pct": 39.45,
+        "mean_pct": 39.45,
+        "min_pct": 38.9,
+        "max_pct": 40.0
+      },
+      "median_gap_pp": 14.53,
+      "mann_whitney": {
+        "u": 12.0,
+        "max_u": 12,
+        "auc": 1.0
+      }
     }
   },
-  "ocr_corrections_made_count": 216,
+  "agent_checked_rows_with_logged_ocr_corrections": 217,
   "verified_folk_medicine_passages": 57,
+  "verified_passages_total_rows": 283,
   "by_regierungsbezirk": {
     "Mittelfranken": {
       "total_districts": 32,
@@ -54,9 +132,11 @@
       "poppy_opiate_used": 1,
       "alcohol_to_infants_used": 1,
       "endemic_goiter_or_cretinism": 6,
-      "explicit_mortality_pct_count": 10,
-      "median_infant_mortality_pct": 30.2,
-      "mean_infant_mortality_pct": 29.6
+      "n_all_birth_cohort": 10,
+      "median_imr_pct_all_birth_cohort": 30.2,
+      "mean_imr_pct_all_birth_cohort": 29.56,
+      "n_live_births_only": 10,
+      "median_imr_pct_live_births_only": 30.2
     },
     "Niederbayern": {
       "total_districts": 32,
@@ -70,9 +150,11 @@
       "poppy_opiate_used": 0,
       "alcohol_to_infants_used": 0,
       "endemic_goiter_or_cretinism": 6,
-      "explicit_mortality_pct_count": 2,
-      "median_infant_mortality_pct": 41.8,
-      "mean_infant_mortality_pct": 41.8
+      "n_all_birth_cohort": 2,
+      "median_imr_pct_all_birth_cohort": 41.84,
+      "mean_imr_pct_all_birth_cohort": 41.84,
+      "n_live_births_only": 2,
+      "median_imr_pct_live_births_only": 41.84
     },
     "Oberfranken": {
       "total_districts": 32,
@@ -86,9 +168,11 @@
       "poppy_opiate_used": 0,
       "alcohol_to_infants_used": 3,
       "endemic_goiter_or_cretinism": 1,
-      "explicit_mortality_pct_count": 4,
-      "median_infant_mortality_pct": 22.8,
-      "mean_infant_mortality_pct": 24.0
+      "n_all_birth_cohort": 4,
+      "median_imr_pct_all_birth_cohort": 22.79,
+      "mean_imr_pct_all_birth_cohort": 24.02,
+      "n_live_births_only": 3,
+      "median_imr_pct_live_births_only": 24.8
     },
     "Oberpfalz und Regensburg": {
       "total_districts": 32,
@@ -102,9 +186,11 @@
       "poppy_opiate_used": 0,
       "alcohol_to_infants_used": 3,
       "endemic_goiter_or_cretinism": 3,
-      "explicit_mortality_pct_count": 4,
-      "median_infant_mortality_pct": 40.5,
-      "mean_infant_mortality_pct": 39.9
+      "n_all_birth_cohort": 4,
+      "median_imr_pct_all_birth_cohort": 40.5,
+      "mean_imr_pct_all_birth_cohort": 39.87,
+      "n_live_births_only": 2,
+      "median_imr_pct_live_births_only": 39.24
     },
     "Pfalz": {
       "total_districts": 25,
@@ -118,9 +204,11 @@
       "poppy_opiate_used": 1,
       "alcohol_to_infants_used": 1,
       "endemic_goiter_or_cretinism": 2,
-      "explicit_mortality_pct_count": 5,
-      "median_infant_mortality_pct": 19.7,
-      "mean_infant_mortality_pct": 19.5
+      "n_all_birth_cohort": 5,
+      "median_imr_pct_all_birth_cohort": 19.7,
+      "mean_imr_pct_all_birth_cohort": 19.51,
+      "n_live_births_only": 4,
+      "median_imr_pct_live_births_only": 19.7
     },
     "Schwaben und Neuburg": {
       "total_districts": 38,
@@ -134,9 +222,11 @@
       "poppy_opiate_used": 0,
       "alcohol_to_infants_used": 3,
       "endemic_goiter_or_cretinism": 4,
-      "explicit_mortality_pct_count": 6,
-      "median_infant_mortality_pct": 38.3,
-      "mean_infant_mortality_pct": 38.4
+      "n_all_birth_cohort": 6,
+      "median_imr_pct_all_birth_cohort": 38.3,
+      "mean_imr_pct_all_birth_cohort": 38.38,
+      "n_live_births_only": 4,
+      "median_imr_pct_live_births_only": 38.3
     },
     "Unterfranken und Aschaffenburg": {
       "total_districts": 48,
@@ -150,9 +240,11 @@
       "poppy_opiate_used": 0,
       "alcohol_to_infants_used": 4,
       "endemic_goiter_or_cretinism": 4,
-      "explicit_mortality_pct_count": 6,
-      "median_infant_mortality_pct": 23.4,
-      "mean_infant_mortality_pct": 24.0
+      "n_all_birth_cohort": 6,
+      "median_imr_pct_all_birth_cohort": 23.45,
+      "mean_imr_pct_all_birth_cohort": 24.05,
+      "n_live_births_only": 4,
+      "median_imr_pct_live_births_only": 24.73
     }
   }
 }

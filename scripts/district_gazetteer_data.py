@@ -1,7 +1,7 @@
 """Canonical 1858–1861 Bavarian Physikatsbezirke gazetteer and volume-slice rules.
 
 Maps all 212 BSB Cgm 6874 volumes (including 11 collective multi-district volumes
-and multi-part district filings) to 228 canonical 1860 Bavarian medical districts
+and multi-part district filings) to 239 canonical 1860 Bavarian medical districts
 with historical 1860 Regierungsbezirk assignments and WGS84 seat coordinates.
 """
 
@@ -166,7 +166,7 @@ DISTRICT_COORDINATES: dict[str, tuple[str, float, float]] = {
     "Waldmohr": ("Pfalz", 49.3953, 7.3411),
     "Winnweiler": ("Pfalz", 49.5692, 7.8547),
     "Wolfstein i. Pf.": ("Pfalz", 49.5831, 7.6061),
-    # --- Oberpfalz und Regensburg (30 districts) ---
+    # --- Oberpfalz und Regensburg (32 districts) ---
     "Amberg (Stadt)": ("Oberpfalz und Regensburg", 49.4428, 11.8628),
     "Amberg (Land)": ("Oberpfalz und Regensburg", 49.4520, 11.8750),
     "Auerbach": ("Oberpfalz und Regensburg", 49.6922, 11.6317),
@@ -265,7 +265,7 @@ DISTRICT_COORDINATES: dict[str, tuple[str, float, float]] = {
     "Wassertrüdingen": ("Mittelfranken", 49.0422, 10.5986),
     "Weißenburg i. B.": ("Mittelfranken", 49.0308, 10.9714),
     "Windsheim": ("Mittelfranken", 49.5022, 10.4167),
-    # --- Unterfranken und Aschaffenburg (47 districts) ---
+    # --- Unterfranken und Aschaffenburg (48 districts) ---
     "Alzenau": ("Unterfranken und Aschaffenburg", 50.0872, 9.0725),
     "Amorbach": ("Unterfranken und Aschaffenburg", 49.6447, 9.2219),
     "Arnstein": ("Unterfranken und Aschaffenburg", 49.9781, 9.9692),

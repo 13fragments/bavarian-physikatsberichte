@@ -2,7 +2,7 @@
 """Build the canonical 1860 Bavarian district index and extract topic candidates.
 
 Outputs under `data/dataset/`:
-1. `districts_index.json` & `districts_index.csv` — 237 canonical Bavarian medical
+1. `districts_index.json` & `districts_index.csv` — 239 canonical Bavarian medical
    districts across 7 Regierungsbezirke, with exact volume/canvas slices and WGS84 coords.
 2. `district_epidemiology_candidates.json` — per-district top candidate canvases for:
    - `infant_feeding` (first-year nutrition, breastfeeding, Mehlbrei, pacifiers, poppy/alcohol)
@@ -32,16 +32,18 @@ CATALOG_FILE = ROOT / "data" / "catalog" / "volumes.jsonl"
 TRANSCRIPTS_DIR = ROOT / "data" / "transcripts"
 DATASET_DIR = ROOT / "data" / "dataset"
 
-# OCR-tolerant patterns tailored to Kurrent 1B errors (e.g., Wehlbrei/Mehlbrei, Stertfälle/Sterbfälle)
+# OCR- and dialect-tolerant patterns tailored to 1860 Bavarian Kurrent & Kurrent 1B errors
 PAT_INFANT_CORE = re.compile(
     r"(ersten\s+lebensjahr|erste[ns]?\s+jahr|säugling|neugebor|kinderpflege|ernährung\s+der\s+kinder|"
-    r"kinderernährung|kindersterblichkeit|mutterbrust|brust\s+gereicht|gestillt|stillen\s+der|"
-    r"[mw]ehlbrei|kindsmus|kindsbrei|schnuller|schlotzer|zulp|luller|sauglappen|"
+    r"kinderernährung|kindersterblichkeit|mutterbrust|mutterkunst|brust\s+gereicht|selbststill|gestillt|"
+    r"stillen\s+der|säugen|gesäugt|säugung|[mw]ehlbrei|kindsmu[sß]|kindsbrei|schnuller|"
+    r"saugschlo[tz]er|schlo[tz]er|zulp|zulze|zuzel|luller|sauglappen|"
     r"mohn|schlafmohn|opium|theriak|branntwein|schnaps|schmack)",
     re.IGNORECASE,
 )
 PAT_INFANT_HIGH = re.compile(
-    r"(ersten\s+lebensjahr|[mw]ehlbrei|mutterbrust|gestillt|schnuller|schlotzer|zulp|luller|"
+    r"(ersten\s+lebensjahr|[mw]ehlbrei|mutterbrust|selbststill|gestillt|säugen|gesäugt|"
+    r"schnuller|saugschlo[tz]er|schlo[tz]er|zulp|zulze|zuzel|luller|"
     r"mohnk[öo]pf|schlafmohn|mohnabsud|kindersterblichkeit)",
     re.IGNORECASE,
 )

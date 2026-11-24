@@ -25,6 +25,8 @@ import urllib.error
 import urllib.request
 
 MODEL_REPO = "13fragments/kurrent-transcriber-1b"
+# Pin exact Hugging Face commit SHA when reproducing a release run; override via --model-revision.
+MODEL_REVISION = os.environ.get("KURRENT_MODEL_REVISION", "main")
 MODEL_DIR = Path("/content/kurrent-transcriber-1b")
 SERVE_VENV = Path("/content/serve")
 CLIENT_VENV = Path("/content/client")
@@ -61,7 +63,7 @@ def bootstrap_envs_and_reexec() -> None:
             [
                 sys.executable,
                 "-c",
-                f"from huggingface_hub import snapshot_download; snapshot_download({MODEL_REPO!r}, local_dir={str(MODEL_DIR)!r})",
+                f"from huggingface_hub import snapshot_download; snapshot_download({MODEL_REPO!r}, revision={MODEL_REVISION!r}, local_dir={str(MODEL_DIR)!r})",
             ]
         )
 

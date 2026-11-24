@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Bavarian Physikatsberichte (BSB Cgm 6874, 1858-1861): Complete Transcription and Verified Epidemiology Dataset"
+message: "If you use this dataset or pipeline, please cite it using the metadata below."
+type: dataset
+authors:
+  - name: "13fragments"
+url: "https://github.com/13fragments/bavarian-physikatsberichte"
+repository-code: "https://github.com/13fragments/bavarian-physikatsberichte"
+license: "CC-BY-SA-4.0"
+version: "0.9.0-pre-paleographer-review"
+date-released: "2026-11-24"
+keywords:
+  - historical-demography
+  - handwritten-text-recognition
+  - kurrent
+  - bavaria
+  - physikatsberichte
+  - infant-mortality
+  - folk-medicine
+references:
+  - type: software
+    title: "Kurrent Transcriber 1B"
+    authors:
+      - name: "13fragments"
+    doi: "10.5281/zenodo.24342061"
+    url: "https://huggingface.co/13fragments/kurrent-transcriber-1b"

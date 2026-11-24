@@ -1,0 +1,21 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+Copyright (c) 2026 13fragments
+
+All machine transcriptions, image-verified annotations, structured CSV/GeoJSON
+tables, evaluation references, and dataset documentation in this repository and
+release package are licensed under the Creative Commons Attribution-ShareAlike
+4.0 International License (CC BY-SA 4.0):
+
+  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Source manuscript images from the Bayerische Staatsbibliothek (Munich), shelfmark
+series BSB Cgm 6874(1) through BSB Cgm 6874(207), are in the public domain under
+Public Domain Mark 1.0 (https://creativecommons.org/publicdomain/mark/1.0/).
+Please credit the Bayerische Staatsbibliothek and the individual volume call
+number when reusing manuscript images.
+
+Source model attribution:
+  Kurrent Transcriber 1B (13fragments), CC BY-SA 4.0
+  https://huggingface.co/13fragments/kurrent-transcriber-1b
+  DOI: 10.5281/zenodo.24342061

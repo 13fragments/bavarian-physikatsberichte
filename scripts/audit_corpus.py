@@ -67,8 +67,18 @@ def main() -> int:
         with gzip.open(path, "rt", encoding="utf-8") as gz:
             pages = [json.loads(ln) for ln in gz if ln.strip()]
         pages.sort(key=lambda x: int(x["canvas_number"]))
-        if len(pages) != expected:
-            page_mismatches.append({"bsb_id": bid, "expected": expected, "actual": len(pages)})
+        canvas_nums = [int(p["canvas_number"]) for p in pages]
+        expected_seq = list(range(1, expected + 1))
+        if canvas_nums != expected_seq:
+            page_mismatches.append(
+                {
+                    "bsb_id": bid,
+                    "expected": expected,
+                    "actual": len(pages),
+                    "missing_canvases": sorted(set(expected_seq) - set(canvas_nums))[:20],
+                    "duplicate_canvases": len(canvas_nums) - len(set(canvas_nums)),
+                }
+            )
         prev_page = None
         for p in pages:
             total_pages += 1
@@ -92,6 +102,9 @@ def main() -> int:
             if prev_page is not None and int(p["canvas_number"]) == int(prev_page["canvas_number"]) + 1:
                 dup, sim = is_duplicate_pair(prev_page.get("text", ""), p.get("text", ""))
                 if dup:
+                    prev_sha = (prev_page.get("image_step") or {}).get("sent_sha256", "")
+                    curr_sha = (p.get("image_step") or {}).get("sent_sha256", "")
+                    same_img_hash = bool(prev_sha and curr_sha and prev_sha == curr_sha)
                     duplicate_frames.append(
                         {
                             "bsb_id": bid,
@@ -99,10 +112,14 @@ def main() -> int:
                             "canvas_number": int(p["canvas_number"]),
                             "duplicate_of_canvas": int(prev_page["canvas_number"]),
                             "similarity": sim,
+                            "same_image_sha256": same_img_hash,
+                            "duplicate_method": "exact_image_hash_and_text" if same_img_hash else "text_near_duplicate",
                         }
                     )
             prev_page = p
 
+    exact_hash_dups = sum(1 for d in duplicate_frames if d["same_image_sha256"])
+    text_near_dups = len(duplicate_frames) - exact_hash_dups
     summary = {
         "admitted_volumes": len(admitted),
         "completed_volumes": len(admitted) - len(missing_volumes),
@@ -112,6 +129,8 @@ def main() -> int:
         "unique_non_duplicate_pages": total_pages - len(duplicate_frames),
         "expected_total_pages": sum(int(v["canvas_count"]) for v in admitted),
         "duplicate_consecutive_frames_count": len(duplicate_frames),
+        "duplicate_exact_image_hash_count": exact_hash_dups,
+        "duplicate_text_near_match_count": text_near_dups,
         "incomplete_repetition_pages_count": len(incomplete_pages),
         "incomplete_repetition_share": round(len(incomplete_pages) / max(total_pages, 1), 5),
         "runs_removed_pages_count": runs_removed_count,

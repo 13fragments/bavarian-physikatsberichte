@@ -38,6 +38,14 @@ VALID_MEHLBREI = {
     "explicitly_rare_or_absent",
     "not_documented",
 }
+# Shared by goiter_status and cretinism_status; each column describes one condition only.
+CONDITION_STATUSES = (
+    "endemic_or_frequent",
+    "sporadic_or_localized",
+    "explicitly_absent",
+    "not_documented",
+)
+CONDITION_COLUMNS = ("goiter_status", "cretinism_status")
 VALID_DENOMINATORS = {"live_births", "total_births_incl_stillborn", "all_deaths", "not_applicable", ""}
 VALID_VERIFICATION = {"Agent-checked", "No-relevant-section", "Seen"}
 
@@ -208,6 +216,10 @@ def group_summary(vals: list[float]) -> dict[str, float | int | None]:
     }
 
 
+def condition_breakdown(rows: list[dict], column: str) -> dict[str, int]:
+    return {status: sum(1 for r in rows if r[column] == status) for status in CONDITION_STATUSES}
+
+
 def validate_district_rows(district_rows: list[dict]) -> None:
     expected_index = json.loads(DISTRICTS_INDEX_JSON.read_text(encoding="utf-8"))
     expected_ids = {d["district_id"] for d in expected_index}
@@ -225,6 +237,9 @@ def validate_district_rows(district_rows: list[dict]) -> None:
             raise ValueError(f"{r['district_id']}: invalid breastfeeding_status={r.get('breastfeeding_status')}")
         if r.get("mehlbrei_gruel_status") not in VALID_MEHLBREI:
             raise ValueError(f"{r['district_id']}: invalid mehlbrei_gruel_status={r.get('mehlbrei_gruel_status')}")
+        for col in CONDITION_COLUMNS:
+            if r.get(col) not in CONDITION_STATUSES:
+                raise ValueError(f"{r['district_id']}: invalid {col}={r.get(col)}")
         if (r.get("infant_mortality_denominator") or "") not in VALID_DENOMINATORS:
             raise ValueError(f"{r['district_id']}: invalid denominator={r.get('infant_mortality_denominator')}")
         if r.get("verification_status") not in VALID_VERIFICATION:
@@ -299,7 +314,8 @@ def main() -> int:
         "is_approximate",
         "age_window",
         "infant_mortality_detail",
-        "goiter_cretinism_status",
+        "goiter_status",
+        "cretinism_status",
         "primary_bsb_id",
         "primary_canvas",
         "mdz_page_url",
@@ -451,9 +467,8 @@ def main() -> int:
             "pacifier_used": sum(1 for r in sub_doc if r["pacifier_status"] == "used"),
             "poppy_opiate_used": sum(1 for r in sub_doc if r["poppy_opiate_sedative"] == "documented_used"),
             "alcohol_to_infants_used": sum(1 for r in sub_doc if r["alcohol_to_infants"] == "documented_used"),
-            "endemic_goiter_or_cretinism": sum(
-                1 for r in sub_all if r["goiter_cretinism_status"] == "endemic_or_frequent"
-            ),
+            "endemic_goiter": sum(1 for r in sub_all if r["goiter_status"] == "endemic_or_frequent"),
+            "endemic_cretinism": sum(1 for r in sub_all if r["cretinism_status"] == "endemic_or_frequent"),
             "n_all_birth_cohort": len(all_bc),
             "median_imr_pct_all_birth_cohort": round(statistics.median(all_bc), 2) if all_bc else None,
             "mean_imr_pct_all_birth_cohort": round(statistics.mean(all_bc), 2) if all_bc else None,
@@ -508,8 +523,8 @@ def main() -> int:
         "poppy_opiate_used_districts": sum(1 for r in documented if r["poppy_opiate_sedative"] == "documented_used"),
         "alcohol_to_infants_used_districts": sum(1 for r in documented if r["alcohol_to_infants"] == "documented_used"),
         "alcohol_to_children_all_districts": sum(1 for r in district_rows if r["alcohol_to_infants"] == "documented_used"),
-        "endemic_goiter_districts": sum(1 for r in district_rows if r["goiter_cretinism_status"] == "endemic_or_frequent"),
-        "sporadic_goiter_districts": sum(1 for r in district_rows if r["goiter_cretinism_status"] == "sporadic_or_localized"),
+        "goiter_breakdown": condition_breakdown(district_rows, "goiter_status"),
+        "cretinism_breakdown": condition_breakdown(district_rows, "cretinism_status"),
         "birth_cohort_mortality_districts_all": len(all_bc_vals),
         "birth_cohort_mortality_districts_live_births_only": len(live_vals),
         "all_deaths_share_only_districts": sum(
@@ -562,7 +577,7 @@ def main() -> int:
       <blockquote>"{html.escape(r['verified_german_quote'])}"</blockquote>
       <p class="en">{html.escape(r['english_translation'])}</p>
       <p class="meta"><strong>Mortality:</strong> {html.escape(mort_str)} — {html.escape(str(r.get('infant_mortality_detail') or ''))}<br>
-      <strong>Poppy/opiate:</strong> {html.escape(r['poppy_opiate_sedative'])} · <strong>Alcohol:</strong> {html.escape(r['alcohol_to_infants'])} · <strong>Goiter:</strong> {html.escape(r['goiter_cretinism_status'])}<br>
+      <strong>Poppy/opiate:</strong> {html.escape(r['poppy_opiate_sedative'])} · <strong>Alcohol:</strong> {html.escape(r['alcohol_to_infants'])} · <strong>Goiter:</strong> {html.escape(r['goiter_status'])} · <strong>Cretinism:</strong> {html.escape(r['cretinism_status'])}<br>
       <strong>Verification:</strong> {html.escape(r['verification_status'])} ({html.escape(r.get('ocr_corrections_noted') or '')})</p>
     </div>
   </div>

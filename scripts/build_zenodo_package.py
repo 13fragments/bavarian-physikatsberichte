@@ -32,6 +32,7 @@ REQUIRED_DATASET_FILES = (
     "corpus_audit.json",
     "districts_index.csv",
     "epidemiology_summary_stats.json",
+    "goiter_cretinism_status_mapping.csv",
     "in_corpus_accuracy_eval.csv",
     "in_corpus_accuracy_eval.json",
     "map_bavaria_1860_infant_feeding.geojson",

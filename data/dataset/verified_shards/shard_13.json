@@ -191,7 +191,7 @@
     "infant_mortality_pct": 29.5,
     "infant_mortality_denominator": "all_deaths",
     "infant_mortality_detail": "27-year mortality table (1834–1860, canvas 62) and text (canvas 55): 3,110 deaths aged 0–1 out of 10,539 total deaths (annual average 115 of 390 = 29.5% of all deaths, nearly one third; plus 470 stillbirths, avg 17/yr).",
-    "goiter_status": "not_documented",
+    "goiter_status": "sporadic_or_localized",
     "cretinism_status": "not_documented",
     "primary_bsb_id": "bsb00105945",
     "primary_canvas": 55,

@@ -5,7 +5,8 @@ Reads `data/dataset/verified_bavaria_1860_infant_feeding.csv` and writes one
 SVG per figure under `publication/figures/`:
 
 - `feeding`: Figure 2 of Article 1, infant feeding (`fig_bavaria_1860_feeding_map.svg`).
-- `goiter`: goiter and cretinism (`fig_bavaria_1860_goiter_map.svg`).
+- `goiter`: goiter only, from `goiter_status` (`fig_bavaria_1860_goiter_map.svg`).
+  Cretinism has its own column, `cretinism_status`, and is not drawn.
 
 With Google Chrome available, it also writes a 2x PNG next to each SVG.
 Run `python3 scripts/render_bavaria_map.py [--figure feeding|goiter|all]`.
@@ -144,30 +145,31 @@ FEEDING = Figure(
 
 GOITER = Figure(
     svg_name="fig_bavaria_1860_goiter_map.svg",
-    column="goiter_cretinism_status",
+    column="goiter_status",
     status={
         "endemic_or_frequent": ("#a3292b", "Endemic or frequent"),
-        "sporadic_or_localized": ("#d08c1a", "Sporadic or in some villages"),
-        "explicitly_absent": ("#2b5c8a", "Reported absent or rare"),
+        "sporadic_or_localized": ("#d08c1a", "Rare or in some places"),
+        "explicitly_absent": ("#2b5c8a", "Reported absent"),
         "not_documented": ("none", "Not captured in verified pages"),
     },
     draw_order=("not_documented", "explicitly_absent", "sporadic_or_localized", "endemic_or_frequent"),
     legend_order=("endemic_or_frequent", "sporadic_or_localized", "explicitly_absent", "not_documented"),
     hollow="not_documented",
-    # Districts quoted in publication/posts/06_goiter_iodine.md.
+    # Districts quoted in publication/posts/06_goiter_iodine.md. Wiesentheid is quoted on cretinism
+    # and has no verified goiter statement, so its point is hollow.
     callouts=(
         ("wiesentheid", "Wiesentheid"),
         ("weiler", "Weiler"),
         ("schillingsfuerst", "Schillingsfürst"),
-        ("rothenfels", "Rothenfels"),
+        ("uffenheim", "Uffenheim"),
         ("eltmann", "Eltmann"),
     ),
-    title="Goiter and cretinism at the seats of 239 Bavarian districts, 1858 to 1861",
-    desc="Each point is a district seat, colored by how the district physician described goiter or cretinism. "
-    "The source table has one column for both conditions, so a color can rest on a statement about only one of them. "
-    "Red points: endemic or frequent. Amber points: sporadic or limited to some villages. Blue points: the physician "
-    "reports goiter or cretinism absent or rare. Hollow points: no statement was captured in the image-verified pages, "
-    "which does not mean the conditions were absent. Upper Bavaria is blank because its reports are not in this "
+    title="Goiter at the seats of 239 Bavarian districts, 1858 to 1861",
+    desc="Each point is a district seat, colored by how the district physician described goiter (Kropf). "
+    "Red points: goiter endemic or frequent. Amber points: goiter rare, limited to some places, or reported without "
+    "being called frequent. The blue point, Nittenau: the physician found no one with goiter. Hollow points: no goiter "
+    "statement was captured in the image-verified pages, which does not mean that goiter was absent. Cretinism has a "
+    "separate column in the dataset and is not shown. Upper Bavaria is blank because its reports are not in this "
     "collection.",
     hollow_stroke="#c4c4c4",
     hollow_r=2.4,

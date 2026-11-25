@@ -1,8 +1,8 @@
 # Post 6: The doctor who weighed the iodine theory and set it aside
 
 - **Type:** quick post with map, or short thread.
-- **Status:** quotes checked against the page images (verification log: `verification/goiter.md`). The map uses the combined goiter and cretinism column of the image-verified district table (`data/dataset/verified_bavaria_1860_infant_feeding.csv`). One page from the first keyword search failed: Vilseck says scrofula (*Scropheln*), not goiter, and is left out.
-- **Image 1:** `publication/figures/fig_bavaria_1860_goiter_map.png` (district seats colored by how the physician described goiter and cretinism).
+- **Status:** quotes checked against the page images (verification log: `verification/goiter.md`). The map uses the goiter column, `goiter_status`, of the image-verified district table (`data/dataset/verified_bavaria_1860_infant_feeding.csv`). Cretinism has its own column, `cretinism_status`, and is not on the map. Both columns are not yet in a published dataset version (see Caveats). One page from the first keyword search failed: Vilseck says scrofula (*Scropheln*), not goiter, and is left out.
+- **Image 1:** `publication/figures/fig_bavaria_1860_goiter_map.png` (district seats colored by how the physician described goiter).
 - **Image 2:** Wiesentheid, `bsb00146483` canvas 265, crop of "der Jodgehalt der Luft und der Nahrungsmittel ist vorerst noch zweifelhaft, sein Einfluß aber jedenfalls untergeordnet." Viewer: https://www.digitale-sammlungen.de/de/view/bsb00146483?page=265
 
 ## Single post
@@ -11,7 +11,7 @@ Franconia, around 1860. The Wiesentheid doctor weighs every theory of cretinism,
 
 ## Short thread
 
-1. Goiter and cretinism were common in parts of Bavaria around 1860. The district physicians described them, district by district. The map shows where they called goiter or cretinism endemic or frequent (red), sporadic or local (amber), or absent or rare (blue).
+1. Goiter and cretinism were common in parts of Bavaria around 1860. The district physicians described them, district by district. The map shows goiter: where they called it endemic or frequent (red), rare or local (amber), or absent (blue).
 
 2. Their explanations fit their time. Uffenheim: "in the female sex the carrying of heavy loads on the head is a not uncommon cause of the development of goiter." Zeil, near Eltmann: goiters, especially in women, "may come from heavy work, births, the carrying of heavy loads."
 
@@ -25,7 +25,7 @@ Franconia, around 1860. The Wiesentheid doctor weighs every theory of cretinism,
 
 7. Weiler, in the Allgäu: women "are often disfigured by fat necks and goiters", and "there are some families in which nearly all the children approach cretinism." Schillingsfürst: in the upper Tauber valleys, "cretinism occurs here in all its variations."
 
-8. Source: the 1858-1861 Bavarian district physicians' reports (Bayerische Staatsbibliothek, Cgm 6874), open data: https://doi.org/10.5281/zenodo.24523214
+8. Source: the 1858-1861 Bavarian district physicians' reports (Bayerische Staatsbibliothek, Cgm 6874), open data: https://doi.org/10.5281/zenodo.24523213
 
 ## Original German
 
@@ -39,9 +39,10 @@ Franconia, around 1860. The Wiesentheid doctor weighs every theory of cretinism,
 
 ## Caveats
 
-- **The map is thin.** Only 74 of 239 districts have a goiter or cretinism statement in the image-verified pages (26 endemic or frequent, 38 sporadic or localized, 10 absent or rare). The verification pass looked for infant feeding first, so a hollow point means "not captured", not "no goiter". Say so in the post or the alt text.
-- **One column for two conditions.** The table records goiter and cretinism in one column, so a color can rest on a statement about only one of them. Dingolfing (blue) reports no cretins and says nothing about goiter. Bayreuth Stadt and Herzogenaurach (blue) report almost no goiter, not none. Say "goiter or cretinism" in the post and the alt text.
-- **Possible table error, Uffenheim.** The verified table marks Uffenheim as "explicitly absent", but canvas 43 names goiter in women as "not uncommon". The two statements may refer to different things (for example, cretinism absent but goiter present), or the table may be wrong. Check the Uffenheim row before you post the map, and correct the dataset if needed.
+- **Dataset version.** `goiter_status` and `cretinism_status` are not in the published version `0.9.0-pre-paleographer-review` (DOI `10.5281/zenodo.24523214`), which has only the combined column `goiter_cretinism_status`. Publish the next dataset version before this post, so that the source link holds the data on the map. Part 8 links the concept DOI, which resolves to the newest version.
+- **The map is thin.** Only 34 of 239 districts have a goiter statement in the image-verified pages (13 endemic or frequent, 20 rare or local, 1 absent: Nittenau). The verification pass looked for infant feeding first, so a hollow point means "not captured", not "no goiter". Say so in the post or the alt text. The old combined column marked 74 districts; 27 of them are hollow now because the recorded evidence does not settle either condition. They are queued for image checks (`DATACARD.md`, section 8).
+- **Goiter only.** Cretinism is in its own column (5 endemic or frequent, 17 rare or local, 5 absent) and is not on the map. Wiesentheid and Schillingsfürst are quoted on cretinism. Wiesentheid is a hollow point because no goiter statement from its pages was verified; Schillingsfürst is red for goiter. Dingolfing (no cretins, nothing on goiter) and Herzogenaurach (almost no goiter among men, nothing on women) are hollow. Bayreuth Stadt (almost no goiter) is amber.
+- **Uffenheim, resolved.** The table now records goiter as present (`sporadic_or_localized`, canvas 43) and cretinism as absent (`explicitly_absent`, canvas 21). Its point is amber. The physician calls heavy loads "a not uncommon cause" of goiter in women; he does not say that goiter is frequent.
 - The list of theories on canvas 264 is the Wiesentheid physician's summary of another author, cited from an 1858 journal. The iodine sentence on canvas 265 is his own judgment.
 - Weiler: "bereits" is the Swabian sense "nearly", so "nearly all the children".
 - Thread part 6 is modern medical context, not in the reports.

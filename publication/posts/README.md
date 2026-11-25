@@ -28,7 +28,7 @@ Two pieces were released on 2026-11-25: Article 1, "Feeding and Survival in 1860
 | Tue 2026-12-15 | [04](04_coffee_without_coffee.md) Coffee without coffee | Food topic, one week after Post 07. |
 | Thu 2026-12-17 | [10](10_civil_war_emigration.md) Civil War emigration | Quick post before the holiday pause. |
 | 2026-12-21 to 2027-01-03 | Pause | Holidays, low reach. |
-| Tue 2027-01-05 | [06](06_goiter_iodine.md) Goiter and map | Check the Uffenheim row first (see the open dataset issue below). |
+| Tue 2027-01-05 | [06](06_goiter_iodine.md) Goiter and map | Publish the dataset version with the goiter column first (see the dataset issue below). |
 | Tue 2027-01-12 | [03](03_marriage_permits.md) Marriage permits | Four weeks after Post 10, which also covers emigration. Confirm the Knodel citation first. |
 | Tue 2027-01-19 | [01](01_malaria_danube.md) Malaria | Confirm the external malaria dates first. |
 | A few days before the folk medicine article | [05](05_trud_sleep_paralysis.md) *Trud* | Folk belief, so it works as a teaser for the folk medicine article. |
@@ -55,6 +55,10 @@ The verifying agents are LLMs, like the Gemini agents that checked the dataset t
 - Viewer links use the dataset canvas number as `?page=`. In volumes where the library manifest lists images twice (`bsb00009733` Lauingen, `bsb00009735` Bissingen), the viewer counts canvases, so these links are still correct.
 - Credit the images as "Bayerische Staatsbibliothek München, Cgm 6874, Public Domain Mark 1.0" and the transcription as "13fragments, CC BY-SA 4.0".
 
-## Open dataset issue found during the checks
+## Dataset issue found during the checks (closed)
 
-The verified district table has one column, `goiter_cretinism_status`, for two conditions. Uffenheim shows the problem. The table marks it `explicitly_absent` because canvas 21 says cretinism is absent, but canvas 43 calls carrying heavy loads on the head "a not uncommon cause" of goiter in women. One value cannot record both statements. Before the next dataset release, correct the Uffenheim row or split the column into one column for goiter and one for cretinism. Until then, the goiter map and Post 06 say "goiter or cretinism".
+The verified district table had one column, `goiter_cretinism_status`, for two conditions. Uffenheim showed the problem. The table marked it `explicitly_absent` because canvas 21 says cretinism is absent, but canvas 43 calls carrying heavy loads on the head "a not uncommon cause" of goiter in women. One value could not record both statements.
+
+The column is now split into `goiter_status` and `cretinism_status`. Uffenheim has goiter `sporadic_or_localized` and cretinism `explicitly_absent`. The goiter map and Post 06 show goiter only. The release notes are in `DATACARD.md`, section 8, and the evidence for each district is in `data/dataset/goiter_cretinism_status_mapping.csv`.
+
+The split is not yet in a published dataset version. The owner publishes the next version on Zenodo and Hugging Face. Do this before Post 06, because the post links the dataset as the source of the map.

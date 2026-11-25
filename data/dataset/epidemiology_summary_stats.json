@@ -20,14 +20,14 @@
   "alcohol_to_infants_used_districts": 15,
   "alcohol_to_children_all_districts": 16,
   "goiter_breakdown": {
-    "endemic_or_frequent": 22,
+    "endemic_or_frequent": 23,
     "sporadic_or_localized": 34,
     "explicitly_absent": 1,
-    "not_documented": 182
+    "not_documented": 181
   },
   "cretinism_breakdown": {
-    "endemic_or_frequent": 6,
-    "sporadic_or_localized": 26,
+    "endemic_or_frequent": 5,
+    "sporadic_or_localized": 27,
     "explicitly_absent": 8,
     "not_documented": 199
   },
@@ -217,8 +217,8 @@
       "pacifier_used": 4,
       "poppy_opiate_used": 1,
       "alcohol_to_infants_used": 1,
-      "endemic_goiter": 0,
-      "endemic_cretinism": 1,
+      "endemic_goiter": 1,
+      "endemic_cretinism": 0,
       "n_all_birth_cohort": 5,
       "median_imr_pct_all_birth_cohort": 19.7,
       "mean_imr_pct_all_birth_cohort": 19.51,

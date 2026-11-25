@@ -14,8 +14,8 @@ Result: `25` of the `27` districts now have a value for at least one condition. 
 
 The section 5 definitions leave three cases open. The rules below follow the coding of the `47` rows already settled in `goiter_cretinism_status_mapping.csv`.
 
-1. **Frequent, but only in named towns or villages: `sporadic_or_localized`.** The definition of `sporadic_or_localized` includes "limits it to some places". This follows `Kitzingen`, `Königshofen im Grabfeld`, `Landshut (Land)`, and `Eltmann`. It applies to `Bergzabern` (the town only), `Markt Bibart` cretinism (three places), `Marktbreit` cretinism (Bullenheim), and `Miltenberg` (four places). One settled row, `Kandel` (endemic cretinism in Hagenbach and Rheinzabern, `endemic_or_frequent`), does not follow this rule; it was not changed here.
-2. **Frequent in a whole natural region of the district: `endemic_or_frequent`.** This follows `Deggendorf` (goiter frequent in the *Waldgegend*). It applies to `Wörth a.d. Donau` goiter.
+1. **Frequent, but only in named towns or villages: `sporadic_or_localized`.** The definition of `sporadic_or_localized` includes "limits it to some places". This follows `Kitzingen`, `Königshofen im Grabfeld`, `Landshut (Land)`, and `Eltmann`. It applies to `Bergzabern` (the town only), `Markt Bibart` cretinism (three places), `Marktbreit` cretinism (Bullenheim), `Miltenberg` (four places), and `Kandel` cretinism (see the addendum).
+2. **Frequent in a whole natural region of the district: `endemic_or_frequent`.** This follows `Deggendorf` (goiter frequent in the *Waldgegend*). It applies to `Wörth a.d. Donau` goiter and `Kandel` goiter.
 3. **Conscription defects: `endemic_or_frequent` when the physician names goiter among the main defects, or when his own count makes it the largest cause of unfitness.** This follows `Griesbach`, `Kemnath`, and `Hofheim`. It applies to `Ottobeuren`, `Rehau`, `Windsheim`, and `Amberg (Stadt)`. Counts in which goiter is a minor cause are `sporadic_or_localized`, as in `Fürth` and `Regensburg (Land)`. This applies to `Amberg (Land)` and `Markt Erlbach`.
 4. **"Nicht selten" (not rare) is not "frequent": `sporadic_or_localized`.** This follows `Eltmann` (Zeil) and `Uffenheim`. It applies to `Sulzbach`.
 5. **Cretin-like or near-cretinous persons count as cretinism evidence**, as in `Rothenfels` and `Weiler`. This applies to `Bergzabern`, `Miltenberg`, and `Wolfstein i. Pf.`
@@ -276,6 +276,20 @@ The section 5 definitions leave three cases open. The rules below follow the cod
 - Confidence: high.
 - Caveats: canvas 65 denies endemic goiter, not goiter; canvas 71-72 reports thyroid swelling in all forms. The former value `explicitly_absent` is not supported. Cretinism evidence is "cretinism-like" (rule 5). Canvas 144 (machine text, not read) names goiter as a result of women carrying loads on the head.
 
+## Addendum: Kandel
+
+`Kandel` was not one of the `27` rows. The split had coded it goiter `not_documented` and cretinism `endemic_or_frequent` from the shard note "endemic cretinism in Hagenbach and Rheinzabern". It was checked against the images to apply rule 1 consistently. The check found a goiter statement on canvas 28 as well, so both values change.
+
+### kandel_c28  (Kandel, Pfalz; bsb00144884 canvas 28 and 31; https://www.digitale-sammlungen.de/de/view/bsb00144884?page=28)
+- Coding: goiter `endemic_or_frequent` (was `not_documented`); cretinism `sporadic_or_localized` (was `endemic_or_frequent`).
+- German (ink), canvas 28: "Im Durchschnitt sind die Bewohner der Rheinniederungen von weniger kräftigen Leibesbeschaffenheit, ihre Gesichtsfarbe zwar sehr verwettert aber mehr bleich als frisch; [...] Beym weiblichen Geschlechte sind Kröpfe sehr häufig und selbst bey den Männern nicht selten."
+- English: "On average the inhabitants of the Rhine lowlands are of less robust build, their complexion very weathered but more pale than fresh; [...] In the female sex goiters are very frequent, and even among the men not rare."
+- German (ink), canvas 31: "In mehreren dem Rheine nahe gelegenen Gemeinden, ist von jeher der Cretinismus endemisch, so in Hagenbach, das früher ein mit Mauern umgebenes eng gebautes schmutziges altes Reichsstädtchen war, und in Rheinzabern, [...] Die Ursache des in diesen beyden Gemeinden herrschenden Cretinismus [...]"
+- English: "In several communities near the Rhine cretinism has always been endemic, such as Hagenbach, formerly a walled, narrowly built, dirty old imperial town, and Rheinzabern, [...] The cause of the cretinism prevailing in these two communities [...]"
+- Corrections against the machine text: canvas 28 "Rheinwiederungen" -> "Rheinniederungen", "krüchtigen Leibesbescheidenheit" -> "kräftigen Leibesbeschaffenheit", "nicht halten" -> "nicht selten"; canvas 31 "ausgebautes" -> "umgebenes", "chageachtet" -> "ungeachtet", "Ueberger" -> "Herberger".
+- Confidence: high.
+- Caveats: goiter is very frequent in the Rhine lowlands, one of the canton's two natural regions (canvas 27, read in the machine text only, contrasts them with the higher western part), so rule 2 applies. Cretinism is endemic in some Rhine communities, named Hagenbach and Rheinzabern, so rule 1 applies. Kandel's point on the goiter map changes from hollow to red.
+
 ## Summary
 
 | District | Former combined | Goiter | Cretinism |
@@ -310,6 +324,8 @@ The section 5 definitions leave three cases open. The rules below follow the cod
 
 Four findings correct the split branch's reading of the shard notes. `Sulzbach` and `Memmingen` name goiter in the ink, next to scrofula. `Herzogenaurach` covers women too (canvas 102). `Wolfstein i. Pf.` was `explicitly_absent` in the combined column, but its physician denies only *endemic* goiter and reports thyroid swellings of all forms.
 
-Judgment calls for review: `Amberg (Stadt)` and `Ottobeuren` (rule 3), `Markt Bibart` goiter ("heimisch"), `Sulzbach` (rule 4), `Wörth a.d. Donau` goiter (rule 2), and `Markt Erlbach` cretinism (a dead family, coded `not_documented`).
+`Kandel` (addendum) is recoded to follow rule 1: goiter `endemic_or_frequent`, cretinism `sporadic_or_localized`.
+
+Judgment calls for review: `Amberg (Stadt)` and `Ottobeuren` (rule 3), `Markt Bibart` goiter ("heimisch"), `Sulzbach` (rule 4), `Wörth a.d. Donau` and `Kandel` goiter (rule 2), and `Markt Erlbach` cretinism (a dead family, coded `not_documented`).
 
 Strongest single hook for Post 06: Marktbreit, canvas 20. The physician calls goiter very frequent, blames the lime in the water, and adds: "Der Jodgehalt der Atmosphäre differirt gewiß nichts gegen andere von Kropf freie Gegenden." ("The iodine content of the atmosphere surely does not differ at all from other goiter-free regions.") A second doctor set iodine aside.

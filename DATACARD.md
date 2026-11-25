@@ -18,7 +18,7 @@ This companion dataset releases three linked layers:
 
 1. **Full-corpus machine transcription** of all `212` digitized `BSB Cgm 6874` volumes (`26,325` archival page images, `25,827` unique non-duplicate pages, `10,231,643` completion tokens).
 2. **Volume-clustered `30`-page in-corpus accuracy evaluation** across `30` distinct volumes, reporting both strictly blind-keyed (`4.33%` median `cer_norm`) and ink-adjudicated (`3.45%` median `cer_norm`) metrics under the `Kurrent Pages Benchmark` protocol, along with all reference texts (`eval_sample_references.tar.gz`).
-3. **Image-verified structured tables** covering all `239` canonical 1860 districts (separated birth-cohort infant mortality vs. infant share of all deaths, feeding practice, pacifiers, sedatives, and goiter), `57` folk-medicine passages, and a normalized `verified_passages.csv` table indexing every published quotation.
+3. **Image-verified structured tables** covering all `239` canonical 1860 districts (separated birth-cohort infant mortality vs. infant share of all deaths, feeding practice, pacifiers, sedatives, goiter, and cretinism), `57` folk-medicine passages, and a normalized `verified_passages.csv` table indexing every published quotation.
 
 ## 2. Corpus coverage and catalog notes
 
@@ -77,6 +77,15 @@ Of the `239` reports, `191` document infant feeding (`122` predominantly breastf
 
 To prevent denominator mixing, `verified_bavaria_1860_infant_feeding.csv` and `map_bavaria_1860_infant_feeding.geojson` store birth-cohort mortality (`imr_pct_of_births`, `n = 37`) separately from infant share of all deaths (`infant_share_of_all_deaths_pct`, `n = 18`), accompanied by `numerator_includes_stillbirths`, `is_approximate`, and `age_window` flags. Sensitivity checks in `epidemiology_summary_stats.json` confirm the feeding-mortality gap across strict subsets: `23.0%` (`n = 17`) vs. `40.0%` (`n = 9`) across all birth-cohort rates (`AUC = 0.922`), `24.05%` (`n = 15`) vs. `40.0%` (`n = 7`) on strict `live_births` rows only, and `24.05%` (`n = 15`) vs. `39.45%` (`n = 6`) excluding `Eggenfelden`'s verbal approximate `"fast die Hälfte"`.
 
+`goiter_status` and `cretinism_status` record goiter (*Kropf*, including *Satthals* and *Dickhals*) and cretinism separately. Both use four values:
+
+- `endemic_or_frequent`: the physician calls the condition endemic or frequent, or lists it among the main conscription defects.
+- `sporadic_or_localized`: the physician calls the condition rare or not frequent, limits it to some places, families, or groups, or reports it without calling it frequent.
+- `explicitly_absent`: the physician says that the condition does not occur.
+- `not_documented`: no statement about that condition was captured in the verified pages. This value does not mean that the condition was absent. The verification pass looked for infant feeding first.
+
+Goiter: `13` endemic or frequent, `20` sporadic or localized, `1` explicitly absent, `205` not documented. Cretinism: `5`, `17`, `5`, and `212`. *Blödsinn* (idiocy) and *Taubstummheit* (deaf-mutism) are not counted as cretinism. Section 8 explains how the two columns replaced the single column of version `0.9.0-pre-paleographer-review`.
+
 ## 6. Files and schemas
 
 | File | Description |
@@ -84,8 +93,9 @@ To prevent denominator mixing, `verified_bavaria_1860_infant_feeding.csv` and `m
 | `cgm6874_pages.jsonl.gz` | Deterministic (`mtime=0`) gzipped JSONL of all `26,325` pages in volume and canvas order with `duplicate_of_canvas` and `duplicate_same_image_sha256` flags. |
 | `cgm6874_volumes.csv` | Catalog of all `212` admitted `BSB Cgm 6874` volumes with shelfmarks, canvas counts, and `PDM 1.0` URIs. |
 | `districts_index.csv` | Canonical gazetteer of `239` 1860 Bavarian *Physikatsbezirke* with historical *Regierungsbezirk*, coordinates, and exact sub-volume canvas slices. |
-| `verified_bavaria_1860_infant_feeding.csv` | Verified `239`-jurisdiction epidemiology table with separated `imr_pct_of_births` and `infant_share_of_all_deaths_pct` columns, denominator/stillbirth/approximate/age-window flags, MDZ/IIIF links, quotes, translations, and OCR correction logs. |
+| `verified_bavaria_1860_infant_feeding.csv` | Verified `239`-jurisdiction epidemiology table with separated `imr_pct_of_births` and `infant_share_of_all_deaths_pct` columns, denominator/stillbirth/approximate/age-window flags, separate `goiter_status` and `cretinism_status` columns, MDZ/IIIF links, quotes, translations, and OCR correction logs. |
 | `map_bavaria_1860_infant_feeding.geojson` | Point `FeatureCollection` mirroring `verified_bavaria_1860_infant_feeding.csv` with separated mortality properties. |
+| `goiter_cretinism_status_mapping.csv` | For the `74` districts whose former `goiter_cretinism_status` was not `not_documented`: the former value, the new `goiter_status` and `cretinism_status`, and the recorded evidence for each new value. |
 | `verified_bavaria_1860_folk_medicine.csv` | `57` verified folk-medicine, superstition, and healer passages from `64` checked pages. |
 | `verified_passages.csv` | Normalized passage-level evidence table indexing every primary and secondary verified quotation cited in Articles 1 and 2 by stable `passage_id`. |
 | `in_corpus_accuracy_eval.csv` & `.json` | Per-page and aggregate accuracy metrics (`cer_dipl`, `cer_norm`, `wer_norm`, `nls_norm`, `blind_cer_norm`, `page_type`) across the `30`-page sample. |
@@ -98,3 +108,20 @@ To prevent denominator mixing, `verified_bavaria_1860_infant_feeding.csv` and `m
 - **Original manuscript images:** Bayerische Staatsbibliothek (Munich), `BSB Cgm 6874(1)`-`Cgm 6874(207)`, `Public Domain Mark 1.0`. Cite `Bayerische Staatsbibliothek`, the individual volume call number, and `bsb_id` when reusing images.
 - **Transcriptions, verified tables, and evaluation references:** Released by `13fragments` under `CC BY-SA 4.0` (`LICENSE-DATA.txt`), matching `Kurrent Transcriber 1B` (`10.5281/zenodo.24342061`).
 - **Pipeline scripts:** Released by `13fragments` under the `MIT License` (`LICENSE-CODE.txt`).
+
+## 8. Release notes
+
+### Next release (not yet published; version number not yet assigned)
+
+- **Goiter and cretinism have separate columns.** Version `0.9.0-pre-paleographer-review` stored both conditions in one column, `goiter_cretinism_status`. One value could therefore rest on a statement about only one condition. For example, `Uffenheim` was `explicitly_absent` because canvas `21` says that cretinism is absent, although canvas `43` names goiter in women. The column is replaced by `goiter_status` and `cretinism_status` in `verified_bavaria_1860_infant_feeding.csv`, `map_bavaria_1860_infant_feeding.geojson`, and the verified district shards. The values keep the same four names (section 5).
+- **Method.** No page image was checked again for this change. Each of the `74` rows with a former value other than `not_documented` was recoded from the evidence already recorded for it: the quotation, the translation, and the correction notes in its shard. For `Uffenheim`, `Weiler`, `Wiesentheid`, `Schillingsfürst`, and `Eltmann`, the recoding also uses the image check of the social-post quotes (Claude Fable 5.2, `claude-fable-5-2`, 2026-11-25; log `publication/posts/verification/goiter.md` in the repository). A condition receives a value only where a recorded statement names that condition and its frequency, distribution, or absence. Where that statement agrees with the former value, the former value is kept. A spelling correction of a word such as *Cretinismus*, or a topic label such as "goiter/cretinism scan", does not settle a condition. The other `165` rows were `not_documented` and stay `not_documented` in both columns.
+- **Evidence table.** The new file `goiter_cretinism_status_mapping.csv` gives, for each of the `74` rows, the former value, the two new values, and the evidence for each new value.
+- **Rows without a settled condition.** For `27` of the `74` rows, the recorded evidence settles neither condition, so both columns are `not_documented`. `14` of them have no goiter or cretinism text in the shard. `2` record scrofula (*Scropheln*, *Scropulosis*), not goiter (`Sulzbach`, `Memmingen`). `10` record only spelling corrections, or only that a passage was recovered, without its content. `Herzogenaurach` states only that goiter is almost absent among men. These rows are queued for image verification in the paleographer review pass: `Amberg (Land)`, `Amberg (Stadt)`, `Augsburg`, `Bergzabern`, `Gräfenberg`, `Herzogenaurach`, `Kempten (Land)`, `Markt Bibart`, `Markt Erlbach`, `Marktbreit`, `Memmingen`, `Miltenberg`, `Oberdorf`, `Ottobeuren`, `Pottenstein`, `Rehau`, `Roding`, `Rothenburg ob der Tauber`, `Scheinfeld`, `Simbach`, `Sulzbach`, `Thiersheim`, `Wemding`, `Windsheim`, `Wolfstein i. Pf.`, `Wörth a.d. Donau`, and `Öttingen`.
+- **Examples.** `Uffenheim`: goiter `sporadic_or_localized`, cretinism `explicitly_absent`. `Dingolfing`: cretinism `explicitly_absent`, goiter `not_documented` (the report says nothing about goiter). `Bayreuth (Stadt)`: goiter `sporadic_or_localized` (*fast gar keine Kröpfe*, almost none, not none). `Nittenau`: goiter `explicitly_absent`, cretinism `sporadic_or_localized` (`3` cretins).
+- **Counts.** Goiter: `13` endemic or frequent, `20` sporadic or localized, `1` explicitly absent. Cretinism: `5`, `17`, `5`. The former combined column had `26`, `38`, and `10`.
+- **Statistics keys.** In `epidemiology_summary_stats.json`, `endemic_goiter_districts` and `sporadic_goiter_districts`, which counted the combined column, are replaced by `goiter_breakdown` and `cretinism_breakdown`. In `by_regierungsbezirk`, `endemic_goiter_or_cretinism` is replaced by `endemic_goiter` and `endemic_cretinism`.
+- **Unchanged.** No other field, row, or file changed. `verification_viewer.html` shows both new columns.
+
+### 0.9.0-pre-paleographer-review (2026-11-25)
+
+- First public release: Zenodo DOI `10.5281/zenodo.24523214`, Hugging Face `13fragments/bavarian-physikatsberichte`.

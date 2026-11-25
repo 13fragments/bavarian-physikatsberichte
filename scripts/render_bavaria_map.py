@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Render an archival-atlas static map of 1860 Bavarian infant feeding and mortality.
+"""Render Figure 2: infant feeding at the 1860 district seats of BSB Cgm 6874.
 
-Reads `data/dataset/verified_bavaria_1860_infant_feeding.csv` and renders a 2x-supersampled
-editorial PNG (`publication/figures/fig_bavaria_1860_feeding_map.png`) showing all 239
-canonical districts across Right-Rhine Bavaria + Bavarian Palatinate inset, the Danube and
-Main rivers, the unrepresented Upper Bavaria region (held in Stadtarchiv München), and
-key birth-cohort infant mortality callouts.
+Reads `data/dataset/verified_bavaria_1860_infant_feeding.csv` and writes
+`publication/figures/fig_bavaria_1860_feeding_map.svg`. With Google Chrome
+available, it also writes a 2x PNG next to it.
+
+The map makes no claim about district boundaries. Each point is the seat of one
+of the 239 canonical districts. No open data set of the 1860 Bavarian district
+boundaries was used, so the figure draws none. River courses are schematic
+polylines through towns on their banks, for orientation only. The Palatinate
+appears as an inset at the same scale.
 """
 
 from __future__ import annotations
@@ -15,289 +19,292 @@ import math
 import os
 from pathlib import Path
 import shutil
-from PIL import Image, ImageDraw, ImageFont
+import subprocess
+import tempfile
+from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data" / "dataset" / "verified_bavaria_1860_infant_feeding.csv"
-OUT_PATH = ROOT / "publication" / "figures" / "fig_bavaria_1860_feeding_map.png"
-ARTIFACT_DIR = Path(os.environ["ARTIFACT_DIR"]) if os.environ.get("ARTIFACT_DIR") else None
+SVG_PATH = ROOT / "publication" / "figures" / "fig_bavaria_1860_feeding_map.svg"
+PNG_PATH = SVG_PATH.with_suffix(".png")
+CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
-# High-contrast archival palette (parchment ground, Prussian blue / amber / vermilion ink)
-BG = (246, 242, 232)
-PANEL_BG = (241, 236, 223)
-BORDER = (165, 155, 138)
-INK = (26, 24, 22)
-MUTED = (98, 92, 83)
-RIVER = (118, 155, 178)
-OBERBAYERN_FILL = (231, 224, 208)
-OBERBAYERN_STROKE = (168, 156, 136)
+WIDTH, HEIGHT = 560, 560
+FONT = '"IBM Plex Mono", ui-monospace, Menlo, monospace'
+INK, MUTED, BG, FRAME, RIVER = "#111", "#666", "#fdfdfc", "#cfcfcf", "#9db3c4"
 
-STATUS_COLORS = {
-    "predominantly_breastfed": (27, 73, 101),    # Prussian blue
-    "mixed_or_short_duration": (204, 122, 16),   # Ochre / amber
-    "rarely_or_not_breastfed": (166, 38, 42),    # Vermilion crimson
-    "not_documented": (168, 162, 152),           # Warm stone
+STATUS = {
+    "predominantly_breastfed": ("#2b5c8a", "Predominantly breastfed"),
+    "mixed_or_short_duration": ("#d08c1a", "Mixed or short breastfeeding"),
+    "rarely_or_not_breastfed": ("#a3292b", "Rarely or not breastfed"),
+    "not_documented": ("none", "Feeding not documented"),
 }
+DRAW_ORDER = ["not_documented", "predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed"]
 
-# Simplified WGS84 polylines (lon, lat) for Danube, Main, and approximate Upper Bavaria region
+# Main map frame, in degrees. The scale is equal in x and y at latitude 49.
+LON0, LON1, LAT0, LAT1 = 8.95, 13.95, 47.38, 50.72
+COS = math.cos(math.radians(49.0))
+PAD = 10
+SCALE = (WIDTH - 2 * PAD) / ((LON1 - LON0) * COS)
+
+# Palatinate inset: top-right corner of the main map, same scale.
+INSET_LON0, INSET_LAT1 = 7.13, 49.80
+INSET_X, INSET_Y, INSET_W, INSET_H = 390, 10, 164, 158
+
+# Schematic river courses (lon, lat) through towns on their banks.
 DANUBE = [
-    (9.99, 48.40), (10.30, 48.46), (10.50, 48.57), (10.78, 48.72), (11.18, 48.74),
-    (11.42, 48.76), (11.76, 48.81), (11.87, 48.92), (12.10, 49.02), (12.57, 48.88),
-    (12.96, 48.83), (13.19, 48.63), (13.46, 48.57), (13.72, 48.53),
+    (10.01, 48.40), (10.22, 48.45), (10.27, 48.45), (10.43, 48.57), (10.49, 48.58),
+    (10.57, 48.61), (10.78, 48.72), (10.94, 48.74), (11.18, 48.73), (11.43, 48.76),
+    (11.62, 48.77), (11.77, 48.80), (11.89, 48.92), (12.04, 48.94), (12.10, 49.02),
+    (12.21, 49.03), (12.40, 49.00), (12.57, 48.88), (12.69, 48.91), (12.96, 48.84),
+    (13.03, 48.77), (13.18, 48.63), (13.46, 48.57), (13.72, 48.52),
 ]
 MAIN = [
-    (11.58, 50.09), (11.45, 50.11), (11.07, 50.14), (10.89, 49.90), (10.51, 50.03),
-    (10.23, 50.04), (10.17, 49.74), (9.93, 49.79), (9.65, 49.99), (9.58, 49.76),
-    (9.26, 49.70), (9.15, 49.97), (9.00, 50.06),
+    (11.58, 49.94), (11.45, 50.10), (11.25, 50.14), (11.06, 50.15), (10.99, 50.10),
+    (10.88, 49.93), (10.51, 50.03), (10.23, 50.04), (10.23, 49.86), (10.16, 49.80),
+    (10.16, 49.74), (10.15, 49.67), (10.07, 49.66), (9.93, 49.79), (9.77, 49.96),
+    (9.70, 50.05), (9.58, 50.00), (9.60, 49.85), (9.52, 49.76), (9.26, 49.70),
+    (9.15, 49.84), (9.15, 49.97), (9.00, 50.07),
 ]
-OBERBAYERN_POLY = [
-    (10.88, 48.68), (11.42, 48.76), (11.78, 48.79), (12.05, 48.45), (12.68, 48.26),
-    (12.88, 48.10), (13.02, 47.65), (12.60, 47.60), (11.80, 47.55), (11.05, 47.45),
-    (10.82, 47.65), (10.84, 48.20),
+LECH = [(10.70, 47.57), (10.90, 47.81), (10.88, 48.05), (10.93, 48.37), (10.95, 48.74)]
+RHINE = [(8.18, 48.97), (8.37, 49.22), (8.44, 49.32), (8.44, 49.48), (8.37, 49.63), (8.40, 49.80)]
+
+# Region names at hand-placed anchor points (lon, lat), clear of the points.
+REGIONS = [
+    ("Lower Franconia", 9.45, 50.62, "middle"),
+    ("Upper Franconia", 11.62, 50.62, "middle"),
+    ("Middle Franconia", 10.05, 49.28, "end"),
+    ("Upper Palatinate", 12.75, 49.55, "middle"),
+    ("Lower Bavaria", 13.35, 49.30, "middle"),
+    ("Swabia", 9.55, 47.95, "middle"),
 ]
 
-CALLOUTS = {
-    "uffenheim": ("Uffenheim 17.6%", (-228, -16)),
-    "fuerth": ("Fürth (urban)", (20, -24)),
-    "roth_mittelfranken": ("Roth 40% / Spalt 50%", (22, -10)),
-    "greding": ("Greding (Mieder)", (22, -10)),
-    "noerdlingen": ("Nördlingen (Ries, N of Danube)", (-395, -10)),
-    "oettingen": ("Öttingen 35.9%", (22, -16)),
-    "roggenburg": ("Roggenburg", (-162, 14)),
-    "goeggingen": ("Göggingen 47.2%", (22, 12)),
-    "ottobeuren": ("Ottobeuren 40.7%", (22, 14)),
-    "woerth_a_d_donau": ("Wörth a.d.D. 47.4%", (22, -22)),
-    "eggenfelden": ("Eggenfelden ~50%", (22, 10)),
-    "landstuhl": ("Landstuhl 14.4%*", (-18, 28)),
-    "otterberg": ("Otterberg 18.8%", (20, -34)),
-}
+# Labelled districts with their first-year death rate where the article cites one.
+CALLOUTS = [
+    ("roggenburg", "Roggenburg"),
+    ("ottobeuren", "Ottobeuren 40.7%"),
+    ("oettingen", "Öttingen 35.9%"),
+    ("noerdlingen", "Nördlingen"),
+    ("uffenheim", "Uffenheim 17.6%"),
+    ("fuerth", "Fürth"),
+    ("roth_mittelfranken", "Roth 40.0%"),
+    ("greding", "Greding"),
+    ("woerth_a_d_donau", "Wörth 47.4%"),
+    ("eggenfelden", "Eggenfelden ~50%"),
+    ("landstuhl", "Landstuhl"),
+]
+CALLOUT_SIZE = 9.5
+CHAR_WIDTH = 0.6  # IBM Plex Mono advance width, in em
+
+# Legend box, bottom-right corner (Salzburg and Austria, no districts).
+LEGEND_X, LEGEND_Y, LEGEND_W, LEGEND_H = 372, 462, 182, 88
 
 
-def load_font(size: int, bold: bool = False, italic: bool = False) -> ImageFont.FreeTypeFont:
-    candidates = []
-    if bold:
-        candidates += [
-            "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
-            "/System/Library/Fonts/Charter.ttc",
-        ]
-    elif italic:
-        candidates += [
-            "/System/Library/Fonts/Supplemental/Georgia Italic.ttf",
-            "/System/Library/Fonts/Charter.ttc",
-        ]
-    else:
-        candidates += [
-            "/System/Library/Fonts/Supplemental/Georgia.ttf",
-            "/System/Library/Fonts/Charter.ttc",
-        ]
-    for path in candidates:
-        if Path(path).exists():
-            return ImageFont.truetype(path, size=size)
-    return ImageFont.load_default()
+def project(lon: float, lat: float) -> tuple[float, float]:
+    return PAD + (lon - LON0) * COS * SCALE, PAD + (LAT1 - lat) * SCALE
 
 
-def proj_main(lon: float, lat: float, box: tuple[int, int, int, int]) -> tuple[float, float]:
-    # Mercator-aspect scaling centered at 49.0N (cos(49) ~= 0.656)
-    lon0, lon1 = 8.85, 13.95
-    lat0, lat1 = 47.25, 50.65
-    x0, y0, x1, y1 = box
-    x = x0 + (lon - lon0) / (lon1 - lon0) * (x1 - x0)
-    y = y1 - (lat - lat0) / (lat1 - lat0) * (y1 - y0)
-    return x, y
+def project_inset(lon: float, lat: float) -> tuple[float, float]:
+    return INSET_X + 8 + (lon - INSET_LON0) * COS * SCALE, INSET_Y + 22 + (INSET_LAT1 - lat) * SCALE
 
 
-def proj_pfalz(lon: float, lat: float, box: tuple[int, int, int, int]) -> tuple[float, float]:
-    lon0, lon1 = 7.05, 8.60
-    lat0, lat1 = 48.95, 49.85
-    x0, y0, x1, y1 = box
-    x = x0 + (lon - lon0) / (lon1 - lon0) * (x1 - x0)
-    y = y1 - (lat - lat0) / (lat1 - lat0) * (y1 - y0)
-    return x, y
+def polyline(points: list[tuple[float, float]], proj, width: float) -> str:
+    path = " ".join(f"{x:.1f},{y:.1f}" for x, y in (proj(lon, lat) for lon, lat in points))
+    return f'<polyline points="{path}" fill="none" stroke="{RIVER}" stroke-width="{width}" stroke-linejoin="round" stroke-linecap="round"/>'
+
+
+def text(x: float, y: float, body: str, size: float = 10, fill: str = INK, anchor: str = "start", extra: str = "") -> str:
+    return (
+        f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" text-anchor="{anchor}" '
+        f'stroke="{BG}" stroke-width="3" paint-order="stroke" stroke-linejoin="round"{extra}>{escape(body)}</text>'
+    )
+
+
+def label_box(x: float, y: float, label: str, anchor: str) -> tuple[float, float, float, float]:
+    width = CHAR_WIDTH * CALLOUT_SIZE * len(label)
+    left = {"start": x, "end": x - width, "middle": x - width / 2}[anchor]
+    return left - 1, y - CALLOUT_SIZE * 0.8, left + width + 1, y + CALLOUT_SIZE * 0.25
+
+
+def overlaps(a: tuple[float, float, float, float], b: tuple[float, float, float, float]) -> bool:
+    return a[0] < b[2] and b[0] < a[2] and a[1] < b[3] and b[1] < a[3]
+
+
+def place_label(x, y, label, points, obstacles):
+    """Score label positions around a point; return text position, anchor, and leader start or None.
+
+    Candidates sit at four distances in eight directions. The score counts the
+    points and earlier labels or frames that the text box would cover, with a
+    small penalty for distance. Labels away from their point get a leader line.
+    """
+    best = None
+    for distance in (8, 16, 24, 34):
+        for step in range(8):
+            angle = math.radians(step * 45)
+            dx, dy = math.cos(angle), -math.sin(angle)
+            ax, ay = x + distance * dx, y + distance * dy
+            anchor = "start" if dx > 0.3 else "end" if dx < -0.3 else "middle"
+            baseline = ay + 3.5 if abs(dy) < 0.3 else ay - 1 if dy < 0 else ay + 8.5
+            box = label_box(ax, baseline, label, anchor)
+            if box[0] < 2 or box[2] > WIDTH - 2 or box[1] < 2 or box[3] > HEIGHT - 2:
+                continue
+            hits = sum(1 for px, py, r in points if overlaps(box, (px - r, py - r, px + r, py + r)))
+            hits += sum(1 for other in obstacles if overlaps(box, other))
+            score = hits * 10 + distance * 0.15 + (0 if abs(dy) < 0.3 else 0.6)
+            if best is None or score < best[0]:
+                start = 8.5 if (x, y, 7.0) in points else 5.5
+                leader = (x + start * dx, y + start * dy, ax - 1.5 * dx, ay - 1.5 * dy) if distance > 8 else None
+                best = (score, ax, baseline, anchor, box, leader)
+    _, lx, ly, anchor, box, leader = best
+    obstacles.append(box)
+    return lx, ly, anchor, leader
+
+
+def legend() -> list[str]:
+    x, y = LEGEND_X, LEGEND_Y
+    out = [f'<rect x="{x}" y="{y}" width="{LEGEND_W}" height="{LEGEND_H}" fill="{BG}" stroke="{FRAME}"/>']
+    row = y + 16
+    for status in ("predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed", "not_documented"):
+        color, label = STATUS[status]
+        if status == "not_documented":
+            out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="3" fill="{BG}" stroke="#8a8a8a" stroke-width="1.1"/>')
+        else:
+            out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="3.6" fill="{color}"/>')
+        out.append(text(x + 22, row, label, 8.5, INK))
+        row += 14
+    out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="6" fill="none" stroke="{INK}" stroke-width="1.1"/>')
+    out.append(text(x + 22, row, "First-year death rate given", 8.5, INK))
+    return out
+
+
+def district_title(row: dict[str, str]) -> str:
+    parts = [row["district_name"], STATUS[row["breastfeeding_status"]][1].lower()]
+    if row.get("imr_pct_of_births"):
+        basis = "live births" if row["infant_mortality_denominator"] == "live_births" else "all births"
+        parts.append(f"first-year deaths {float(row['imr_pct_of_births']):.1f}% of {basis}")
+    return ", ".join(parts)
+
+
+def build_svg(rows: list[dict[str, str]]) -> str:
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" '
+        f'font-family=\'{FONT}\' role="img" aria-labelledby="map-title map-desc">',
+        '<title id="map-title">Infant feeding at the seats of 239 Bavarian districts, 1858 to 1861</title>',
+        '<desc id="map-desc">Each point is a district seat, colored by how the district physician described infant feeding. '
+        "Blue points, predominantly breastfed, fill Franconia and the Palatinate. Red and amber points, rarely or briefly "
+        "breastfed, fill Swabia and parts of Lower Bavaria. Upper Bavaria is blank because its reports are not in this "
+        "collection.</desc>",
+        f'<rect width="{WIDTH}" height="{HEIGHT}" fill="{BG}"/>',
+    ]
+    for lon in (9, 10, 11, 12, 13):
+        x, _ = project(lon, 49)
+        out.append(f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{HEIGHT}" stroke="#eeeeec" stroke-width="1"/>')
+    for lat in (48, 49, 50):
+        _, y = project(11, lat)
+        out.append(f'<line x1="0" y1="{y:.1f}" x2="{WIDTH}" y2="{y:.1f}" stroke="#eeeeec" stroke-width="1"/>')
+
+    for course, width in ((DANUBE, 2.4), (MAIN, 1.8), (LECH, 1.4)):
+        out.append(polyline(course, project, width))
+    for name, lon, lat, rot in (("Danube", 11.98, 48.87, -8), ("Main", 10.62, 50.06, 0), ("Lech", 10.98, 47.85, 80)):
+        x, y = project(lon, lat)
+        out.append(text(x, y, name, 9, "#6f8799", extra=f' font-style="italic" transform="rotate({rot} {x:.1f} {y:.1f})"'))
+
+    region_boxes = []
+    for name, lon, lat, anchor in REGIONS:
+        x, y = project(lon, lat)
+        out.append(text(x, y, name.upper(), 8.5, "#888", anchor, ' letter-spacing="0.08em"'))
+        width = len(name) * 8.5 * (CHAR_WIDTH + 0.08)
+        left = {"start": x, "end": x - width, "middle": x - width / 2}[anchor]
+        region_boxes.append((left, y - 8, left + width, y + 2))
+    x, y = project(11.70, 48.08)
+    out.append(text(x, y, "UPPER BAVARIA", 8.5, "#888", "middle", ' letter-spacing="0.08em"'))
+    out.append(text(x, y + 12, "reports not in this collection", 8.5, "#888", "middle"))
+    region_boxes.append((x - 80, y - 8, x + 80, y + 14))
+
+    # Palatinate inset
+    out.append(f'<rect x="{INSET_X}" y="{INSET_Y}" width="{INSET_W}" height="{INSET_H}" fill="{BG}" stroke="{FRAME}"/>')
+    out.append(text(INSET_X + 8, INSET_Y + 14, "PALATINATE", 8.5, "#888", extra=' letter-spacing="0.08em"'))
+    out.append(text(INSET_X + 8 + 72, INSET_Y + 14, "same scale", 8.5, "#aaa"))
+    out.append(polyline(RHINE, project_inset, 1.8))
+    rx, ry = project_inset(8.52, 49.12)
+    out.append(text(rx, ry, "Rhine", 9, "#6f8799", extra=f' font-style="italic" transform="rotate(-80 {rx:.1f} {ry:.1f})"'))
+
+    positions: dict[str, tuple[float, float]] = {}
+    ringed: set[str] = set()
+    for status in DRAW_ORDER:
+        for row in rows:
+            if row["breastfeeding_status"] != status:
+                continue
+            lon, lat = float(row["longitude"]), float(row["latitude"])
+            x, y = project_inset(lon, lat) if row["regierungsbezirk"] == "Pfalz" else project(lon, lat)
+            positions[row["district_id"]] = (x, y)
+            color = STATUS[status][0]
+            ring = ""
+            if row.get("imr_pct_of_births"):
+                ringed.add(row["district_id"])
+                ring = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="none" stroke="{INK}" stroke-width="1.1"/>'
+            if status == "not_documented":
+                dot = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{BG}" stroke="#8a8a8a" stroke-width="1.1"/>'
+            else:
+                dot = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.6" fill="{color}" stroke="{BG}" stroke-width="0.8"/>'
+            out.append(f"<g><title>{escape(district_title(row))}</title>{ring}{dot}</g>")
+
+    obstacles = [
+        (INSET_X, INSET_Y, INSET_X + INSET_W, INSET_Y + 18),
+        (LEGEND_X - 2, LEGEND_Y - 2, LEGEND_X + LEGEND_W + 2, LEGEND_Y + LEGEND_H + 2),
+        *region_boxes,
+    ]
+    points = [(x, y, 7.0 if district_id in ringed else 4.4) for district_id, (x, y) in positions.items()]
+    for district_id, label in CALLOUTS:
+        x, y = positions[district_id]
+        lx, ly, anchor, leader = place_label(x, y, label, points, obstacles)
+        if leader:
+            out.append(f'<line x1="{leader[0]:.1f}" y1="{leader[1]:.1f}" x2="{leader[2]:.1f}" y2="{leader[3]:.1f}" '
+                       f'stroke="{INK}" stroke-width="0.8"/>')
+        out.append(text(lx, ly, label, CALLOUT_SIZE, INK, anchor, ' font-weight="500"'))
+
+    out.extend(legend())
+
+    # Scale bar: 50 km along a meridian.
+    bar = 50 / 111.2 * SCALE
+    sx, sy = PAD + 6, HEIGHT - 16
+    out.append(f'<line x1="{sx:.1f}" y1="{sy}" x2="{sx + bar:.1f}" y2="{sy}" stroke="{INK}" stroke-width="1"/>')
+    for tick in (sx, sx + bar):
+        out.append(f'<line x1="{tick:.1f}" y1="{sy - 3}" x2="{tick:.1f}" y2="{sy + 3}" stroke="{INK}" stroke-width="1"/>')
+    out.append(text(sx + bar + 6, sy + 3, "50 km", 9, MUTED))
+    out.append("</svg>")
+    return "\n".join(out) + "\n"
+
+
+def render_png(svg_path: Path, png_path: Path) -> bool:
+    if not Path(CHROME).exists():
+        return False
+    with tempfile.TemporaryDirectory() as tmp:
+        page = Path(tmp) / "map.html"
+        page.write_text(
+            f'<!DOCTYPE html><html><body style="margin:0;background:{BG}">{svg_path.read_text()}</body></html>',
+            encoding="utf-8",
+        )
+        subprocess.run(
+            [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2",
+             f"--window-size={WIDTH},{HEIGHT}", f"--screenshot={png_path}", page.as_uri()],
+            check=True, capture_output=True,
+        )
+    return True
 
 
 def main() -> int:
     rows = list(csv.DictReader(CSV_PATH.open(encoding="utf-8")))
-    W, H = 2800, 1960
-    img = Image.new("RGB", (W, H), BG)
-    draw = ImageDraw.Draw(img)
-
-    f_title = load_font(56, bold=True)
-    f_sub = load_font(30, italic=True)
-    f_h = load_font(28, bold=True)
-    f_body = load_font(24)
-    f_small = load_font(22)
-    f_callout = load_font(23, bold=True)
-    f_region = load_font(26, italic=True)
-
-    # Header
-    draw.text((88, 52), "Infant feeding across 239 Bavarian districts (BSB Cgm 6874, 1858–1861)", fill=INK, font=f_title)
-    draw.text(
-        (88, 122),
-        "Franconia and the Palatinate breastfed (86%); Swabia and Old Bavaria relied on flour gruel (Mehlbrei), extending north of the Danube into the Ries",
-        fill=MUTED,
-        font=f_sub,
-    )
-    draw.line([(88, 174), (W - 88, 174)], fill=BORDER, width=3)
-
-    # Map frames
-    main_box = (88, 206, 2020, 1820)
-    pfalz_box = (2068, 206, 2712, 730)
-    legend_box = (2068, 774, 2712, 1820)
-
-    for b in (main_box, pfalz_box, legend_box):
-        draw.rectangle(b, fill=PANEL_BG, outline=BORDER, width=3)
-
-    # Subtle graticule on main map
-    for lon in (9, 10, 11, 12, 13):
-        x, _ = proj_main(lon, 49.0, main_box)
-        draw.line([(x, main_box[1]), (x, main_box[3])], fill=(228, 222, 208), width=2)
-    for lat in (48, 49, 50):
-        _, y = proj_main(11.0, lat, main_box)
-        draw.line([(main_box[0], y), (main_box[2], y)], fill=(228, 222, 208), width=2)
-
-    # Shaded Oberbayern archival gap region
-    ob_pts = [proj_main(lo, la, main_box) for lo, la in OBERBAYERN_POLY]
-    draw.polygon(ob_pts, fill=OBERBAYERN_FILL, outline=OBERBAYERN_STROKE)
-    ox, oy = proj_main(11.68, 48.08, main_box)
-    draw.text((ox - 125, oy - 36), "OBERBAYERN", fill=(120, 110, 96), font=f_h)
-    draw.text((ox - 165, oy + 2), "(not in BSB Cgm 6874;", fill=(120, 110, 96), font=f_small)
-    draw.text((ox - 155, oy + 30), "Stadtarchiv München)", fill=(120, 110, 96), font=f_small)
-
-    # Rivers
-    danube_pts = [proj_main(lo, la, main_box) for lo, la in DANUBE]
-    draw.line(danube_pts, fill=RIVER, width=7, joint="curve")
-    main_pts = [proj_main(lo, la, main_box) for lo, la in MAIN]
-    draw.line(main_pts, fill=RIVER, width=5, joint="curve")
-
-    dx, dy = proj_main(11.55, 48.72, main_box)
-    draw.text((dx - 45, dy - 38), "Danube", fill=(68, 108, 132), font=f_small)
-    mx, my = proj_main(10.35, 50.07, main_box)
-    draw.text((mx - 10, my - 34), "Main", fill=(68, 108, 132), font=f_small)
-
-    # Regional watermarks
-    region_labels = [
-        ("UNTERFRANKEN", 9.65, 50.28),
-        ("OBERFRANKEN", 11.45, 50.32),
-        ("MITTELFRANKEN", 10.65, 49.42),
-        ("OBERPFALZ", 12.18, 49.58),
-        ("NIEDERBAYERN", 12.78, 48.62),
-        ("SCHWABEN", 9.65, 47.72),
-    ]
-    for label, lo, la in region_labels:
-        rx, ry = proj_main(lo, la, main_box)
-        draw.text((rx - 95, ry), label, fill=(138, 130, 116), font=f_region)
-
-    # Pfalz inset header
-    draw.text((pfalz_box[0] + 24, pfalz_box[1] + 18), "Pfalz (Palatinate inset)", fill=INK, font=f_h)
-    draw.text((pfalz_box[0] + 24, pfalz_box[1] + 54), "25 districts · 85% breastfed", fill=MUTED, font=f_small)
-
-    # Draw district markers (undocumented first, then documented so signal pops)
-    order = {
-        "not_documented": 0,
-        "predominantly_breastfed": 1,
-        "mixed_or_short_duration": 2,
-        "rarely_or_not_breastfed": 3,
-    }
-    rows.sort(key=lambda r: order.get(r["breastfeeding_status"], 0))
-
-    coords_cache: dict[str, tuple[float, float]] = {}
-    for r in rows:
-        lon, lat = float(r["longitude"]), float(r["latitude"])
-        is_pfalz = r["regierungsbezirk"] == "Pfalz"
-        px, py = proj_pfalz(lon, lat, pfalz_box) if is_pfalz else proj_main(lon, lat, main_box)
-        coords_cache[r["district_id"]] = (px, py)
-        col = STATUS_COLORS.get(r["breastfeeding_status"], STATUS_COLORS["not_documented"])
-        has_imr = bool(r.get("imr_pct_of_births"))
-        rad = 15 if has_imr else 11
-        if has_imr:
-            draw.ellipse([px - rad - 5, py - rad - 5, px + rad + 5, py + rad + 5], outline=INK, width=3)
-        draw.ellipse([px - rad, py - rad, px + rad, py + rad], fill=col, outline=(250, 248, 242), width=2)
-
-    # Callout labels with crisp leader lines
-    for did, (text, (ox, oy)) in CALLOUTS.items():
-        if did not in coords_cache:
-            continue
-        px, py = coords_cache[did]
-        tx, ty = px + ox, py + oy
-        bbox = draw.textbbox((tx, ty), text, font=f_callout)
-        pad = 6
-        draw.line([(px, py), (tx + (4 if ox > 0 else (bbox[2] - bbox[0] - 4)), ty + 12)], fill=(90, 84, 76), width=2)
-        draw.rectangle([bbox[0] - pad, bbox[1] - pad, bbox[2] + pad, bbox[3] + pad], fill=(252, 249, 242), outline=(185, 178, 166), width=2)
-        draw.text((tx, ty), text, fill=INK, font=f_callout)
-
-    # Legend & summary panel
-    lx, ly = legend_box[0] + 32, legend_box[1] + 28
-    draw.text((lx, ly), "Breastfeeding status (n = 239)", fill=INK, font=f_h)
-    ly += 54
-    legend_items = [
-        ("Predominantly breastfed (122)", STATUS_COLORS["predominantly_breastfed"]),
-        ("Mixed or short duration (36)", STATUS_COLORS["mixed_or_short_duration"]),
-        ("Rarely or not breastfed (23)", STATUS_COLORS["rarely_or_not_breastfed"]),
-        ("Undocumented / unstated (58)", STATUS_COLORS["not_documented"]),
-    ]
-    for label, col in legend_items:
-        draw.ellipse([lx + 4, ly + 4, lx + 30, ly + 30], fill=col, outline=(250, 248, 242), width=2)
-        draw.text((lx + 46, ly + 3), label, fill=INK, font=f_body)
-        ly += 46
-
-    ly += 10
-    draw.ellipse([lx + 2, ly + 2, lx + 32, ly + 32], outline=INK, width=3)
-    draw.text((lx + 46, ly + 3), "Black ring = birth-cohort IMR (37)", fill=INK, font=f_body)
-    ly += 58
-
-    draw.line([(lx, ly), (legend_box[2] - 32, ly)], fill=BORDER, width=2)
-    ly += 26
-    draw.text((lx, ly), "Birth-cohort infant mortality", fill=INK, font=f_h)
-    ly += 44
-    summary_lines = [
-        "All birth-cohort rates (n = 26):",
-        "  Breastfed (17):   23.0% median",
-        "  Mixed / rare (9): 40.0% median",
-        "  Gap: +17.0 pp (AUC = 0.922)",
-        "",
-        "Strict live-births only (n = 22):",
-        "  Breastfed (15):   24.1% median",
-        "  Mixed / rare (7): 40.0% median",
-        "  Excl. approx (6): 39.5% median",
-        "",
-        "Within Mittelfranken (n = 8):",
-        "  Breastfed (6):    24.9% median",
-        "  Roth / Weißenburg: 40.0% / 38.9%",
-    ]
-    for line in summary_lines:
-        if not line:
-            ly += 14
-            continue
-        draw.text((lx, ly), line, fill=INK if not line.startswith("  ") else MUTED, font=f_small)
-        ly += 34
-
-    ly += 18
-    draw.line([(lx, ly), (legend_box[2] - 32, ly)], fill=BORDER, width=2)
-    ly += 22
-    draw.text((lx, ly), "*Landstuhl: 14.4% live-birth IMR", fill=MUTED, font=f_small)
-    ly += 30
-    draw.text((lx, ly), "  (16.3% incl. stillbirths).", fill=MUTED, font=f_small)
-    ly += 36
-    draw.text((lx, ly), "Source: BSB Cgm 6874 (PDM 1.0);", fill=MUTED, font=f_small)
-    ly += 30
-    draw.text((lx, ly), "13fragments (agent-checked; human", fill=MUTED, font=f_small)
-    ly += 30
-    draw.text((lx, ly), "paleographer review open).", fill=MUTED, font=f_small)
-
-    # Footer
-    draw.text(
-        (88, 1858),
-        "Positions show 1860 district seats (WGS84). Notice Nördlingen, Wemding, Öttingen, and Wallerstein (Ries) lie north of the Danube yet follow the Swabian non-breastfeeding regime.",
-        fill=MUTED,
-        font=f_small,
-    )
-
-    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    final_img = img.resize((1400, 980), Image.Resampling.LANCZOS)
-    final_img.save(OUT_PATH, format="PNG", optimize=True)
-    if ARTIFACT_DIR is not None and ARTIFACT_DIR.exists():
-        shutil.copy2(OUT_PATH, ARTIFACT_DIR / OUT_PATH.name)
-    print(f"Rendered {OUT_PATH} ({final_img.size[0]}x{final_img.size[1]}px)")
+    SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SVG_PATH.write_text(build_svg(rows), encoding="utf-8")
+    print(f"Rendered {SVG_PATH.relative_to(ROOT)} ({len(rows)} districts)")
+    if render_png(SVG_PATH, PNG_PATH):
+        print(f"Rendered {PNG_PATH.relative_to(ROOT)}")
+    artifact_dir = os.environ.get("ARTIFACT_DIR")
+    if artifact_dir and Path(artifact_dir).exists():
+        for path in (SVG_PATH, PNG_PATH):
+            if path.exists():
+                shutil.copy2(path, Path(artifact_dir) / path.name)
     return 0
 
 

@@ -21,7 +21,7 @@ End-to-end harvesting, transcription, accuracy evaluation, and image-verified ex
 - `scripts/district_gazetteer_data.py` and `scripts/extract_epidemiology_candidates.py`: Splits collective volumes into `239` canonical 1860 districts and extracts candidate infant-feeding, mortality, and folk-medicine passages using dialect-tolerant patterns.
 - `scripts/build_verification_download_manifest.py` and `scripts/download_iiif_targets.py`: Downloads full-resolution IIIF page images locally for image verification.
 - `scripts/compile_verified_datasets.py`: Validates all `239` district shards against `districts_index.json` and builds the final `CSV`, `GeoJSON`, `verified_passages.csv`, sensitivity JSON, and `verification_viewer.html`.
-- `scripts/build_article_figures.py` and `scripts/render_bavaria_map.py`: Generates cropped manuscript strips and the static archival map under `publication/figures/`.
+- `scripts/build_article_figures.py` and `scripts/render_bavaria_map.py`: Generates cropped manuscript strips and the district-seat map (SVG and PNG) under `publication/figures/`.
 - `scripts/build_zenodo_package.py`: Deterministically (`mtime=0`) stages the complete Zenodo and Hugging Face bundle in `dist/zenodo_package/` from a strict required allowlist with `SHA256SUMS`.
 
 ## Licensing, archival coverage, and verification status

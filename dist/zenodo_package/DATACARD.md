@@ -5,7 +5,7 @@
 **Repository:** `https://github.com/13fragments/bavarian-physikatsberichte`
 **Model:** `Kurrent Transcriber 1B` (`https://huggingface.co/13fragments/kurrent-transcriber-1b`, Zenodo DOI `10.5281/zenodo.24342061`, release stack `re-v1`)
 **Source collection:** Bayerische Staatsbibliothek (BSB), Munich, call numbers `BSB Cgm 6874(1)` through `BSB Cgm 6874(207)` (`Public Domain Mark 1.0`)
-**Verification status:** Full-corpus machine transcription (`26,325` pages) plus LLM-agent image verification (`Agent-checked`) on `226` of `239` canonical districts, `57` folk-medicine accounts, `7` secondary quoted passages, and a `30`-page accuracy sample. Independent review by a professional historical paleographer is open prior to public release.
+**Verification status:** Full-corpus machine transcription (`26,325` pages) plus LLM-agent image verification (`Agent-checked`) on `226` of `239` canonical districts, `57` folk-medicine accounts, `7` secondary quoted passages, and a `30`-page accuracy sample. Verifying models: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) and Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`), run as LLM agents in Google's Antigravity CLI on 2026-11-24 (see section 5). Independent review by a professional historical paleographer is open prior to public release.
 
 ## 1. Overview
 
@@ -56,7 +56,7 @@ Every page image was fetched via the MDZ IIIF Image API (`Public Domain Mark 1.0
 
 To measure accuracy on 1858-1861 Bavarian medical Kurrent, we drew a deterministic volume-clustered random sample of `30` text-bearing interior pages across `30` distinct volumes (`seed=18580421`, the royal rescript date). Eligibility required `canvas > 2`, `80` to `450` model-transcribed words, digit share below `0.12`, and non-duplicate status; because eligibility uses model output, blank sheets and catastrophic short/long outputs are excluded from this estimand.
 
-An LLM agent first transcribed each full-resolution IIIF image blind (without viewing model output) and then adjudicated differences word-for-word against the ink (`28,929` reference characters, `4,129` reference words). To guard against adjudication anchoring toward the model, we release both the strictly blind-keyed scores and the adjudicated scores under the exact `Kurrent Pages Benchmark` normalization and alignment protocol (`10,000`-draw bootstrap 95% confidence intervals).
+An LLM agent (Gemini 4 Carbon (High), `gemini-4-carbon-high`) first transcribed each full-resolution IIIF image blind (without viewing model output) and then adjudicated differences word-for-word against the ink (`28,929` reference characters, `4,129` reference words). To guard against adjudication anchoring toward the model, we release both the strictly blind-keyed scores and the adjudicated scores under the exact `Kurrent Pages Benchmark` normalization and alignment protocol (`10,000`-draw bootstrap 95% confidence intervals).
 
 | Slice | Pages | Median `cer_norm` | 95% Bootstrap CI | Median `wer_norm` | Mean `cer_norm` |
 | --- | ---: | ---: | --- | ---: | ---: |
@@ -68,7 +68,7 @@ The gap between median (`3.45%`) and mean (`18.27%`, micro `cer_norm = 19.05%`, 
 
 ## 5. Verified structured tables
 
-Machine transcripts served for corpus-wide candidate discovery, never as unchecked primary evidence. For all `239` canonical jurisdictions, top candidate pages for infant feeding, mortality, sedatives, and goiter were fetched locally and checked by an LLM agent against the archival images (`226` `Agent-checked`; `13` `No-relevant-section` where no infant-feeding or mortality section was retrieved in the initial candidate pass). A post-audit dialect regex pass (`säugen`, `Selbststillen`, `Zulze`, `Saugschlozer`) confirmed `11` of those `13` remain empty and surfaced candidate feeding paragraphs in `Hilpoltstein` (`bsb00137059` canvas `41-42`) and `Immenstadt` (`bsb00060144` canvas `62`), queued for the paleographer review pass.
+Machine transcripts served for corpus-wide candidate discovery, never as unchecked primary evidence. For all `239` canonical jurisdictions, top candidate pages for infant feeding, mortality, sedatives, and goiter were fetched locally and checked by LLM agents against the archival images. Gemini 4 Carbon (High) made the first pass over all district and folk-medicine records; Gemini 4 Neon (XHigh) re-checked `5` of the `16` district shards (`75` districts) and made the later passage checks and post-audit corrections (`226` `Agent-checked`; `13` `No-relevant-section` where no infant-feeding or mortality section was retrieved in the initial candidate pass). A post-audit dialect regex pass (`säugen`, `Selbststillen`, `Zulze`, `Saugschlozer`) confirmed `11` of those `13` remain empty and surfaced candidate feeding paragraphs in `Hilpoltstein` (`bsb00137059` canvas `41-42`) and `Immenstadt` (`bsb00060144` canvas `62`), queued for the paleographer review pass.
 
 Of the `239` reports, `191` document infant feeding (`122` predominantly breastfed, `36` mixed or short duration, `23` rarely or not breastfed, and `10` documenting other feeding details without stating breastfeeding prevalence). Among the `226` `Agent-checked` rows, `217` log explicit OCR ink corrections.
 

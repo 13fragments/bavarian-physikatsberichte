@@ -3,7 +3,7 @@
 Every fact, count, citation, and quotation in Article 1 (`publication/article_1_infant_feeding_draft.md`) and Article 2 (`publication/article_2_folk_medicine_outline_and_quotes.md`) comes from this sheet and is indexed by `passage_id` in `data/dataset/verified_passages.csv`. Status markers:
 
 - **Seen / Computed:** verified directly from programmatic corpus audits, BSB IIIF manifests, or reproducible recomputation from verified tables.
-- **Agent-checked (`[A]`):** compared letter-for-letter against the downloaded Bayerische Staatsbibliothek archival page image by an LLM agent on 2026-11-24. Independent review by a professional historical paleographer is open before publication.
+- **Agent-checked (`[A]`):** compared letter-for-letter against the downloaded Bayerische Staatsbibliothek archival page image by LLM agents on 2026-11-24: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) for the 30-page blind keying and adjudication and the first pass of all district and folk-medicine checks; Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`) for the re-check of 5 of the 16 district shards (75 districts), the later passage checks, and the post-audit corrections. Both ran as subagents of one session in Google's Antigravity CLI (source: local Antigravity CLI session logs). Independent review by a professional historical paleographer is open before publication.
 - **Machine (`[M]`):** raw `Kurrent Transcriber 1B` output not yet checked against the image. Do not publish unchecked `[M]` quotes.
 - **External:** historical or archival context outside `BSB Cgm 6874`, with source explicitly named.
 
@@ -114,5 +114,5 @@ Every quote below is `[A]` (Agent-checked against local BSB IIIF images on 2026-
 - `Landstuhl`: the dataset value is `16.3%` of total births with stillbirths in both numerator and denominator. The `14.4%` live-birth figure is our recalculation from the report's counts (`96` live-born infant deaths of about `664.6` live births a year). Landstuhl enters Sensitivity 1 at `16.3%` and is not part of the strict `live_births` slices.
 - `Göggingen` (`47.2%`) has no feeding classification. Do not group it with districts that physicians described as short, mixed, or rarely breastfeeding.
 - Describe the in-corpus accuracy figures as agreement with an LLM-agent reference. `Kurrent Pages Benchmark` scores use human references, so any comparison with them must state that difference.
-- Name `an LLM agent` explicitly in article body text wherever agent verification was used; remove `[A]` tags only after professional paleographer verification passes.
+- Name the LLM agent (Gemini 4 Carbon; Gemini 4 Neon for re-checks) in article body text wherever agent verification was used; remove `[A]` tags only after professional paleographer verification passes.
 - Attribute physicians' moralizing terms ("ignorance", "superstition", "quackery") to the doctors rather than adopting them as neutral ground truth.

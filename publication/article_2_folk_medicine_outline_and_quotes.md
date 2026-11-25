@@ -1,7 +1,7 @@
 # Article 2 outline and 25 verified quotations: chair legs, sabres, and boiled dog meat
 
 - **Target:** `13fragments` blog (follow-up piece from the same `26,325`-page `BSB Cgm 6874` transcription run).
-- **Status:** Detailed outline and `25` LLM-agent image-verified primary-source quotations (`[A]` = checked letter-for-letter against Bayerische Staatsbibliothek archival page images; independent review by a professional historical paleographer is open before publication).
+- **Status:** Detailed outline and `25` LLM-agent image-verified primary-source quotations (Gemini 4 Carbon (High), with Gemini 4 Neon (XHigh) re-checks) (`[A]` = checked letter-for-letter against Bayerische Staatsbibliothek archival page images; independent review by a professional historical paleographer is open before publication).
 - **Facts and passage table:** `publication/FACTS.md`, `data/dataset/verified_bavaria_1860_folk_medicine.csv` (`57` confirmed passages), and `data/dataset/verified_passages.csv` (which includes `parsberg_p134_night_watchman` as a standalone verified record).
 
 ## Working titles
@@ -33,7 +33,7 @@ To avoid reading as a cabinet of curiosities, the full draft needs an interpreti
 
 ## Top 25 image-verified quotations (`[A]`)
 
-Every German passage below was checked by an LLM agent directly against its Bayerische Staatsbibliothek IIIF page image and is stored in `data/dataset/verified_passages.csv`. Original German curly quotation marks are rendered as straight quotes in this draft for linter compliance; ellipses (`[...]`) mark any elided text.
+Every German passage below was checked by an LLM agent (Gemini 4 Carbon, with Gemini 4 Neon for re-checks) directly against its Bayerische Staatsbibliothek IIIF page image and is stored in `data/dataset/verified_passages.csv`. Original German curly quotation marks are rendered as straight quotes in this draft for linter compliance; ellipses (`[...]`) mark any elided text.
 
 ### 1. Bamberg (Land) I - Bandaging a chair leg from afar (`BSB Cgm 6874(12)`, `bsb00140579`, scan 60; `folk_bamberg_land_i_p60`) [A]
 

@@ -163,7 +163,7 @@
     "infant_mortality_denominator": "not_applicable",
     "infant_mortality_detail": "No infant mortality rate documented in candidate pages.",
     "goiter_status": "not_documented",
-    "cretinism_status": "not_documented",
+    "cretinism_status": "explicitly_absent",
     "primary_bsb_id": "bsb00140619",
     "primary_canvas": 92,
     "mdz_page_url": "https://www.digitale-sammlungen.de/de/view/bsb00140619?page=92",

@@ -162,7 +162,7 @@
     "infant_mortality_pct": 33.4,
     "infant_mortality_denominator": "all_deaths",
     "infant_mortality_detail": "Mortality-by-age table on p. 52 reports 683 deaths aged 0–1 Jahr (364 male, 319 female) out of 2,045 total deaths (1,006 male, 1,039 female; table includes row 1 Todtgeborene and contains a +10 addition slip printing 207 for 93+104 in 50–60 yr), yielding 33.4% of all deaths. p. 121 notes most first-year deaths are from convulsions (Gefraisch).",
-    "goiter_status": "not_documented",
+    "goiter_status": "sporadic_or_localized",
     "cretinism_status": "not_documented",
     "primary_bsb_id": "bsb00144879",
     "primary_canvas": 121,

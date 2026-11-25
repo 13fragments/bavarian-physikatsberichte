@@ -59,6 +59,6 @@ The verifying agents are LLMs, like the Gemini agents that checked the dataset t
 
 The verified district table had one column, `goiter_cretinism_status`, for two conditions. Uffenheim showed the problem. The table marked it `explicitly_absent` because canvas 21 says cretinism is absent, but canvas 43 calls carrying heavy loads on the head "a not uncommon cause" of goiter in women. One value could not record both statements.
 
-The column is now split into `goiter_status` and `cretinism_status`. Uffenheim has goiter `sporadic_or_localized` and cretinism `explicitly_absent`. The goiter map and Post 06 show goiter only. The release notes are in `DATACARD.md`, section 8, and the evidence for each district is in `data/dataset/goiter_cretinism_status_mapping.csv`.
+The column is now split into `goiter_status` and `cretinism_status`. Uffenheim has goiter `sporadic_or_localized` and cretinism `explicitly_absent`. The goiter map and Post 06 show goiter only. The release notes are in `DATACARD.md`, section 8, and the evidence for each district is in `data/dataset/goiter_cretinism_status_mapping.csv`. The split left 27 districts without a settled condition; an image check then gave 25 of them a value for at least one condition (log `data/dataset/goiter_cretinism_image_verification.md`).
 
 The split is not yet in a published dataset version. The owner publishes the next version on Zenodo and Hugging Face. Do this before Post 06, because the post links the dataset as the source of the map.

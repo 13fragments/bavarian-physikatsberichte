@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Render Figure 2: infant feeding at the 1860 district seats of BSB Cgm 6874.
+"""Render district-seat maps of the 1860 Bavarian districts of BSB Cgm 6874.
 
-Reads `data/dataset/verified_bavaria_1860_infant_feeding.csv` and writes
-`publication/figures/fig_bavaria_1860_feeding_map.svg`. With Google Chrome
-available, it also writes a 2x PNG next to it.
+Reads `data/dataset/verified_bavaria_1860_infant_feeding.csv` and writes one
+SVG per figure under `publication/figures/`:
+
+- `feeding`: Figure 2 of Article 1, infant feeding (`fig_bavaria_1860_feeding_map.svg`).
+- `goiter`: goiter and cretinism (`fig_bavaria_1860_goiter_map.svg`).
+
+With Google Chrome available, it also writes a 2x PNG next to each SVG.
+Run `python3 scripts/render_bavaria_map.py [--figure feeding|goiter|all]`.
 
 The map makes no claim about district boundaries. Each point is the seat of one
 of the 239 canonical districts. No open data set of the 1860 Bavarian district
@@ -14,7 +19,9 @@ appears as an inset at the same scale.
 
 from __future__ import annotations
 
+import argparse
 import csv
+from dataclasses import dataclass
 import math
 import os
 from pathlib import Path
@@ -25,21 +32,12 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data" / "dataset" / "verified_bavaria_1860_infant_feeding.csv"
-SVG_PATH = ROOT / "publication" / "figures" / "fig_bavaria_1860_feeding_map.svg"
-PNG_PATH = SVG_PATH.with_suffix(".png")
+FIGURE_DIR = ROOT / "publication" / "figures"
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 WIDTH, HEIGHT = 560, 560
 FONT = '"IBM Plex Mono", ui-monospace, Menlo, monospace'
 INK, MUTED, BG, FRAME, RIVER = "#111", "#666", "#fdfdfc", "#cfcfcf", "#9db3c4"
-
-STATUS = {
-    "predominantly_breastfed": ("#2b5c8a", "Predominantly breastfed"),
-    "mixed_or_short_duration": ("#d08c1a", "Mixed or short breastfeeding"),
-    "rarely_or_not_breastfed": ("#a3292b", "Rarely or not breastfed"),
-    "not_documented": ("none", "Feeding not documented"),
-}
-DRAW_ORDER = ["not_documented", "predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed"]
 
 # Main map frame, in degrees. The scale is equal in x and y at latitude 49.
 LON0, LON1, LAT0, LAT1 = 8.95, 13.95, 47.38, 50.72
@@ -79,25 +77,103 @@ REGIONS = [
     ("Swabia", 9.55, 47.95, "middle"),
 ]
 
-# Labelled districts with their first-year death rate where the article cites one.
-CALLOUTS = [
-    ("roggenburg", "Roggenburg"),
-    ("ottobeuren", "Ottobeuren 40.7%"),
-    ("oettingen", "Öttingen 35.9%"),
-    ("noerdlingen", "Nördlingen"),
-    ("uffenheim", "Uffenheim 17.6%"),
-    ("fuerth", "Fürth"),
-    ("roth_mittelfranken", "Roth 40.0%"),
-    ("greding", "Greding"),
-    ("woerth_a_d_donau", "Wörth 47.4%"),
-    ("eggenfelden", "Eggenfelden ~50%"),
-    ("landstuhl", "Landstuhl"),
-]
 CALLOUT_SIZE = 9.5
 CHAR_WIDTH = 0.6  # IBM Plex Mono advance width, in em
 
 # Legend box, bottom-right corner (Salzburg and Austria, no districts).
-LEGEND_X, LEGEND_Y, LEGEND_W, LEGEND_H = 372, 462, 182, 88
+LEGEND_X, LEGEND_Y, LEGEND_W = 372, 462, 182
+
+
+@dataclass(frozen=True)
+class Figure:
+    """One district-seat map: which CSV column colors the points, and how."""
+
+    svg_name: str
+    column: str
+    status: dict[str, tuple[str, str]]  # column value -> (fill color, legend label)
+    draw_order: tuple[str, ...]  # later values draw on top
+    legend_order: tuple[str, ...]
+    hollow: str  # column value drawn as a hollow point
+    callouts: tuple[tuple[str, str], ...]  # (district_id, label)
+    title: str
+    desc: str
+    ring_column: str | None = None  # draw a ring where this column has a value
+    ring_label: str | None = None
+    hollow_stroke: str = "#8a8a8a"
+    hollow_r: float = 3.0
+
+    @property
+    def legend_height(self) -> int:
+        return 18 + 14 * (len(self.legend_order) + (1 if self.ring_column else 0))
+
+
+FEEDING = Figure(
+    svg_name="fig_bavaria_1860_feeding_map.svg",
+    column="breastfeeding_status",
+    status={
+        "predominantly_breastfed": ("#2b5c8a", "Predominantly breastfed"),
+        "mixed_or_short_duration": ("#d08c1a", "Mixed or short breastfeeding"),
+        "rarely_or_not_breastfed": ("#a3292b", "Rarely or not breastfed"),
+        "not_documented": ("none", "Feeding not documented"),
+    },
+    draw_order=("not_documented", "predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed"),
+    legend_order=("predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed", "not_documented"),
+    hollow="not_documented",
+    # Labelled districts with their first-year death rate where the article cites one.
+    callouts=(
+        ("roggenburg", "Roggenburg"),
+        ("ottobeuren", "Ottobeuren 40.7%"),
+        ("oettingen", "Öttingen 35.9%"),
+        ("noerdlingen", "Nördlingen"),
+        ("uffenheim", "Uffenheim 17.6%"),
+        ("fuerth", "Fürth"),
+        ("roth_mittelfranken", "Roth 40.0%"),
+        ("greding", "Greding"),
+        ("woerth_a_d_donau", "Wörth 47.4%"),
+        ("eggenfelden", "Eggenfelden ~50%"),
+        ("landstuhl", "Landstuhl"),
+    ),
+    title="Infant feeding at the seats of 239 Bavarian districts, 1858 to 1861",
+    desc="Each point is a district seat, colored by how the district physician described infant feeding. "
+    "Blue points, predominantly breastfed, fill Franconia and the Palatinate. Red and amber points, rarely or briefly "
+    "breastfed, fill Swabia and parts of Lower Bavaria. Upper Bavaria is blank because its reports are not in this "
+    "collection.",
+    ring_column="imr_pct_of_births",
+    ring_label="First-year death rate given",
+)
+
+GOITER = Figure(
+    svg_name="fig_bavaria_1860_goiter_map.svg",
+    column="goiter_cretinism_status",
+    status={
+        "endemic_or_frequent": ("#a3292b", "Endemic or frequent"),
+        "sporadic_or_localized": ("#d08c1a", "Sporadic or in some villages"),
+        "explicitly_absent": ("#2b5c8a", "Reported absent or rare"),
+        "not_documented": ("none", "Not captured in verified pages"),
+    },
+    draw_order=("not_documented", "explicitly_absent", "sporadic_or_localized", "endemic_or_frequent"),
+    legend_order=("endemic_or_frequent", "sporadic_or_localized", "explicitly_absent", "not_documented"),
+    hollow="not_documented",
+    # Districts quoted in publication/posts/06_goiter_iodine.md.
+    callouts=(
+        ("wiesentheid", "Wiesentheid"),
+        ("weiler", "Weiler"),
+        ("schillingsfuerst", "Schillingsfürst"),
+        ("rothenfels", "Rothenfels"),
+        ("eltmann", "Eltmann"),
+    ),
+    title="Goiter and cretinism at the seats of 239 Bavarian districts, 1858 to 1861",
+    desc="Each point is a district seat, colored by how the district physician described goiter or cretinism. "
+    "The source table has one column for both conditions, so a color can rest on a statement about only one of them. "
+    "Red points: endemic or frequent. Amber points: sporadic or limited to some villages. Blue points: the physician "
+    "reports goiter or cretinism absent or rare. Hollow points: no statement was captured in the image-verified pages, "
+    "which does not mean the conditions were absent. Upper Bavaria is blank because its reports are not in this "
+    "collection.",
+    hollow_stroke="#c4c4c4",
+    hollow_r=2.4,
+)
+
+FIGURES = {"feeding": FEEDING, "goiter": GOITER}
 
 
 def project(lon: float, lat: float) -> tuple[float, float]:
@@ -160,40 +236,38 @@ def place_label(x, y, label, points, obstacles):
     return lx, ly, anchor, leader
 
 
-def legend() -> list[str]:
+def legend(fig: Figure) -> list[str]:
     x, y = LEGEND_X, LEGEND_Y
-    out = [f'<rect x="{x}" y="{y}" width="{LEGEND_W}" height="{LEGEND_H}" fill="{BG}" stroke="{FRAME}"/>']
+    out = [f'<rect x="{x}" y="{y}" width="{LEGEND_W}" height="{fig.legend_height}" fill="{BG}" stroke="{FRAME}"/>']
     row = y + 16
-    for status in ("predominantly_breastfed", "mixed_or_short_duration", "rarely_or_not_breastfed", "not_documented"):
-        color, label = STATUS[status]
-        if status == "not_documented":
-            out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="3" fill="{BG}" stroke="#8a8a8a" stroke-width="1.1"/>')
+    for status in fig.legend_order:
+        color, label = fig.status[status]
+        if status == fig.hollow:
+            out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="{fig.hollow_r:g}" fill="{BG}" stroke="{fig.hollow_stroke}" stroke-width="1.1"/>')
         else:
             out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="3.6" fill="{color}"/>')
         out.append(text(x + 22, row, label, 8.5, INK))
         row += 14
-    out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="6" fill="none" stroke="{INK}" stroke-width="1.1"/>')
-    out.append(text(x + 22, row, "First-year death rate given", 8.5, INK))
+    if fig.ring_column:
+        out.append(f'<circle cx="{x + 12}" cy="{row - 3}" r="6" fill="none" stroke="{INK}" stroke-width="1.1"/>')
+        out.append(text(x + 22, row, fig.ring_label or "", 8.5, INK))
     return out
 
 
-def district_title(row: dict[str, str]) -> str:
-    parts = [row["district_name"], STATUS[row["breastfeeding_status"]][1].lower()]
-    if row.get("imr_pct_of_births"):
+def district_title(fig: Figure, row: dict[str, str]) -> str:
+    parts = [row["district_name"], fig.status[row[fig.column]][1].lower()]
+    if fig.ring_column and row.get(fig.ring_column):
         basis = "live births" if row["infant_mortality_denominator"] == "live_births" else "all births"
         parts.append(f"first-year deaths {float(row['imr_pct_of_births']):.1f}% of {basis}")
     return ", ".join(parts)
 
 
-def build_svg(rows: list[dict[str, str]]) -> str:
+def build_svg(fig: Figure, rows: list[dict[str, str]]) -> str:
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" '
         f'font-family=\'{FONT}\' role="img" aria-labelledby="map-title map-desc">',
-        '<title id="map-title">Infant feeding at the seats of 239 Bavarian districts, 1858 to 1861</title>',
-        '<desc id="map-desc">Each point is a district seat, colored by how the district physician described infant feeding. '
-        "Blue points, predominantly breastfed, fill Franconia and the Palatinate. Red and amber points, rarely or briefly "
-        "breastfed, fill Swabia and parts of Lower Bavaria. Upper Bavaria is blank because its reports are not in this "
-        "collection.</desc>",
+        f'<title id="map-title">{escape(fig.title)}</title>',
+        f'<desc id="map-desc">{escape(fig.desc)}</desc>',
         f'<rect width="{WIDTH}" height="{HEIGHT}" fill="{BG}"/>',
     ]
     for lon in (9, 10, 11, 12, 13):
@@ -231,31 +305,31 @@ def build_svg(rows: list[dict[str, str]]) -> str:
 
     positions: dict[str, tuple[float, float]] = {}
     ringed: set[str] = set()
-    for status in DRAW_ORDER:
+    for status in fig.draw_order:
         for row in rows:
-            if row["breastfeeding_status"] != status:
+            if row[fig.column] != status:
                 continue
             lon, lat = float(row["longitude"]), float(row["latitude"])
             x, y = project_inset(lon, lat) if row["regierungsbezirk"] == "Pfalz" else project(lon, lat)
             positions[row["district_id"]] = (x, y)
-            color = STATUS[status][0]
+            color = fig.status[status][0]
             ring = ""
-            if row.get("imr_pct_of_births"):
+            if fig.ring_column and row.get(fig.ring_column):
                 ringed.add(row["district_id"])
                 ring = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="none" stroke="{INK}" stroke-width="1.1"/>'
-            if status == "not_documented":
-                dot = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{BG}" stroke="#8a8a8a" stroke-width="1.1"/>'
+            if status == fig.hollow:
+                dot = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{fig.hollow_r:g}" fill="{BG}" stroke="{fig.hollow_stroke}" stroke-width="1.1"/>'
             else:
                 dot = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.6" fill="{color}" stroke="{BG}" stroke-width="0.8"/>'
-            out.append(f"<g><title>{escape(district_title(row))}</title>{ring}{dot}</g>")
+            out.append(f"<g><title>{escape(district_title(fig, row))}</title>{ring}{dot}</g>")
 
     obstacles = [
         (INSET_X, INSET_Y, INSET_X + INSET_W, INSET_Y + 18),
-        (LEGEND_X - 2, LEGEND_Y - 2, LEGEND_X + LEGEND_W + 2, LEGEND_Y + LEGEND_H + 2),
+        (LEGEND_X - 2, LEGEND_Y - 2, LEGEND_X + LEGEND_W + 2, LEGEND_Y + fig.legend_height + 2),
         *region_boxes,
     ]
     points = [(x, y, 7.0 if district_id in ringed else 4.4) for district_id, (x, y) in positions.items()]
-    for district_id, label in CALLOUTS:
+    for district_id, label in fig.callouts:
         x, y = positions[district_id]
         lx, ly, anchor, leader = place_label(x, y, label, points, obstacles)
         if leader:
@@ -263,7 +337,7 @@ def build_svg(rows: list[dict[str, str]]) -> str:
                        f'stroke="{INK}" stroke-width="0.8"/>')
         out.append(text(lx, ly, label, CALLOUT_SIZE, INK, anchor, ' font-weight="500"'))
 
-    out.extend(legend())
+    out.extend(legend(fig))
 
     # Scale bar: 50 km along a meridian.
     bar = 50 / 111.2 * SCALE
@@ -294,17 +368,24 @@ def render_png(svg_path: Path, png_path: Path) -> bool:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--figure", choices=[*FIGURES, "all"], default="all")
+    args = parser.parse_args()
     rows = list(csv.DictReader(CSV_PATH.open(encoding="utf-8")))
-    SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    SVG_PATH.write_text(build_svg(rows), encoding="utf-8")
-    print(f"Rendered {SVG_PATH.relative_to(ROOT)} ({len(rows)} districts)")
-    if render_png(SVG_PATH, PNG_PATH):
-        print(f"Rendered {PNG_PATH.relative_to(ROOT)}")
+    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
     artifact_dir = os.environ.get("ARTIFACT_DIR")
-    if artifact_dir and Path(artifact_dir).exists():
-        for path in (SVG_PATH, PNG_PATH):
-            if path.exists():
-                shutil.copy2(path, Path(artifact_dir) / path.name)
+    for key in FIGURES if args.figure == "all" else [args.figure]:
+        fig = FIGURES[key]
+        svg_path = FIGURE_DIR / fig.svg_name
+        png_path = svg_path.with_suffix(".png")
+        svg_path.write_text(build_svg(fig, rows), encoding="utf-8")
+        print(f"Rendered {svg_path.relative_to(ROOT)} ({len(rows)} districts)")
+        if render_png(svg_path, png_path):
+            print(f"Rendered {png_path.relative_to(ROOT)}")
+        if artifact_dir and Path(artifact_dir).exists():
+            for path in (svg_path, png_path):
+                if path.exists():
+                    shutil.copy2(path, Path(artifact_dir) / path.name)
     return 0
 
 

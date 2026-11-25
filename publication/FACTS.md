@@ -3,11 +3,11 @@
 Every fact, count, citation, and quotation in Article 1 (`publication/article_1_infant_feeding_draft.md`) and Article 2 (`publication/article_2_folk_medicine_outline_and_quotes.md`) comes from this sheet and is indexed by `passage_id` in `data/dataset/verified_passages.csv`. Status markers:
 
 - **Seen / Computed:** verified directly from programmatic corpus audits, BSB IIIF manifests, or reproducible recomputation from verified tables.
-- **Agent-checked (`[A]`):** compared letter-for-letter against the downloaded Bayerische Staatsbibliothek archival page image by LLM agents on 2026-11-24: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) for the 30-page blind keying and adjudication and the first pass of all district and folk-medicine checks; Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`) for the re-check of 5 of the 16 district shards (75 districts), the later passage checks, and the post-audit corrections. Both ran as subagents of one session in Google's Antigravity CLI (source: local Antigravity CLI session logs). Independent review by a professional historical paleographer is open before publication.
+- **Agent-checked (`[A]`):** compared letter-for-letter against the downloaded Bayerische Staatsbibliothek archival page image by LLM agents on 2026-11-24: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) for the 30-page blind keying and adjudication and the first pass of all district and folk-medicine checks; Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`) for the re-check of 5 of the 16 district shards (75 districts), the later passage checks, and the post-audit corrections. Both ran as subagents of one session in Google's Antigravity CLI (source: local Antigravity CLI session logs). Independent review by a professional historical paleographer is still open. Article 1 was published on 2026-11-25, before that review.
 - **Machine (`[M]`):** raw `Kurrent Transcriber 1B` output not yet checked against the image. Do not publish unchecked `[M]` quotes.
 - **External:** historical or archival context outside `BSB Cgm 6874`, with source explicitly named.
 
-Updated on 2026-11-24 after dual-CLI review synthesis. Canvas numbers correspond to `?page=N` in the Munich Digitization Center (MDZ) viewer (`https://www.digitale-sammlungen.de/de/view/<bsb_id>?page=<N>`).
+Updated on 2026-11-24 after dual-CLI review synthesis. Publication status updated on 2026-11-25. Canvas numbers correspond to `?page=N` in the Munich Digitization Center (MDZ) viewer (`https://www.digitale-sammlungen.de/de/view/<bsb_id>?page=<N>`).
 
 ## 1. The collection and reading run
 

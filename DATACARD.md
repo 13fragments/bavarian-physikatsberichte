@@ -1,11 +1,14 @@
 # Dataset card for the 1858-1861 Bavarian medical survey (BSB Cgm 6874)
 
 **Publisher:** 13fragments
-**Date:** 2026-11-24
+**Date:** 2026-11-25
+**Version:** `0.9.0-pre-paleographer-review`
+**DOI:** `10.5281/zenodo.24523214` (Zenodo)
+**Hugging Face:** `https://huggingface.co/datasets/13fragments/bavarian-physikatsberichte`
 **Repository:** `https://github.com/13fragments/bavarian-physikatsberichte`
 **Model:** `Kurrent Transcriber 1B` (`https://huggingface.co/13fragments/kurrent-transcriber-1b`, Zenodo DOI `10.5281/zenodo.24342061`, release stack `re-v1`)
 **Source collection:** Bayerische Staatsbibliothek (BSB), Munich, call numbers `BSB Cgm 6874(1)` through `BSB Cgm 6874(207)` (`Public Domain Mark 1.0`)
-**Verification status:** Full-corpus machine transcription (`26,325` pages) plus LLM-agent image verification (`Agent-checked`) on `226` of `239` canonical districts, `57` folk-medicine accounts, `7` secondary quoted passages, and a `30`-page accuracy sample. Verifying models: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) and Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`), run as LLM agents in Google's Antigravity CLI on 2026-11-24 (see section 5). Independent review by a professional historical paleographer is open prior to public release.
+**Verification status:** Full-corpus machine transcription (`26,325` pages) plus LLM-agent image verification (`Agent-checked`) on `226` of `239` canonical districts, `57` folk-medicine accounts, `7` secondary quoted passages, and a `30`-page accuracy sample. Verifying models: Gemini 4 Carbon (High) (`gemini-4-carbon-high`) and Gemini 4 Neon (XHigh) (`gemini-4-neon-xhigh`), run as LLM agents in Google's Antigravity CLI on 2026-11-24 (see section 5). Independent review by a professional historical paleographer is still open. Corrections from that review will appear in a later version.
 
 ## 1. Overview
 

@@ -8,7 +8,8 @@ url: "https://github.com/13fragments/bavarian-physikatsberichte"
 repository-code: "https://github.com/13fragments/bavarian-physikatsberichte"
 license: "CC-BY-SA-4.0"
 version: "0.9.0-pre-paleographer-review"
-date-released: "2026-11-24"
+doi: "10.5281/zenodo.24523214"
+date-released: "2026-11-25"
 keywords:
   - historical-demography
   - handwritten-text-recognition

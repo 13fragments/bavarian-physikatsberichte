@@ -2,6 +2,8 @@
 
 End-to-end harvesting, transcription, accuracy evaluation, and image-verified extraction pipeline for the 1858-1861 Bavarian district medical, topographic, and ethnographic reports (*Medizinisch-topographische und ethnographische Beschreibung der Physikatsbezirke Bayerns*, Bayerische Staatsbibliothek shelfmarks `BSB Cgm 6874(1)` through `BSB Cgm 6874(207)`).
 
+**Dataset release:** version `0.9.0-pre-paleographer-review`, Zenodo DOI `10.5281/zenodo.24523214` (`https://doi.org/10.5281/zenodo.24523214`), Hugging Face `https://huggingface.co/datasets/13fragments/bavarian-physikatsberichte`. Cite all versions with the concept DOI `10.5281/zenodo.24523213`.
+
 ## Summary of outputs
 
 1. **Complete transcription (`212` volumes, `26,325` pages):** Compressed per-volume `JSONL` files under `data/transcripts/`, produced with `Kurrent Transcriber 1B` (`https://huggingface.co/13fragments/kurrent-transcriber-1b`, `CC BY-SA 4.0`, DOI `10.5281/zenodo.24342061`, release stack `re-v1`). Corpus audit (`data/dataset/corpus_audit.json`) verifies exact `1..canvas_count` sequences and flags `498` consecutive duplicate frames (`493` exact image-hash duplicates + `5` text near-duplicates; `25,827` unique pages).
@@ -28,4 +30,4 @@ End-to-end harvesting, transcription, accuracy evaluation, and image-verified ex
 - **Original archival images:** Bayerische Staatsbibliothek (Munich), `Public Domain Mark 1.0`.
 - **Pipeline code:** `MIT License` (`LICENSE-CODE.txt`).
 - **Transcriptions, verified tables, and evaluation references:** `13fragments`, `CC BY-SA 4.0` (`LICENSE-DATA.txt`; citation metadata in `CITATION.cff`).
-- **Verification note:** All structured records and quotations marked `Agent-checked` (`[A]`) were checked by LLM agents against local BSB IIIF images: Gemini 4 Carbon (High) for the first pass and Gemini 4 Neon (XHigh) for re-checks and post-audit corrections, run in Google's Antigravity CLI; independent review by a professional historical paleographer is open before public release.
+- **Verification note:** All structured records and quotations marked `Agent-checked` (`[A]`) were checked by LLM agents against local BSB IIIF images: Gemini 4 Carbon (High) for the first pass and Gemini 4 Neon (XHigh) for re-checks and post-audit corrections, run in Google's Antigravity CLI; independent review by a professional historical paleographer is still open. Corrections from that review will appear in a later version.
